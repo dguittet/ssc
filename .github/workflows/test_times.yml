@@ -39,6 +39,7 @@ jobs:
                     
     - name: Get Artifact
       uses: actions/github-script@v7
+      id: get-artifact
       with:
         script: |
           let allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
@@ -62,12 +63,18 @@ jobs:
             fs.mkdirSync(temp);
           }
           fs.writeFileSync(path.join(temp, 'test_times.zip'), Buffer.from(download.data));
+          return path.join(temp, 'test_times.zip')
+        result-encoding: string
 
     - name: Unzip Test Times
-      shell: bash
-      run: | 
-        ls D:/a/ssc/ssc
-        unzip D:/a/ssc/ssc/test_times.zip
+      if: ${{ matrix.os == 'windows-2019' }}
+      run: |
+        echo "${{steps.get-artifact.outputs.result}}"
+        7z x ${{steps.get-artifact.outputs.result}}
+
+    - name: Unzip Test Times
+      if: ${{ matrix.os != 'windows-2019' }}
+      run: unzip ${{ github.workspace }}/test_times.zip
 
     - name: Checkout SSC
       uses: actions/checkout@v4
