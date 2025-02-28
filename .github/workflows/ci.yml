@@ -47,7 +47,7 @@ jobs:
       with:
           name: SSC Linux Test Time Elapsed
           path: |
-            ${{env.SSCDIR}}/build/test/gtest_elapsed_times.csv
+            ${{env.SSCDIR}}/test/gtest_elapsed_times.csv
       
   build-on-mac:
     runs-on: ${{ matrix.os }}
@@ -90,7 +90,7 @@ jobs:
       with:
           name: SSC Mac Arm Test Time Elapsed
           path: |
-            ${{env.SSCDIR}}/build/test/gtest_elapsed_times.csv 
+            ${{env.SSCDIR}}/test/gtest_elapsed_times.csv 
 
     - name: Upload Test Times CSV
       if: ${{ matrix.os != 'macos-latest' }}
@@ -98,7 +98,7 @@ jobs:
       with:
           name: SSC Mac Intel Test Time Elapsed
           path: |
-            ${{env.SSCDIR}}/build/test/gtest_elapsed_times.csv 
+            ${{env.SSCDIR}}/test/gtest_elapsed_times.csv 
 
   build-on-windows:
     runs-on: windows-2019
@@ -129,7 +129,7 @@ jobs:
       shell: bash
       # Turn off fast fail for when the landbosse tests write to cerr
       run: |
-        cd ${SSCDIR}/build/test/Release
+        # cd ${SSCDIR}/build/test/Release
         # ./Test.exe --gtest_filter="*WakeModel*" > ${SSCDIR}/build/test/gtest.log
         pip install pandas requests
         python ${SSCDIR}/test/compare_elapsed_time.py gtest_log ${SSCDIR}/test/gtest.log
