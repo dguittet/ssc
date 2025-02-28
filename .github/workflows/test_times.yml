@@ -78,4 +78,4 @@ jobs:
     - name: Compare Test Times
       run: |
         pip install pandas
-        python ${{ github.workspace }}/test/compare_elapsed_time.py compare ${{ github.workspace }}/gtest_elapsed_times.csv ${{ github.ref_name }}
+        python ${{ github.workspace }}/ssc/test/compare_elapsed_time.py compare ${{ github.workspace }}/gtest_elapsed_times.csv ${{ github.ref_name }}
