@@ -70,7 +70,11 @@ jobs:
     - name: Unzip Test Times
       if: ${{ matrix.os != 'windows-2019' }}
       run: unzip ${{ github.workspace }}/test_times.zip
-
+      
+    - name: Checkout SSC
+      uses: actions/checkout@v4
+      with:
+          path: ssc    
     - name: Compare Test Times
       run: |
         pip install pandas
