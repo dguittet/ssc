@@ -66,8 +66,8 @@ jobs:
     - name: Unzip Test Times
       shell: bash
       run: | 
-        ls ${{ github.workspace }}
-        unzip ${{ github.workspace }}/test_times.zip
+        ls D:/a/ssc/ssc
+        unzip D:/a/ssc/ssc/test_times.zip
 
     - name: Checkout SSC
       uses: actions/checkout@v4
