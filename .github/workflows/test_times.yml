@@ -33,7 +33,30 @@ jobs:
       if: ${{ matrix.os == 'macos-latest' }}
       run: echo "CI_WF=SSC Mac Arm Shared Libraries" >> $GITHUB_ENV
 
-    - name: Get Artifact
+    - name: Get Artifact 1
+      uses: actions/github-script@v7
+      with:
+        script: |
+          let allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: context.payload.workflow_run.id,
+          });
+          
+    - name: Get Artifact 2
+      uses: actions/github-script@v7
+      with:
+        script: |
+          let allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: context.payload.workflow_run.id,
+          });
+          let matchArtifact = allArtifacts.data.artifacts.filter((artifact) => {
+            return artifact.name == "${{env.CI_WF}}"
+          })[0];
+                    
+    - name: Get Artifact 3
       uses: actions/github-script@v7
       with:
         script: |
