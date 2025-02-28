@@ -112,6 +112,5 @@ jobs:
     - name: Compare Test Times
       shell: bash
       run: |
-        ls ${{ runner.temp }}/artifacts/test
         pip install pandas
         python ${SSCDIR}/test/compare_elapsed_time.py compare ${{ github.workspace }}/gtest_elapsed_times.csv ${{ github.ref_name }}
