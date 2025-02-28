@@ -99,15 +99,15 @@ jobs:
 
     - name: Check
       shell: bash
-      run: ls ${{ runner.temp }}/artifacts
+      run: ls ${{ github.workspace }}
 
     - name: Unzip Test Times
       if: ${{ matrix.os == 'windows-2019' }}
-      run: 7z x ${{ runner.temp }}/artifacts/test_times.zip
+      run: 7z x ${{ github.workspace }}/test_times.zip
 
     - name: Unzip Test Times
       if: ${{ matrix.os != 'windows-2019' }}
-      run: unzip ${{ runner.temp }}/artifacts/test_times.zip
+      run: unzip ${{ github.workspace }}/test_times.zip
 
     - name: Compare Test Times
       shell: bash
