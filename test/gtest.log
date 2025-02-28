@@ -1,0 +1,2142 @@
+Running main() from gtest_main.cc
+[==========] Running 783 tests from 114 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from CMBatteryEqns_cmod_battery_eqns
+[ RUN      ] CMBatteryEqns_cmod_battery_eqns.TestStatefulSizeModifications
+[       OK ] CMBatteryEqns_cmod_battery_eqns.TestStatefulSizeModifications (0 ms)
+[ RUN      ] CMBatteryEqns_cmod_battery_eqns.reopt_sizing
+[       OK ] CMBatteryEqns_cmod_battery_eqns.reopt_sizing (5 ms)
+[----------] 2 tests from CMBatteryEqns_cmod_battery_eqns (6 ms total)
+
+[----------] 21 tests from CMPvsamv1BatteryIntegration_cmod_pvsamv1
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.TestDailyBatteryStats
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.TestDailyBatteryStats (1 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACBatteryModelIntegration
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACBatteryModelIntegration (1944 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACDCBatteryModelIntegrationCustomDispatchSparse
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACDCBatteryModelIntegrationCustomDispatchSparse (982 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACDCBatteryModelIntegrationCustomDispatchFull
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACDCBatteryModelIntegrationCustomDispatchFull (1003 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACDCBatteryModelIntegrationManualDispatch
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACDCBatteryModelIntegrationManualDispatch (975 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialDCBatteryModelIntegration
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialDCBatteryModelIntegration (2202 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.LCOS_test_singleowner
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.LCOS_test_singleowner (13224 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.LCOS_test_levpartflip
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.LCOS_test_levpartflip (11983 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.LCOS_test_cashloan
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.LCOS_test_cashloan (21761 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.PPA_ACBatteryModelIntegration
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.PPA_ACBatteryModelIntegration (21734 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.PPA_ManualDispatchBatteryModelIntegration
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.PPA_ManualDispatchBatteryModelIntegration (11071 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.PPA_CustomDispatchBatteryModelDCIntegrationSparse
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.PPA_CustomDispatchBatteryModelDCIntegrationSparse (11325 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.PPA_CustomDispatchBatteryModelDCIntegrationFull
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.PPA_CustomDispatchBatteryModelDCIntegrationFull (11709 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.CommercialMultipleSubarrayBatteryIntegration
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.CommercialMultipleSubarrayBatteryIntegration (950 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ClippingForecastTest1_DC_Dispatch
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ClippingForecastTest1_DC_Dispatch (968 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ClippingForecastTest2_DC_Dispatch_w_forecast
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ClippingForecastTest2_DC_Dispatch_w_forecast (1018 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.PPA_CustomDispatchBatteryModelDCIntegrationFullSubhourly
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.PPA_CustomDispatchBatteryModelDCIntegrationFullSubhourly (53132 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialDCBatteryModelPriceSignalDispatch
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialDCBatteryModelPriceSignalDispatch (6049 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACBatteryModelInterconnectionLimits
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACBatteryModelInterconnectionLimits (477 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACBatteryModelInterconnectionLimitsWAvailabilityLoss
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACBatteryModelInterconnectionLimitsWAvailabilityLoss (479 ms)
+[ RUN      ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACBatteryModelGridOutage
+[       OK ] CMPvsamv1BatteryIntegration_cmod_pvsamv1.ResidentialACBatteryModelGridOutage (478 ms)
+[----------] 21 tests from CMPvsamv1BatteryIntegration_cmod_pvsamv1 (173477 ms total)
+
+[----------] 12 tests from CMBatteryStatefulIntegration_cmod_battery_stateful
+[ RUN      ] CMBatteryStatefulIntegration_cmod_battery_stateful.TestStep
+[       OK ] CMBatteryStatefulIntegration_cmod_battery_stateful.TestStep (0 ms)
+[ RUN      ] CMBatteryStatefulIntegration_cmod_battery_stateful.SubMinute
+[       OK ] CMBatteryStatefulIntegration_cmod_battery_stateful.SubMinute (0 ms)
+[ RUN      ] CMBatteryStatefulIntegration_cmod_battery_stateful.ReadJson
+[       OK ] CMBatteryStatefulIntegration_cmod_battery_stateful.ReadJson (0 ms)
+[ RUN      ] CMBatteryStatefulIntegration_cmod_battery_stateful.RunCurrentControl
+[       OK ] CMBatteryStatefulIntegration_cmod_battery_stateful.RunCurrentControl (23 ms)
+[ RUN      ] CMBatteryStatefulIntegration_cmod_battery_stateful.RunCurrentControlLMOLTO
+[       OK ] CMBatteryStatefulIntegration_cmod_battery_stateful.RunCurrentControlLMOLTO (22 ms)
+[ RUN      ] CMBatteryStatefulIntegration_cmod_battery_stateful.AdaptiveTimestep
+{"indices_replaced":[0.0],"n_replacements":0.0,"loss_kw":0.0,"dq_relative_calendar_old":0.00010289571696803093,"rainflow_jlt":0.0,"rainflow_Ylt":0.0,"rainflow_Xlt":0.0,"day_age_of_battery":0.08333333333333333,"cycle_counts":[[20.0,0.0],[80.0,0.0]],"q_relative_cycle":100.0,"cycle_DOD":0.0,"cycle_range":0.0,"n_cycles":0.0,"q_relative":100.0,"cell_voltage":3.9043007062198558,"q_relative_calendar":101.9897104283032,"chargeChange":0.0,"SOC":33.24986202812992,"I_loss":0.0,"input_power":1.0,"cell_current":1.839028008290328,"qmax_lifetime":20.25,"P_dischargeable":2.5970677554849597,"P":0.9980364508621171,"I_chargeable":-12.00422682173155,"I":1.839028008290328,"average_range":0.0,"qmax_thermal":19.44,"Q":6.463773178268457,"replacement_schedule_percent":[0.0],"SOC_prev":42.709882646907328,"h":20.0,"replacement_option":0.0,"monthly_idle_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"percent_unavailable_prev":0.0,"vnom_default":3.6,"surface_area":2.018,"monthly_charge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"last_idx":2.0,"qfull":2.25,"loss_choice":0.0,"c_rate":0.2,"calendar_a":0.003,"calendar_q0":1.02,"heat_dissipated":0.0,"calendar_choice":1.0,"calendar_b":-7280.0,"T_batt_prev":20.0,"t_room_init":20.0,"q_relative_thermal":96.0,"option":1.0,"Q_max":20.25,"cp":1004.0,"calendar_c":930.0,"percent_unavailable":0.0,"cap_vs_temp":[[-10.0,60.0],[0.0,80.0],[25.0,100.0],[40.0,100.0]],"minimum_soc":5.0,"schedule_loss":[0.0],"prev_charge":2.0,"I_dischargeable":5.817395860441611,"qnom":2.0,"vnom":3.4,"leadacid_q20":0.0,"T_room":20.0,"monthly_discharge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"qexp":0.04,"V":542.6977981645599,"vcut":2.706,"vfull":4.1,"voltage_choice":0.0,"leadacid_qn":0.0,"replacement_schedule":[0.0],"leadacid_q10":0.0,"dt_hr":1.0,"calendar_matrix":[[-3.1000000000000004e231]],"control_mode":1.0,"life_model":0.0,"T_batt":20.0,"leadacid_tn":0.0,"analysis_period":1.0,"cycling_matrix":[[20.0,0.0,100.0],[20.0,5000.0,80.0],[20.0,10000.0,60.0],[80.0,0.0,100.0],[80.0,1000.0,80.0],[80.0,2000.0,60.0]],"load_escalation":[0.0],"resistance":0.0,"P_chargeable":-6.841208865704809,"qmax_init":1000.0,"q0":6.463773178268457,"input_current":1.0,"replacement_capacity":0.0,"mass":507.0,"charge_mode":2.0,"availabilty_loss":[0.0],"maximum_soc":95.0,"vexp":4.05,"nominal_voltage":500.0,"chem":1.0,"nominal_energy":10.0,"initial_soc":50.0}
+{"initial_soc":50.0,"nominal_energy":10.0,"chem":1.0,"nominal_voltage":500.0,"vexp":4.05,"maximum_soc":95.0,"availabilty_loss":[0.0],"charge_mode":2.0,"mass":507.0,"replacement_capacity":0.0,"input_current":1.0,"q0":7.8469612458373219,"qmax_init":1000.0,"P_chargeable":-24.21171994398925,"resistance":0.0,"load_escalation":[0.0],"cycling_matrix":[[20.0,0.0,100.0],[20.0,5000.0,80.0],[20.0,10000.0,60.0],[80.0,0.0,100.0],[80.0,1000.0,80.0],[80.0,2000.0,60.0]],"analysis_period":1.0,"leadacid_tn":0.0,"T_batt":20.0,"life_model":0.0,"control_mode":1.0,"calendar_matrix":[[-3.1000000000000004e231]],"dt_hr":0.25,"leadacid_q10":0.0,"replacement_schedule":[0.0],"leadacid_qn":0.0,"voltage_choice":0.0,"vfull":4.1,"vcut":2.706,"V":547.5079902665638,"qexp":0.04,"monthly_discharge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"T_room":20.0,"leadacid_q20":0.0,"vnom":3.4,"qnom":2.0,"I_dischargeable":28.249060485014377,"prev_charge":2.0,"schedule_loss":[0.0],"minimum_soc":5.0,"cap_vs_temp":[[-10.0,60.0],[0.0,80.0],[25.0,100.0],[40.0,100.0]],"percent_unavailable":0.0,"calendar_c":930.0,"cp":1004.0,"Q_max":20.25,"option":1.0,"q_relative_thermal":96.0,"t_room_init":20.0,"T_batt_prev":20.0,"calendar_b":-7280.0,"heat_dissipated":0.0,"calendar_choice":1.0,"c_rate":0.2,"calendar_a":0.003,"qfull":2.25,"loss_choice":0.0,"last_idx":5.0,"percent_unavailable_prev":0.0,"vnom_default":3.6,"surface_area":2.018,"monthly_charge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"monthly_idle_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"h":20.0,"replacement_option":0.0,"SOC_prev":42.709882646907328,"calendar_q0":1.02,"replacement_schedule_percent":[0.0],"I_chargeable":-42.48415501665073,"P":0.9983040393105526,"Q":7.8469612458373219,"average_range":0.0,"qmax_thermal":19.44,"input_power":1.0,"cell_current":1.8233597628858547,"q_relative":100.0,"n_cycles":0.0,"I":1.8233597628858547,"loss_kw":0.0,"I_loss":0.0,"SOC":40.365026984759889,"q_relative_calendar":101.98844648903163,"chargeChange":0.0,"qmax_lifetime":20.25,"day_age_of_battery":0.052083333333333339,"cycle_range":0.0,"cycle_DOD":0.0,"cycle_counts":[[20.0,0.0],[80.0,0.0]],"q_relative_cycle":100.0,"n_replacements":0.0,"rainflow_Xlt":0.0,"indices_replaced":[0.0],"P_dischargeable":12.866077705224838,"cell_voltage":3.9389064047954229,"rainflow_Ylt":0.0,"rainflow_jlt":0.0,"dq_relative_calendar_old":0.00011553510968382602}
+{"indices_replaced":[0.0],"n_replacements":0.0,"loss_kw":0.0,"dq_relative_calendar_old":0.00010289571696803093,"rainflow_jlt":0.0,"rainflow_Ylt":0.0,"rainflow_Xlt":0.0,"day_age_of_battery":0.08333333333333333,"cycle_counts":[[20.0,0.0],[80.0,0.0]],"q_relative_cycle":100.0,"cycle_DOD":0.0,"cycle_range":0.0,"n_cycles":0.0,"q_relative":100.0,"cell_voltage":3.9043007062198558,"q_relative_calendar":101.9897104283032,"chargeChange":0.0,"SOC":33.24986202812992,"I_loss":0.0,"input_power":1.0,"cell_current":1.839028008290328,"qmax_lifetime":20.25,"P_dischargeable":2.5970677554849597,"P":0.9980364508621171,"I_chargeable":-12.00422682173155,"I":1.839028008290328,"average_range":0.0,"qmax_thermal":19.44,"Q":6.463773178268457,"replacement_schedule_percent":[0.0],"SOC_prev":42.709882646907328,"h":20.0,"replacement_option":0.0,"monthly_idle_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"percent_unavailable_prev":0.0,"vnom_default":3.6,"surface_area":2.018,"monthly_charge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"last_idx":2.0,"qfull":2.25,"loss_choice":0.0,"c_rate":0.2,"calendar_a":0.003,"calendar_q0":1.02,"heat_dissipated":0.0,"calendar_choice":1.0,"calendar_b":-7280.0,"T_batt_prev":20.0,"t_room_init":20.0,"q_relative_thermal":96.0,"option":1.0,"Q_max":20.25,"cp":1004.0,"calendar_c":930.0,"percent_unavailable":0.0,"cap_vs_temp":[[-10.0,60.0],[0.0,80.0],[25.0,100.0],[40.0,100.0]],"minimum_soc":5.0,"schedule_loss":[0.0],"prev_charge":2.0,"I_dischargeable":5.817395860441611,"qnom":2.0,"vnom":3.4,"leadacid_q20":0.0,"T_room":20.0,"monthly_discharge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"qexp":0.04,"V":542.6977981645599,"vcut":2.706,"vfull":4.1,"voltage_choice":0.0,"leadacid_qn":0.0,"replacement_schedule":[0.0],"leadacid_q10":0.0,"dt_hr":1.0,"calendar_matrix":[[-3.1000000000000004e231]],"control_mode":1.0,"life_model":0.0,"T_batt":20.0,"leadacid_tn":0.0,"analysis_period":1.0,"cycling_matrix":[[20.0,0.0,100.0],[20.0,5000.0,80.0],[20.0,10000.0,60.0],[80.0,0.0,100.0],[80.0,1000.0,80.0],[80.0,2000.0,60.0]],"load_escalation":[0.0],"resistance":0.0,"P_chargeable":-6.841208865704809,"qmax_init":1000.0,"q0":6.463773178268457,"input_current":1.0,"replacement_capacity":0.0,"mass":507.0,"charge_mode":2.0,"availabilty_loss":[0.0],"maximum_soc":95.0,"vexp":4.05,"nominal_voltage":500.0,"chem":1.0,"nominal_energy":10.0,"initial_soc":50.0}
+{"initial_soc":50.0,"nominal_energy":10.0,"chem":1.0,"nominal_voltage":500.0,"vexp":4.05,"maximum_soc":95.0,"availabilty_loss":[0.0],"charge_mode":2.0,"mass":507.0,"replacement_capacity":0.0,"input_current":1.0,"q0":7.3899740572019099,"qmax_init":1000.0,"P_chargeable":-25.253467939202534,"resistance":0.0,"load_escalation":[0.0],"cycling_matrix":[[20.0,0.0,100.0],[20.0,5000.0,80.0],[20.0,10000.0,60.0],[80.0,0.0,100.0],[80.0,1000.0,80.0],[80.0,2000.0,60.0]],"analysis_period":1.0,"leadacid_tn":0.0,"T_batt":20.0,"life_model":0.0,"control_mode":1.0,"calendar_matrix":[[-3.1000000000000004e231]],"dt_hr":0.25,"leadacid_q10":0.0,"replacement_schedule":[0.0],"leadacid_qn":0.0,"voltage_choice":0.0,"vfull":4.1,"vcut":2.706,"V":546.0896403962319,"qexp":0.04,"monthly_discharge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"T_room":20.0,"leadacid_q20":0.0,"vnom":3.4,"qnom":2.0,"I_dischargeable":26.60390660592686,"prev_charge":2.0,"schedule_loss":[0.0],"minimum_soc":5.0,"cap_vs_temp":[[-10.0,60.0],[0.0,80.0],[25.0,100.0],[40.0,100.0]],"percent_unavailable":0.0,"calendar_c":930.0,"cp":1004.0,"Q_max":20.25,"option":1.0,"q_relative_thermal":96.0,"t_room_init":20.0,"T_batt_prev":20.0,"calendar_b":-7280.0,"heat_dissipated":0.0,"calendar_choice":1.0,"c_rate":0.2,"calendar_a":0.003,"qfull":2.25,"loss_choice":0.0,"last_idx":6.0,"percent_unavailable_prev":0.0,"vnom_default":3.6,"surface_area":2.018,"monthly_charge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"monthly_idle_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"h":20.0,"replacement_option":0.0,"SOC_prev":40.365026984759889,"calendar_q0":1.02,"replacement_schedule_percent":[0.0],"I_chargeable":-44.312103771192379,"P":0.9982238780303893,"Q":7.3899740572019099,"average_range":0.0,"qmax_thermal":19.44,"input_power":1.0,"cell_current":1.8279487545416494,"q_relative":100.0,"n_cycles":0.0,"I":1.8279487545416494,"loss_kw":0.0,"I_loss":0.0,"SOC":38.01426984157361,"q_relative_calendar":101.98635195318909,"chargeChange":0.0,"qmax_lifetime":20.25,"day_age_of_battery":0.0625,"cycle_range":0.0,"cycle_DOD":0.0,"cycle_counts":[[20.0,0.0],[80.0,0.0]],"q_relative_cycle":100.0,"n_replacements":0.0,"rainflow_Xlt":0.0,"indices_replaced":[0.0],"P_dischargeable":12.04134225473516,"cell_voltage":3.9287024488937547,"rainflow_Ylt":0.0,"rainflow_jlt":0.0,"dq_relative_calendar_old":0.00013648046810919208}
+{"indices_replaced":[0.0],"n_replacements":0.0,"loss_kw":0.0,"dq_relative_calendar_old":0.00010289571696803093,"rainflow_jlt":0.0,"rainflow_Ylt":0.0,"rainflow_Xlt":0.0,"day_age_of_battery":0.08333333333333333,"cycle_counts":[[20.0,0.0],[80.0,0.0]],"q_relative_cycle":100.0,"cycle_DOD":0.0,"cycle_range":0.0,"n_cycles":0.0,"q_relative":100.0,"cell_voltage":3.9043007062198558,"q_relative_calendar":101.9897104283032,"chargeChange":0.0,"SOC":33.24986202812992,"I_loss":0.0,"input_power":1.0,"cell_current":1.839028008290328,"qmax_lifetime":20.25,"P_dischargeable":2.5970677554849597,"P":0.9980364508621171,"I_chargeable":-12.00422682173155,"I":1.839028008290328,"average_range":0.0,"qmax_thermal":19.44,"Q":6.463773178268457,"replacement_schedule_percent":[0.0],"SOC_prev":42.709882646907328,"h":20.0,"replacement_option":0.0,"monthly_idle_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"percent_unavailable_prev":0.0,"vnom_default":3.6,"surface_area":2.018,"monthly_charge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"last_idx":2.0,"qfull":2.25,"loss_choice":0.0,"c_rate":0.2,"calendar_a":0.003,"calendar_q0":1.02,"heat_dissipated":0.0,"calendar_choice":1.0,"calendar_b":-7280.0,"T_batt_prev":20.0,"t_room_init":20.0,"q_relative_thermal":96.0,"option":1.0,"Q_max":20.25,"cp":1004.0,"calendar_c":930.0,"percent_unavailable":0.0,"cap_vs_temp":[[-10.0,60.0],[0.0,80.0],[25.0,100.0],[40.0,100.0]],"minimum_soc":5.0,"schedule_loss":[0.0],"prev_charge":2.0,"I_dischargeable":5.817395860441611,"qnom":2.0,"vnom":3.4,"leadacid_q20":0.0,"T_room":20.0,"monthly_discharge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"qexp":0.04,"V":542.6977981645599,"vcut":2.706,"vfull":4.1,"voltage_choice":0.0,"leadacid_qn":0.0,"replacement_schedule":[0.0],"leadacid_q10":0.0,"dt_hr":1.0,"calendar_matrix":[[-3.1000000000000004e231]],"control_mode":1.0,"life_model":0.0,"T_batt":20.0,"leadacid_tn":0.0,"analysis_period":1.0,"cycling_matrix":[[20.0,0.0,100.0],[20.0,5000.0,80.0],[20.0,10000.0,60.0],[80.0,0.0,100.0],[80.0,1000.0,80.0],[80.0,2000.0,60.0]],"load_escalation":[0.0],"resistance":0.0,"P_chargeable":-6.841208865704809,"qmax_init":1000.0,"q0":6.463773178268457,"input_current":1.0,"replacement_capacity":0.0,"mass":507.0,"charge_mode":2.0,"availabilty_loss":[0.0],"maximum_soc":95.0,"vexp":4.05,"nominal_voltage":500.0,"chem":1.0,"nominal_energy":10.0,"initial_soc":50.0}
+{"initial_soc":50.0,"nominal_energy":10.0,"chem":1.0,"nominal_voltage":500.0,"vexp":4.05,"maximum_soc":95.0,"availabilty_loss":[0.0],"charge_mode":2.0,"mass":507.0,"replacement_capacity":0.0,"input_current":1.0,"q0":6.931699663842923,"qmax_init":1000.0,"P_chargeable":-26.298150246303679,"resistance":0.0,"load_escalation":[0.0],"cycling_matrix":[[20.0,0.0,100.0],[20.0,5000.0,80.0],[20.0,10000.0,60.0],[80.0,0.0,100.0],[80.0,1000.0,80.0],[80.0,2000.0,60.0]],"analysis_period":1.0,"leadacid_tn":0.0,"T_batt":20.0,"life_model":0.0,"control_mode":1.0,"calendar_matrix":[[-3.1000000000000004e231]],"dt_hr":0.25,"leadacid_q10":0.0,"replacement_schedule":[0.0],"leadacid_qn":0.0,"voltage_choice":0.0,"vfull":4.1,"vcut":2.706,"V":544.5076785638415,"qexp":0.04,"monthly_discharge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"T_room":20.0,"leadacid_q20":0.0,"vnom":3.4,"qnom":2.0,"I_dischargeable":24.954118789834508,"prev_charge":2.0,"schedule_loss":[0.0],"minimum_soc":5.0,"cap_vs_temp":[[-10.0,60.0],[0.0,80.0],[25.0,100.0],[40.0,100.0]],"percent_unavailable":0.0,"calendar_c":930.0,"cp":1004.0,"Q_max":20.25,"option":1.0,"q_relative_thermal":96.0,"t_room_init":20.0,"T_batt_prev":20.0,"calendar_b":-7280.0,"heat_dissipated":0.0,"calendar_choice":1.0,"c_rate":0.2,"calendar_a":0.003,"qfull":2.25,"loss_choice":0.0,"last_idx":7.0,"percent_unavailable_prev":0.0,"vnom_default":3.6,"surface_area":2.018,"monthly_charge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"monthly_idle_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"h":20.0,"replacement_option":0.0,"SOC_prev":38.01426984157361,"calendar_q0":1.02,"replacement_schedule_percent":[0.0],"I_chargeable":-46.145201344628329,"P":0.9981357042926181,"Q":6.931699663842923,"average_range":0.0,"qmax_thermal":19.44,"input_power":1.0,"cell_current":1.8330975734359463,"q_relative":100.0,"n_cycles":0.0,"I":1.8330975734359463,"loss_kw":0.0,"I_loss":0.0,"SOC":35.65689127491215,"q_relative_calendar":101.98482518652277,"chargeChange":0.0,"qmax_lifetime":20.25,"day_age_of_battery":0.07291666666666667,"cycle_range":0.0,"cycle_DOD":0.0,"cycle_counts":[[20.0,0.0],[80.0,0.0]],"q_relative_cycle":100.0,"n_replacements":0.0,"rainflow_Xlt":0.0,"indices_replaced":[0.0],"P_dischargeable":11.220177909248243,"cell_voltage":3.9173214285168456,"rainflow_Ylt":0.0,"rainflow_jlt":0.0,"dq_relative_calendar_old":0.00015174813477239263}
+{"indices_replaced":[0.0],"n_replacements":0.0,"loss_kw":0.0,"dq_relative_calendar_old":0.00010289571696803093,"rainflow_jlt":0.0,"rainflow_Ylt":0.0,"rainflow_Xlt":0.0,"day_age_of_battery":0.08333333333333333,"cycle_counts":[[20.0,0.0],[80.0,0.0]],"q_relative_cycle":100.0,"cycle_DOD":0.0,"cycle_range":0.0,"n_cycles":0.0,"q_relative":100.0,"cell_voltage":3.9043007062198558,"q_relative_calendar":101.9897104283032,"chargeChange":0.0,"SOC":33.24986202812992,"I_loss":0.0,"input_power":1.0,"cell_current":1.839028008290328,"qmax_lifetime":20.25,"P_dischargeable":2.5970677554849597,"P":0.9980364508621171,"I_chargeable":-12.00422682173155,"I":1.839028008290328,"average_range":0.0,"qmax_thermal":19.44,"Q":6.463773178268457,"replacement_schedule_percent":[0.0],"SOC_prev":42.709882646907328,"h":20.0,"replacement_option":0.0,"monthly_idle_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"percent_unavailable_prev":0.0,"vnom_default":3.6,"surface_area":2.018,"monthly_charge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"last_idx":2.0,"qfull":2.25,"loss_choice":0.0,"c_rate":0.2,"calendar_a":0.003,"calendar_q0":1.02,"heat_dissipated":0.0,"calendar_choice":1.0,"calendar_b":-7280.0,"T_batt_prev":20.0,"t_room_init":20.0,"q_relative_thermal":96.0,"option":1.0,"Q_max":20.25,"cp":1004.0,"calendar_c":930.0,"percent_unavailable":0.0,"cap_vs_temp":[[-10.0,60.0],[0.0,80.0],[25.0,100.0],[40.0,100.0]],"minimum_soc":5.0,"schedule_loss":[0.0],"prev_charge":2.0,"I_dischargeable":5.817395860441611,"qnom":2.0,"vnom":3.4,"leadacid_q20":0.0,"T_room":20.0,"monthly_discharge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"qexp":0.04,"V":542.6977981645599,"vcut":2.706,"vfull":4.1,"voltage_choice":0.0,"leadacid_qn":0.0,"replacement_schedule":[0.0],"leadacid_q10":0.0,"dt_hr":1.0,"calendar_matrix":[[-3.1000000000000004e231]],"control_mode":1.0,"life_model":0.0,"T_batt":20.0,"leadacid_tn":0.0,"analysis_period":1.0,"cycling_matrix":[[20.0,0.0,100.0],[20.0,5000.0,80.0],[20.0,10000.0,60.0],[80.0,0.0,100.0],[80.0,1000.0,80.0],[80.0,2000.0,60.0]],"load_escalation":[0.0],"resistance":0.0,"P_chargeable":-6.841208865704809,"qmax_init":1000.0,"q0":6.463773178268457,"input_current":1.0,"replacement_capacity":0.0,"mass":507.0,"charge_mode":2.0,"availabilty_loss":[0.0],"maximum_soc":95.0,"vexp":4.05,"nominal_voltage":500.0,"chem":1.0,"nominal_energy":10.0,"initial_soc":50.0}
+{"initial_soc":50.0,"nominal_energy":10.0,"chem":1.0,"nominal_voltage":500.0,"vexp":4.05,"maximum_soc":95.0,"availabilty_loss":[0.0],"charge_mode":2.0,"mass":507.0,"replacement_capacity":0.0,"input_current":1.0,"q0":6.4719702882883,"qmax_init":1000.0,"P_chargeable":-27.346149330818006,"resistance":0.0,"load_escalation":[0.0],"cycling_matrix":[[20.0,0.0,100.0],[20.0,5000.0,80.0],[20.0,10000.0,60.0],[80.0,0.0,100.0],[80.0,1000.0,80.0],[80.0,2000.0,60.0]],"analysis_period":1.0,"leadacid_tn":0.0,"T_batt":20.0,"life_model":0.0,"control_mode":1.0,"calendar_matrix":[[-3.1000000000000004e231]],"dt_hr":0.25,"leadacid_q10":0.0,"replacement_schedule":[0.0],"leadacid_qn":0.0,"voltage_choice":0.0,"vfull":4.1,"vcut":2.706,"V":542.7313974659895,"qexp":0.04,"monthly_discharge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"T_room":20.0,"leadacid_q20":0.0,"vnom":3.4,"qnom":2.0,"I_dischargeable":23.299093037837886,"prev_charge":2.0,"schedule_loss":[0.0],"minimum_soc":5.0,"cap_vs_temp":[[-10.0,60.0],[0.0,80.0],[25.0,100.0],[40.0,100.0]],"percent_unavailable":0.0,"calendar_c":930.0,"cp":1004.0,"Q_max":20.25,"option":1.0,"q_relative_thermal":96.0,"t_room_init":20.0,"T_batt_prev":20.0,"calendar_b":-7280.0,"heat_dissipated":0.0,"calendar_choice":1.0,"c_rate":0.2,"calendar_a":0.003,"qfull":2.25,"loss_choice":0.0,"last_idx":8.0,"percent_unavailable_prev":0.0,"vnom_default":3.6,"surface_area":2.018,"monthly_charge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"monthly_idle_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"h":20.0,"replacement_option":0.0,"SOC_prev":35.65689127491215,"calendar_q0":1.02,"replacement_schedule_percent":[0.0],"I_chargeable":-47.984118846846829,"P":0.998038265803709,"Q":6.4719702882883,"average_range":0.0,"qmax_thermal":19.44,"input_power":1.0,"cell_current":1.838917502218492,"q_relative":100.0,"n_cycles":0.0,"I":1.838917502218492,"loss_kw":0.0,"I_loss":0.0,"SOC":33.292028231935699,"q_relative_calendar":101.98364335663573,"chargeChange":0.0,"qmax_lifetime":20.25,"day_age_of_battery":0.08333333333333333,"cycle_range":0.0,"cycle_DOD":0.0,"cycle_counts":[[20.0,0.0],[80.0,0.0]],"q_relative_cycle":100.0,"n_replacements":0.0,"rainflow_Xlt":0.0,"indices_replaced":[0.0],"P_dischargeable":10.40278447332602,"cell_voltage":3.904542427812874,"rainflow_Ylt":0.0,"rainflow_jlt":0.0,"dq_relative_calendar_old":0.00016356643364288272}
+{"indices_replaced":[0.0],"n_replacements":0.0,"loss_kw":0.0,"dq_relative_calendar_old":0.0001123278399451907,"rainflow_jlt":0.0,"rainflow_Ylt":0.0,"rainflow_Xlt":0.0,"day_age_of_battery":0.125,"cycle_counts":[[20.0,0.0],[80.0,0.0]],"q_relative_cycle":100.0,"cycle_DOD":0.0,"cycle_range":0.0,"n_cycles":0.0,"q_relative":100.0,"cell_voltage":3.831193331977116,"q_relative_calendar":101.9887672160055,"chargeChange":0.0,"SOC":23.614390211413804,"I_loss":0.0,"input_power":1.0,"cell_current":1.8731357211696134,"qmax_lifetime":20.25,"P_dischargeable":1.7839396738180607,"P":0.9975119667918104,"I_chargeable":-13.87736254290116,"I":1.8731357211696134,"average_range":0.0,"qmax_thermal":19.44,"Q":4.590637457098843,"replacement_schedule_percent":[0.0],"SOC_prev":33.24986202812992,"h":20.0,"replacement_option":0.0,"monthly_idle_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"percent_unavailable_prev":0.0,"vnom_default":3.6,"surface_area":2.018,"monthly_charge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"last_idx":3.0,"qfull":2.25,"loss_choice":0.0,"c_rate":0.2,"calendar_a":0.003,"calendar_q0":1.02,"heat_dissipated":0.0,"calendar_choice":1.0,"calendar_b":-7280.0,"T_batt_prev":20.0,"t_room_init":20.0,"q_relative_thermal":96.0,"option":1.0,"Q_max":20.25,"cp":1004.0,"calendar_c":930.0,"percent_unavailable":0.0,"cap_vs_temp":[[-10.0,60.0],[0.0,80.0],[25.0,100.0],[40.0,100.0]],"minimum_soc":5.0,"schedule_loss":[0.0],"prev_charge":2.0,"I_dischargeable":4.13157371138896,"qnom":2.0,"vnom":3.4,"leadacid_q20":0.0,"T_room":20.0,"monthly_discharge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"qexp":0.04,"V":532.5358731448191,"vcut":2.706,"vfull":4.1,"voltage_choice":0.0,"leadacid_qn":0.0,"replacement_schedule":[0.0],"leadacid_q10":0.0,"dt_hr":1.0,"calendar_matrix":[[-3.1000000000000004e231]],"control_mode":1.0,"life_model":0.0,"T_batt":20.0,"leadacid_tn":0.0,"analysis_period":1.0,"cycling_matrix":[[20.0,0.0,100.0],[20.0,5000.0,80.0],[20.0,10000.0,60.0],[80.0,0.0,100.0],[80.0,1000.0,80.0],[80.0,2000.0,60.0]],"load_escalation":[0.0],"resistance":0.0,"P_chargeable":-7.90870891319937,"qmax_init":1000.0,"q0":4.590637457098843,"input_current":1.0,"replacement_capacity":0.0,"mass":507.0,"charge_mode":2.0,"availabilty_loss":[0.0],"maximum_soc":95.0,"vexp":4.05,"nominal_voltage":500.0,"chem":1.0,"nominal_energy":10.0,"initial_soc":50.0}
+{"initial_soc":50.0,"nominal_energy":10.0,"chem":1.0,"nominal_voltage":500.0,"vexp":4.05,"maximum_soc":95.0,"availabilty_loss":[0.0],"charge_mode":2.0,"mass":507.0,"replacement_capacity":0.0,"input_current":1.0,"q0":4.599040727137835,"qmax_init":1000.0,"P_chargeable":-7.90391988960415,"resistance":0.0,"load_escalation":[0.0],"cycling_matrix":[[20.0,0.0,100.0],[20.0,5000.0,80.0],[20.0,10000.0,60.0],[80.0,0.0,100.0],[80.0,1000.0,80.0],[80.0,2000.0,60.0]],"analysis_period":1.0,"leadacid_tn":0.0,"T_batt":20.0,"life_model":0.0,"control_mode":1.0,"calendar_matrix":[[-3.1000000000000004e231]],"dt_hr":1.0,"leadacid_q10":0.0,"replacement_schedule":[0.0],"leadacid_qn":0.0,"voltage_choice":0.0,"vfull":4.1,"vcut":2.706,"V":532.596060095558,"qexp":0.04,"monthly_discharge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"T_room":20.0,"leadacid_q20":0.0,"vnom":3.4,"qnom":2.0,"I_dischargeable":4.1391366544240519,"prev_charge":2.0,"schedule_loss":[0.0],"minimum_soc":5.0,"cap_vs_temp":[[-10.0,60.0],[0.0,80.0],[25.0,100.0],[40.0,100.0]],"percent_unavailable":0.0,"calendar_c":930.0,"cp":1004.0,"Q_max":20.25,"option":1.0,"q_relative_thermal":96.0,"t_room_init":20.0,"T_batt_prev":20.0,"calendar_b":-7280.0,"heat_dissipated":0.0,"calendar_choice":1.0,"c_rate":0.2,"calendar_a":0.003,"qfull":2.25,"loss_choice":0.0,"last_idx":3.0,"percent_unavailable_prev":0.0,"vnom_default":3.6,"surface_area":2.018,"monthly_charge_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"monthly_idle_loss":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0],"h":20.0,"replacement_option":0.0,"SOC_prev":33.292028231935699,"calendar_q0":1.02,"replacement_schedule_percent":[0.0],"I_chargeable":-13.868959272862169,"P":0.9975149051052399,"Q":4.599040727137835,"average_range":0.0,"qmax_thermal":19.44,"input_power":1.0,"cell_current":1.8729295611504649,"q_relative":100.0,"n_cycles":0.0,"I":1.8729295611504649,"loss_kw":0.0,"I_loss":0.0,"SOC":23.65761690914524,"q_relative_calendar":101.98304837481234,"chargeChange":0.0,"qmax_lifetime":20.25,"day_age_of_battery":0.125,"cycle_range":0.0,"cycle_DOD":0.0,"cycle_counts":[[20.0,0.0],[80.0,0.0]],"q_relative_cycle":100.0,"n_replacements":0.0,"rainflow_Xlt":0.0,"indices_replaced":[0.0],"P_dischargeable":1.7875082605379603,"cell_voltage":3.8316263316227197,"rainflow_Ylt":0.0,"rainflow_jlt":0.0,"dq_relative_calendar_old":0.00016951625187677026}
+[       OK ] CMBatteryStatefulIntegration_cmod_battery_stateful.AdaptiveTimestep (0 ms)
+[ RUN      ] CMBatteryStatefulIntegration_cmod_battery_stateful.TestCycleCount
+[       OK ] CMBatteryStatefulIntegration_cmod_battery_stateful.TestCycleCount (0 ms)
+[ RUN      ] CMBatteryStatefulIntegration_cmod_battery_stateful.TestReplacementbySchedule
+[       OK ] CMBatteryStatefulIntegration_cmod_battery_stateful.TestReplacementbySchedule (42 ms)
+[ RUN      ] CMBatteryStatefulIntegration_cmod_battery_stateful.TestReplacementbyScheduleSubhourly
+[       OK ] CMBatteryStatefulIntegration_cmod_battery_stateful.TestReplacementbyScheduleSubhourly (88 ms)
+[ RUN      ] CMBatteryStatefulIntegration_cmod_battery_stateful.TestReplacementByCapacity
+[       OK ] CMBatteryStatefulIntegration_cmod_battery_stateful.TestReplacementByCapacity (0 ms)
+[ RUN      ] CMBatteryStatefulIntegration_cmod_battery_stateful.TestReplacementByCapacitySubhourly
+[       OK ] CMBatteryStatefulIntegration_cmod_battery_stateful.TestReplacementByCapacitySubhourly (0 ms)
+[ RUN      ] CMBatteryStatefulIntegration_cmod_battery_stateful.ssc_1023
+[       OK ] CMBatteryStatefulIntegration_cmod_battery_stateful.ssc_1023 (0 ms)
+[----------] 12 tests from CMBatteryStatefulIntegration_cmod_battery_stateful (179 ms total)
+
+[----------] 3 tests from CMBattery_cmod_battery
+[ RUN      ] CMBattery_cmod_battery.CommercialLifetimePeakShaving
+[       OK ] CMBattery_cmod_battery.CommercialLifetimePeakShaving (365 ms)
+[ RUN      ] CMBattery_cmod_battery.ResilienceMetricsFullLoad
+[       OK ] CMBattery_cmod_battery.ResilienceMetricsFullLoad (144 ms)
+[ RUN      ] CMBattery_cmod_battery.ResilienceMetricsFullLoadLifetime
+[       OK ] CMBattery_cmod_battery.ResilienceMetricsFullLoadLifetime (1246 ms)
+[----------] 3 tests from CMBattery_cmod_battery (1756 ms total)
+
+[----------] 5 tests from CMBattwatts_cmod_battwatts
+[ RUN      ] CMBattwatts_cmod_battwatts.ResilienceMetricsHalfLoad
+[       OK ] CMBattwatts_cmod_battwatts.ResilienceMetricsHalfLoad (1169 ms)
+[ RUN      ] CMBattwatts_cmod_battwatts.ResilienceMetricsHalfLoadLifetime
+[       OK ] CMBattwatts_cmod_battwatts.ResilienceMetricsHalfLoadLifetime (2391 ms)
+[ RUN      ] CMBattwatts_cmod_battwatts.ResidentialDefaults
+[       OK ] CMBattwatts_cmod_battwatts.ResidentialDefaults (23 ms)
+[ RUN      ] CMBattwatts_cmod_battwatts.ResidentialDefaultsLeadAcid
+[       OK ] CMBattwatts_cmod_battwatts.ResidentialDefaultsLeadAcid (37 ms)
+[ RUN      ] CMBattwatts_cmod_battwatts.NoPV
+[       OK ] CMBattwatts_cmod_battwatts.NoPV (20 ms)
+[----------] 5 tests from CMBattwatts_cmod_battwatts (3642 ms total)
+
+[----------] 1 test from CMBiomass
+[ RUN      ] CMBiomass.SingleOwnerDefault_cmod_biomass
+[       OK ] CMBiomass.SingleOwnerDefault_cmod_biomass (20 ms)
+[----------] 1 test from CMBiomass (20 ms total)
+
+[----------] 24 tests from CmodCashLoanTest
+[ RUN      ] CmodCashLoanTest.DiscountedPayback
+[       OK ] CmodCashLoanTest.DiscountedPayback (85 ms)
+[ RUN      ] CmodCashLoanTest.PVWattsResidential
+[       OK ] CmodCashLoanTest.PVWattsResidential (22 ms)
+[ RUN      ] CmodCashLoanTest.PVWattsCommercial
+[       OK ] CmodCashLoanTest.PVWattsCommercial (24 ms)
+[ RUN      ] CmodCashLoanTest.PVWattsBatteryResidential
+[       OK ] CmodCashLoanTest.PVWattsBatteryResidential (28 ms)
+[ RUN      ] CmodCashLoanTest.PVWattsBatteryCommercial
+[       OK ] CmodCashLoanTest.PVWattsBatteryCommercial (27 ms)
+[ RUN      ] CmodCashLoanTest.PVResidential
+[       OK ] CmodCashLoanTest.PVResidential (95 ms)
+[ RUN      ] CmodCashLoanTest.PVCommercial
+[       OK ] CmodCashLoanTest.PVCommercial (95 ms)
+[ RUN      ] CmodCashLoanTest.PVBatteryResidential
+[       OK ] CmodCashLoanTest.PVBatteryResidential (170 ms)
+[ RUN      ] CmodCashLoanTest.PVBatteryCommercial
+[       OK ] CmodCashLoanTest.PVBatteryCommercial (157 ms)
+[ RUN      ] CmodCashLoanTest.CustomGenerationResidential
+[       OK ] CmodCashLoanTest.CustomGenerationResidential (21 ms)
+[ RUN      ] CmodCashLoanTest.CustomGenerationCommercial
+[       OK ] CmodCashLoanTest.CustomGenerationCommercial (18 ms)
+[ RUN      ] CmodCashLoanTest.CustomGenerationBatteryResidential
+[       OK ] CmodCashLoanTest.CustomGenerationBatteryResidential (148 ms)
+[ RUN      ] CmodCashLoanTest.CustomGenerationBatteryCommercial
+[       OK ] CmodCashLoanTest.CustomGenerationBatteryCommercial (140 ms)
+[ RUN      ] CmodCashLoanTest.DSLFCommercial
+[       OK ] CmodCashLoanTest.DSLFCommercial (32 ms)
+[ RUN      ] CmodCashLoanTest.EmpiricalTroughCommercial
+[       OK ] CmodCashLoanTest.EmpiricalTroughCommercial (24 ms)
+[ RUN      ] CmodCashLoanTest.FuelCellCommercial
+[       OK ] CmodCashLoanTest.FuelCellCommercial (63 ms)
+[ RUN      ] CmodCashLoanTest.GenericCSPCommercial
+[       OK ] CmodCashLoanTest.GenericCSPCommercial (26 ms)
+[ RUN      ] CmodCashLoanTest.MSLFCommercial
+[       OK ] CmodCashLoanTest.MSLFCommercial (24 ms)
+[ RUN      ] CmodCashLoanTest.SWHResidential
+[       OK ] CmodCashLoanTest.SWHResidential (24 ms)
+[ RUN      ] CmodCashLoanTest.SWHCommercial
+[       OK ] CmodCashLoanTest.SWHCommercial (25 ms)
+[ RUN      ] CmodCashLoanTest.StandaloneBatteryResidential
+[       OK ] CmodCashLoanTest.StandaloneBatteryResidential (144 ms)
+[ RUN      ] CmodCashLoanTest.StandaloneBatteryCommercial
+[       OK ] CmodCashLoanTest.StandaloneBatteryCommercial (147 ms)
+[ RUN      ] CmodCashLoanTest.WindResidential
+[       OK ] CmodCashLoanTest.WindResidential (23 ms)
+[ RUN      ] CmodCashLoanTest.WindCommercial
+[       OK ] CmodCashLoanTest.WindCommercial (22 ms)
+[----------] 24 tests from CmodCashLoanTest (1597 ms total)
+
+[----------] 1 test from CmodCommunitySolarTest
+[ RUN      ] CmodCommunitySolarTest.PVWatts
+[       OK ] CmodCommunitySolarTest.PVWatts (16 ms)
+[----------] 1 test from CmodCommunitySolarTest (16 ms total)
+
+[----------] 2 tests from CMCustomGeneration
+[ RUN      ] CMCustomGeneration.SingleOwnerWithBattery_cmod_custom_generation
+[       OK ] CMCustomGeneration.SingleOwnerWithBattery_cmod_custom_generation (665 ms)
+[ RUN      ] CMCustomGeneration.CommercialWithBattery_cmod_generic
+[       OK ] CMCustomGeneration.CommercialWithBattery_cmod_generic (13074 ms)
+[----------] 2 tests from CMCustomGeneration (13739 ms total)
+
+[----------] 16 tests from CmodAllEquityPartnershipFlipTest
+[ RUN      ] CmodAllEquityPartnershipFlipTest.Biopower
+[       OK ] CmodAllEquityPartnershipFlipTest.Biopower (23 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.DSLF
+[       OK ] CmodAllEquityPartnershipFlipTest.DSLF (21 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.EmpiricalTrough
+[       OK ] CmodAllEquityPartnershipFlipTest.EmpiricalTrough (21 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.PV
+[       OK ] CmodAllEquityPartnershipFlipTest.PV (88 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.CustomGenerationBattery
+[       OK ] CmodAllEquityPartnershipFlipTest.CustomGenerationBattery (73 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.GenericCSP
+[       OK ] CmodAllEquityPartnershipFlipTest.GenericCSP (18 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.CustomGeneration
+[       OK ] CmodAllEquityPartnershipFlipTest.CustomGeneration (17 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.Geotherrmal
+[       OK ] CmodAllEquityPartnershipFlipTest.Geotherrmal (55 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.CPV
+[       OK ] CmodAllEquityPartnershipFlipTest.CPV (18 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.MSLF
+[       OK ] CmodAllEquityPartnershipFlipTest.MSLF (20 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.MSPT
+[       OK ] CmodAllEquityPartnershipFlipTest.MSPT (16 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.PhysicalTrough
+[       OK ] CmodAllEquityPartnershipFlipTest.PhysicalTrough (18 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.PVBattery
+[       OK ] CmodAllEquityPartnershipFlipTest.PVBattery (112 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.PVWatts
+[       OK ] CmodAllEquityPartnershipFlipTest.PVWatts (21 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.StandaloneBattery
+[       OK ] CmodAllEquityPartnershipFlipTest.StandaloneBattery (96 ms)
+[ RUN      ] CmodAllEquityPartnershipFlipTest.Wind
+[       OK ] CmodAllEquityPartnershipFlipTest.Wind (19 ms)
+[----------] 16 tests from CmodAllEquityPartnershipFlipTest (641 ms total)
+
+[----------] 1 test from etes_etes_test.EtesEtesCmod
+[ RUN      ] etes_etes_test.EtesEtesCmod.Default_NoFinancial
+[       OK ] etes_etes_test.EtesEtesCmod.Default_NoFinancial (129763 ms)
+[----------] 1 test from etes_etes_test.EtesEtesCmod (129763 ms total)
+
+[----------] 1 test from etes_ptes_test.EtesPtesCmod
+[ RUN      ] etes_ptes_test.EtesPtesCmod.Default_NoFinancial
+[       OK ] etes_ptes_test.EtesPtesCmod.Default_NoFinancial (143776 ms)
+[----------] 1 test from etes_ptes_test.EtesPtesCmod (143776 ms total)
+
+[----------] 3 tests from CMFuelCell
+[ RUN      ] CMFuelCell.NoFinancialModelFixed_cmod_fuelcell
+[       OK ] CMFuelCell.NoFinancialModelFixed_cmod_fuelcell (36 ms)
+[ RUN      ] CMFuelCell.NoFinancialModelFixedLifetime_cmod_fuelcell
+[       OK ] CMFuelCell.NoFinancialModelFixedLifetime_cmod_fuelcell (32 ms)
+[ RUN      ] CMFuelCell.FuelCellBattery_cmod_fuelcell
+[       OK ] CMFuelCell.FuelCellBattery_cmod_fuelcell (417 ms)
+[----------] 3 tests from CMFuelCell (486 ms total)
+
+[----------] 1 test from CMGeothermalCosts
+[ RUN      ] CMGeothermalCosts.CostModuleTest_cmod_geothermal_costs
+[       OK ] CMGeothermalCosts.CostModuleTest_cmod_geothermal_costs (0 ms)
+[----------] 1 test from CMGeothermalCosts (0 ms total)
+
+[----------] 1 test from CMGeothermal
+[ RUN      ] CMGeothermal.SingleOwnerDefault_cmod_geothermal
+[       OK ] CMGeothermal.SingleOwnerDefault_cmod_geothermal (68 ms)
+[----------] 1 test from CMGeothermal (68 ms total)
+
+[----------] 4 tests from CMGrid_cmod_grid
+[ RUN      ] CMGrid_cmod_grid.SingleYearHourly_cmod_grid
+[       OK ] CMGrid_cmod_grid.SingleYearHourly_cmod_grid (5 ms)
+[ RUN      ] CMGrid_cmod_grid.SingleYearSubHourly_cmod_grid
+[       OK ] CMGrid_cmod_grid.SingleYearSubHourly_cmod_grid (3 ms)
+[ RUN      ] CMGrid_cmod_grid.SingleYearSubHourlyLifetime_cmod_grid
+[       OK ] CMGrid_cmod_grid.SingleYearSubHourlyLifetime_cmod_grid (5 ms)
+[ RUN      ] CMGrid_cmod_grid.SingleYearNoFinancial_cmod_grid
+[       OK ] CMGrid_cmod_grid.SingleYearNoFinancial_cmod_grid (2 ms)
+[----------] 4 tests from CMGrid_cmod_grid (17 ms total)
+
+[----------] 13 tests from CmodHostDeveloperTest
+[ RUN      ] CmodHostDeveloperTest.ssc_1047
+[       OK ] CmodHostDeveloperTest.ssc_1047 (41 ms)
+[ RUN      ] CmodHostDeveloperTest.sam_1477
+[       OK ] CmodHostDeveloperTest.sam_1477 (43 ms)
+[ RUN      ] CmodHostDeveloperTest.sam_1477_no_tax_no_basis
+[       OK ] CmodHostDeveloperTest.sam_1477_no_tax_no_basis (47 ms)
+[ RUN      ] CmodHostDeveloperTest.sam_1477_utility_ibi
+[       OK ] CmodHostDeveloperTest.sam_1477_utility_ibi (43 ms)
+[ RUN      ] CmodHostDeveloperTest.sam_1477_cbi
+[       OK ] CmodHostDeveloperTest.sam_1477_cbi (43 ms)
+[ RUN      ] CmodHostDeveloperTest.sam_1477_cbi_no_tax_reduce_basis
+[       OK ] CmodHostDeveloperTest.sam_1477_cbi_no_tax_reduce_basis (44 ms)
+[ RUN      ] CmodHostDeveloperTest.PVWatts
+[       OK ] CmodHostDeveloperTest.PVWatts (45 ms)
+[ RUN      ] CmodHostDeveloperTest.PVWattsBattery
+[       OK ] CmodHostDeveloperTest.PVWattsBattery (37 ms)
+[ RUN      ] CmodHostDeveloperTest.PV
+[       OK ] CmodHostDeveloperTest.PV (106 ms)
+[ RUN      ] CmodHostDeveloperTest.PVBattery
+[       OK ] CmodHostDeveloperTest.PVBattery (159 ms)
+[ RUN      ] CmodHostDeveloperTest.CustomGeneration
+[       OK ] CmodHostDeveloperTest.CustomGeneration (42 ms)
+[ RUN      ] CmodHostDeveloperTest.CustomGenerationBattery
+[       OK ] CmodHostDeveloperTest.CustomGenerationBattery (129 ms)
+[ RUN      ] CmodHostDeveloperTest.StandaloneBattery
+[       OK ] CmodHostDeveloperTest.StandaloneBattery (157 ms)
+[----------] 13 tests from CmodHostDeveloperTest (941 ms total)
+
+[----------] 3 tests from CmodHybridStepsTest
+[ RUN      ] CmodHybridStepsTest.PVWattsv8
+[       OK ] CmodHybridStepsTest.PVWattsv8 (44 ms)
+[ RUN      ] CmodHybridStepsTest.Wind
+[       OK ] CmodHybridStepsTest.Wind (84 ms)
+[ RUN      ] CmodHybridStepsTest.PVWattsv8Wind
+[       OK ] CmodHybridStepsTest.PVWattsv8Wind (130 ms)
+[----------] 3 tests from CmodHybridStepsTest (259 ms total)
+
+[----------] 3 tests from CmodHybridTest
+[ RUN      ] CmodHybridTest.PVWattsv8WindBatterySingleOwner
+[       OK ] CmodHybridTest.PVWattsv8WindBatterySingleOwner (2345 ms)
+[ RUN      ] CmodHybridTest.PVWattsv8WindBatteryHostDeveloper
+[       OK ] CmodHybridTest.PVWattsv8WindBatteryHostDeveloper (1593 ms)
+[ RUN      ] CmodHybridTest.CustomGenerationPVWattsWindFuelCellBatteryHybrid_SingleOwner
+[       OK ] CmodHybridTest.CustomGenerationPVWattsWindFuelCellBatteryHybrid_SingleOwner (2449 ms)
+[----------] 3 tests from CmodHybridTest (6388 ms total)
+
+[----------] 17 tests from CmodLCOEFCRTest
+[ RUN      ] CmodLCOEFCRTest.Biopower
+[       OK ] CmodLCOEFCRTest.Biopower (1 ms)
+[ RUN      ] CmodLCOEFCRTest.DSLF
+[       OK ] CmodLCOEFCRTest.DSLF (0 ms)
+[ RUN      ] CmodLCOEFCRTest.EmpiricalTrough
+[       OK ] CmodLCOEFCRTest.EmpiricalTrough (0 ms)
+[ RUN      ] CmodLCOEFCRTest.PV
+[       OK ] CmodLCOEFCRTest.PV (0 ms)
+[ RUN      ] CmodLCOEFCRTest.GenericCSP
+[       OK ] CmodLCOEFCRTest.GenericCSP (0 ms)
+[ RUN      ] CmodLCOEFCRTest.CustomGeneration
+[       OK ] CmodLCOEFCRTest.CustomGeneration (0 ms)
+[ RUN      ] CmodLCOEFCRTest.Geotherrmal
+[       OK ] CmodLCOEFCRTest.Geotherrmal (0 ms)
+[ RUN      ] CmodLCOEFCRTest.CPV
+[       OK ] CmodLCOEFCRTest.CPV (0 ms)
+[ RUN      ] CmodLCOEFCRTest.MEtidal
+[       OK ] CmodLCOEFCRTest.MEtidal (0 ms)
+[ RUN      ] CmodLCOEFCRTest.MEwave
+[       OK ] CmodLCOEFCRTest.MEwave (0 ms)
+[ RUN      ] CmodLCOEFCRTest.MSLF
+[       OK ] CmodLCOEFCRTest.MSLF (0 ms)
+[ RUN      ] CmodLCOEFCRTest.PhysicalTrough
+[       OK ] CmodLCOEFCRTest.PhysicalTrough (0 ms)
+[ RUN      ] CmodLCOEFCRTest.PVWatts
+[       OK ] CmodLCOEFCRTest.PVWatts (0 ms)
+[ RUN      ] CmodLCOEFCRTest.SWH
+[       OK ] CmodLCOEFCRTest.SWH (0 ms)
+[ RUN      ] CmodLCOEFCRTest.Wind
+[       OK ] CmodLCOEFCRTest.Wind (0 ms)
+[ RUN      ] CmodLCOEFCRTest.DSGL_IPH_LCOH
+[       OK ] CmodLCOEFCRTest.DSGL_IPH_LCOH (0 ms)
+[ RUN      ] CmodLCOEFCRTest.PhysicalTrough_IPH_LCOH
+[       OK ] CmodLCOEFCRTest.PhysicalTrough_IPH_LCOH (0 ms)
+[----------] 17 tests from CmodLCOEFCRTest (6 ms total)
+
+[----------] 16 tests from CmodLeveragedPartnershipFlipTest
+[ RUN      ] CmodLeveragedPartnershipFlipTest.Biopower
+[       OK ] CmodLeveragedPartnershipFlipTest.Biopower (17 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.DSLF
+[       OK ] CmodLeveragedPartnershipFlipTest.DSLF (18 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.EmpiricalTrough
+[       OK ] CmodLeveragedPartnershipFlipTest.EmpiricalTrough (20 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.PV
+[       OK ] CmodLeveragedPartnershipFlipTest.PV (86 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.CustomGenerationBattery
+[       OK ] CmodLeveragedPartnershipFlipTest.CustomGenerationBattery (77 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.GenericCSP
+[       OK ] CmodLeveragedPartnershipFlipTest.GenericCSP (17 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.CustomGeneration
+[       OK ] CmodLeveragedPartnershipFlipTest.CustomGeneration (19 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.Geotherrmal
+[       OK ] CmodLeveragedPartnershipFlipTest.Geotherrmal (55 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.CPV
+[       OK ] CmodLeveragedPartnershipFlipTest.CPV (16 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.MSLF
+[       OK ] CmodLeveragedPartnershipFlipTest.MSLF (16 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.MSPT
+[       OK ] CmodLeveragedPartnershipFlipTest.MSPT (18 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.PhysicalTrough
+[       OK ] CmodLeveragedPartnershipFlipTest.PhysicalTrough (20 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.PVBattery
+[       OK ] CmodLeveragedPartnershipFlipTest.PVBattery (109 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.PVWatts
+[       OK ] CmodLeveragedPartnershipFlipTest.PVWatts (17 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.StandaloneBattery
+[       OK ] CmodLeveragedPartnershipFlipTest.StandaloneBattery (91 ms)
+[ RUN      ] CmodLeveragedPartnershipFlipTest.Wind
+[       OK ] CmodLeveragedPartnershipFlipTest.Wind (18 ms)
+[----------] 16 tests from CmodLeveragedPartnershipFlipTest (624 ms total)
+
+[----------] 17 tests from CmodMerchantPlantTest
+[ RUN      ] CmodMerchantPlantTest.Biopower
+[       OK ] CmodMerchantPlantTest.Biopower (364 ms)
+[ RUN      ] CmodMerchantPlantTest.DSLF
+[       OK ] CmodMerchantPlantTest.DSLF (339 ms)
+[ RUN      ] CmodMerchantPlantTest.EmpiricalTrough
+[       OK ] CmodMerchantPlantTest.EmpiricalTrough (343 ms)
+[ RUN      ] CmodMerchantPlantTest.PV
+[       OK ] CmodMerchantPlantTest.PV (454 ms)
+[ RUN      ] CmodMerchantPlantTest.CustomGenerationBattery
+[       OK ] CmodMerchantPlantTest.CustomGenerationBattery (455 ms)
+[ RUN      ] CmodMerchantPlantTest.CustomGenerationBattery_LCOS
+[       OK ] CmodMerchantPlantTest.CustomGenerationBattery_LCOS (719 ms)
+[ RUN      ] CmodMerchantPlantTest.GenericCSP
+[       OK ] CmodMerchantPlantTest.GenericCSP (277 ms)
+[ RUN      ] CmodMerchantPlantTest.CustomGeneration
+[       OK ] CmodMerchantPlantTest.CustomGeneration (278 ms)
+[ RUN      ] CmodMerchantPlantTest.Geotherrmal
+[       OK ] CmodMerchantPlantTest.Geotherrmal (369 ms)
+[ RUN      ] CmodMerchantPlantTest.CPV
+[       OK ] CmodMerchantPlantTest.CPV (276 ms)
+[ RUN      ] CmodMerchantPlantTest.MSLF
+[       OK ] CmodMerchantPlantTest.MSLF (356 ms)
+[ RUN      ] CmodMerchantPlantTest.MSPT
+[       OK ] CmodMerchantPlantTest.MSPT (340 ms)
+[ RUN      ] CmodMerchantPlantTest.PhysicalTrough
+[       OK ] CmodMerchantPlantTest.PhysicalTrough (341 ms)
+[ RUN      ] CmodMerchantPlantTest.PVBattery
+[       OK ] CmodMerchantPlantTest.PVBattery (511 ms)
+[ RUN      ] CmodMerchantPlantTest.PVWatts
+[       OK ] CmodMerchantPlantTest.PVWatts (344 ms)
+[ RUN      ] CmodMerchantPlantTest.StandaloneBattery
+[       OK ] CmodMerchantPlantTest.StandaloneBattery (394 ms)
+[ RUN      ] CmodMerchantPlantTest.Wind
+[       OK ] CmodMerchantPlantTest.Wind (356 ms)
+[----------] 17 tests from CmodMerchantPlantTest (6527 ms total)
+
+[----------] 3 tests from CM_MHKTidal
+[ RUN      ] CM_MHKTidal.ComputeModuleTest_cmod_mhk_tidal
+[       OK ] CM_MHKTidal.ComputeModuleTest_cmod_mhk_tidal (0 ms)
+[ RUN      ] CM_MHKTidal.TimeseriesTest_cmod_mhk_tidal
+[       OK ] CM_MHKTidal.TimeseriesTest_cmod_mhk_tidal (1 ms)
+[ RUN      ] CM_MHKTidal.TidalFileReaderTest
+[       OK ] CM_MHKTidal.TidalFileReaderTest (11 ms)
+[----------] 3 tests from CM_MHKTidal (12 ms total)
+
+[----------] 8 tests from CM_MHKWave
+[ RUN      ] CM_MHKWave.ComputeModuleTest_cmod_mhk_wave
+[       OK ] CM_MHKWave.ComputeModuleTest_cmod_mhk_wave (0 ms)
+[ RUN      ] CM_MHKWave.ComputeModuleTest_cmod_mhk_wave_time_series
+[       OK ] CM_MHKWave.ComputeModuleTest_cmod_mhk_wave_time_series (2 ms)
+[ RUN      ] CM_MHKWave.ComputeModuleTest_cmod_mhk_wave_jpd_array
+[       OK ] CM_MHKWave.ComputeModuleTest_cmod_mhk_wave_jpd_array (0 ms)
+[ RUN      ] CM_MHKWave.ReadJson_MatrixData
+[       OK ] CM_MHKWave.ReadJson_MatrixData (0 ms)
+[ RUN      ] CM_MHKWave.ReadJson_MatrixFile
+[       OK ] CM_MHKWave.ReadJson_MatrixFile (0 ms)
+[ RUN      ] CM_MHKWave.ReadJson_TSFile
+[       OK ] CM_MHKWave.ReadJson_TSFile (4 ms)
+[ RUN      ] CM_MHKWave.ComputeModuleTest_cmod_mhk_wave_time_series_array
+[       OK ] CM_MHKWave.ComputeModuleTest_cmod_mhk_wave_time_series_array (1 ms)
+[ RUN      ] CM_MHKWave.ComputeModuleTest_cmod_mhk_wave_time_series_file
+[       OK ] CM_MHKWave.ComputeModuleTest_cmod_mhk_wave_time_series_file (3 ms)
+[----------] 8 tests from CM_MHKWave (12 ms total)
+
+[----------] 32 tests from CMPvsamv1PowerIntegration_cmod_pvsamv1
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.DefaultNoFinancialModel
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.DefaultNoFinancialModel (447 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.DefaultNoFinancialModel_Lac
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.DefaultNoFinancialModel_Lac (472 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.DefaultLifetimeNoFinancialModel
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.DefaultLifetimeNoFinancialModel (9177 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.DefaultResidentialModel
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.DefaultResidentialModel (488 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.LossAdjustmentLifetime
+error during simulation.exec fail(pvsamv1): failed to setup AC adjustment factors: Time series availability losses must have the same time step as the simulation time step unless losses are daily, weekly, monthly, annual, or single value.
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.LossAdjustmentLifetime (5689 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.LossAdjustmentNonLifetime
+error during simulation.exec fail(pvsamv1): failed to setup AC adjustment factors: Time series availability losses must have the same time step as the simulation time step unless losses are daily, weekly, monthly, annual, or single value.
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.LossAdjustmentNonLifetime (2700 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelCustomWeatherFile
+error during simulation.exec fail(pvsamv1): minute column must contain integers from 0-59
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelCustomWeatherFile (1548 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelSkyDiffuseAndIrradModels
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelSkyDiffuseAndIrradModels (4908 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelModuleAndInverterModels
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelModuleAndInverterModels (9031 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelModuleThermalSpectralReflection
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelModuleThermalSpectralReflection (1441 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelSystemDesign
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelSystemDesign (105028 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelShading
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelShading (4206 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelLosses
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelLosses (1311 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelSequentialLosses
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelSequentialLosses (876 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.InvTempDerate
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.InvTempDerate (396 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelMultipleMPPT
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NoFinancialModelMultipleMPPT (781 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.AlbedoTest_cmod_pvsamv1
+error during simulation.fail(albedo, length=12): 1
+0=beam&diffuse,1=total&beam,2=total&diffuse,3=poa_reference,4=poa_pyranometer
+0=isotropic,1=hkdr,2=perez
+
+
+
+
+
+
+0=horizontal,90=vertical
+0=false,1=override
+0=N,90=E,180=S,270=W
+0=fixed,1=1axis,2=2axis,3=azi,4=monthly
+
+0=none,1=standard(non-linear),2=thin film(linear)
+
+
+
+0=false,1=true
+0=shadingdb,1=average,2=maximum,3=minimum
+0=false,1=true
+0=false,1=true
+0=false,1=true
+0=false,1=true
+
+
+
+
+
+
+
+
+
+
+percent of inverter AC output
+percent of AC output after transformer losses
+0=portrait,1=landscape
+
+
+0=disabled,1=enabled
+
+0=false,1=override
+
+
+0=false,1=true
+0=shadingdb,1=average,2=maximum,3=minimum
+0=false,1=true
+0=false,1=true
+0=false,1=true
+0=false,1=true
+
+
+0=disabled,1=enabled
+
+0=false,1=override
+
+
+
+
+0=false,1=true
+0=shadingdb,1=average,2=maximum,3=minimum
+0=false,1=true
+0=false,1=true
+0=false,1=true
+0=false,1=true
+0=disabled,1=enabled
+
+0=false,1=override
+
+
+
+
+0=false,1=true
+0=shadingdb,1=average,2=maximum,3=minimum
+0=false,1=true
+0=false,1=true
+0=false,1=true
+0=false,1=true
+0=spe,1=cec,2=6par_user,3=snl,4=sd11-iec61853,5=PVYield
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0=noct,1=mc
+0=monofacial,1=bifacial
+
+
+
+0=bipv,1=>3.5in,2=2.5-3.5in,3=1.5-2.5in,4=0.5-1.5in,5=<0.5in,6=ground/rack
+0=one story,1=two story
+
+
+0=cec,1=datasheet,2=partload,3=coefficientgenerator,4=PVYield
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0=DisableCalcs,1=EnableCalcs
+
+
+
+
+'adjust' and 'constant' separated by _ instead of : after SAM 2022.12.21
+'adjust' and 'en_timeindex' separated by _ instead of : after SAM 2022.12.21
+'adjust' and 'en_periods' separated by _ instead of : after SAM 2022.12.21
+'dc_adjust' and 'constant' separated by _ instead of : after SAM 2022.12.21
+
+
+0=SingleYearRepeated,1=RunEveryYear
+0=cec,1=datasheet,2=partload,3=coefficientgenerator,4=generic
+
+
+
+
+
+
+
+0=Monthly,1=TimeSeries
+0=UseVoltageModel,1=InputVoltageTable
+
+0=calendar/cycle,1=NMC,2=LMO/LTO
+
+0=LookAhead,1=LookBehind,2=InputForecast
+0=LookAhead,1=LookBehind,2=InputForecast
+0=UseCostModel,1=InputCost
+
+
+
+
+
+
+
+
+
+0=PPA based,1=Merchant Plant
+
+
+Net metering monthly excess
+
+
+0=disable,1=enable
+
+0=disable,1=enable
+0=disable,1=enable
+Optional override
+
+
+0=disable,1=enable
+0=disable,1=enable
+0=disable,1=enable
+0=disable,1=enable
+error during simulation.exec fail(pvsamv1): Albedos must be greater than zero and less than one in the monthly uniform albedo matrix.
+error during simulation.exec fail(pvsamv1): Albedos must be greater than zero and less than one in the monthly uniform albedo matrix.
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.AlbedoTest_cmod_pvsamv1 (1661 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.SnowModel
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.SnowModel (1357 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.SubhourlyClippingCorrectionModel
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.SubhourlyClippingCorrectionModel (1341 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.useCustomCellTemp
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.useCustomCellTemp (874 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.UseCustomAngles
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.UseCustomAngles (878 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.DistributionClippingMethod
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.DistributionClippingMethod (447 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.InverterNighttime
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.InverterNighttime (443 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.TiltEqualsLat
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.TiltEqualsLat (458 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.bifacial
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.bifacial (1398 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.reopt_sizing
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.reopt_sizing (5 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.reopt_sizing_w_outage
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.reopt_sizing_w_outage (4 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.lifetime_outputs
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.lifetime_outputs (9248 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NonAnnual
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NonAnnual (40 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NonAnnualWithLeapDay
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.NonAnnualWithLeapDay (41 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.SingleTimestepNoon
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.SingleTimestepNoon (40 ms)
+[ RUN      ] CMPvsamv1PowerIntegration_cmod_pvsamv1.WeatherDataCases
+[       OK ] CMPvsamv1PowerIntegration_cmod_pvsamv1.WeatherDataCases (824 ms)
+[----------] 32 tests from CMPvsamv1PowerIntegration_cmod_pvsamv1 (167575 ms total)
+
+[----------] 5 tests from CMPvwattsV5Integration_cmod_pvwattsv5
+[ RUN      ] CMPvwattsV5Integration_cmod_pvwattsv5.DefaultNoFinancialModel
+[       OK ] CMPvwattsV5Integration_cmod_pvwattsv5.DefaultNoFinancialModel (53 ms)
+[ RUN      ] CMPvwattsV5Integration_cmod_pvwattsv5.UsingData
+[       OK ] CMPvwattsV5Integration_cmod_pvwattsv5.UsingData (37 ms)
+[ RUN      ] CMPvwattsV5Integration_cmod_pvwattsv5.DifferentTechnologyInputs
+[       OK ] CMPvwattsV5Integration_cmod_pvwattsv5.DifferentTechnologyInputs (401 ms)
+[ RUN      ] CMPvwattsV5Integration_cmod_pvwattsv5.LargeSystem_cmod_pvwattsv5
+[       OK ] CMPvwattsV5Integration_cmod_pvwattsv5.LargeSystem_cmod_pvwattsv5 (249 ms)
+[ RUN      ] CMPvwattsV5Integration_cmod_pvwattsv5.singleTS
+[       OK ] CMPvwattsV5Integration_cmod_pvwattsv5.singleTS (0 ms)
+[----------] 5 tests from CMPvwattsV5Integration_cmod_pvwattsv5 (743 ms total)
+
+[----------] 9 tests from CMPvwattsV7Integration_cmod_pvwattsv7
+[ RUN      ] CMPvwattsV7Integration_cmod_pvwattsv7.DefaultNoFinancialModel_cmod_pvwattsv7
+[       OK ] CMPvwattsV7Integration_cmod_pvwattsv7.DefaultNoFinancialModel_cmod_pvwattsv7 (43 ms)
+[ RUN      ] CMPvwattsV7Integration_cmod_pvwattsv7.DifferentTechnologyInputs_cmod_pvwattsv7
+[       OK ] CMPvwattsV7Integration_cmod_pvwattsv7.DifferentTechnologyInputs_cmod_pvwattsv7 (322 ms)
+[ RUN      ] CMPvwattsV7Integration_cmod_pvwattsv7.LargeSystem_cmod_pvwattsv7
+[       OK ] CMPvwattsV7Integration_cmod_pvwattsv7.LargeSystem_cmod_pvwattsv7 (201 ms)
+[ RUN      ] CMPvwattsV7Integration_cmod_pvwattsv7.SubhourlyWeather_cmod_pvwattsv7
+[       OK ] CMPvwattsV7Integration_cmod_pvwattsv7.SubhourlyWeather_cmod_pvwattsv7 (151 ms)
+[ RUN      ] CMPvwattsV7Integration_cmod_pvwattsv7.LifetimeModeTest_cmod_pvwattsv7
+error during simulation.exec fail(pvwattsv7): Length of degradation array must be equal to analysis period.
+[       OK ] CMPvwattsV7Integration_cmod_pvwattsv7.LifetimeModeTest_cmod_pvwattsv7 (720 ms)
+[ RUN      ] CMPvwattsV7Integration_cmod_pvwattsv7.BifacialTest_cmod_pvwattsv7
+[       OK ] CMPvwattsV7Integration_cmod_pvwattsv7.BifacialTest_cmod_pvwattsv7 (443 ms)
+[ RUN      ] CMPvwattsV7Integration_cmod_pvwattsv7.SnowModelTests_cmod_pvwattsv7
+[       OK ] CMPvwattsV7Integration_cmod_pvwattsv7.SnowModelTests_cmod_pvwattsv7 (580 ms)
+[ RUN      ] CMPvwattsV7Integration_cmod_pvwattsv7.NonAnnual
+[       OK ] CMPvwattsV7Integration_cmod_pvwattsv7.NonAnnual (0 ms)
+[ RUN      ] CMPvwattsV7Integration_cmod_pvwattsv7.IntermediateOutputTesting
+[       OK ] CMPvwattsV7Integration_cmod_pvwattsv7.IntermediateOutputTesting (0 ms)
+[----------] 9 tests from CMPvwattsV7Integration_cmod_pvwattsv7 (2464 ms total)
+
+[----------] 13 tests from CMPvwattsv8Integration_cmod_pvwattsv8
+[ RUN      ] CMPvwattsv8Integration_cmod_pvwattsv8.DefaultSetup
+[       OK ] CMPvwattsv8Integration_cmod_pvwattsv8.DefaultSetup (0 ms)
+[ RUN      ] CMPvwattsv8Integration_cmod_pvwattsv8.DefaultNoFinancialModel_cmod_pvwattsv8
+[       OK ] CMPvwattsv8Integration_cmod_pvwattsv8.DefaultNoFinancialModel_cmod_pvwattsv8 (43 ms)
+[ RUN      ] CMPvwattsv8Integration_cmod_pvwattsv8.DifferentTechnologyInputs_cmod_pvwattsv8
+[       OK ] CMPvwattsv8Integration_cmod_pvwattsv8.DifferentTechnologyInputs_cmod_pvwattsv8 (349 ms)
+[ RUN      ] CMPvwattsv8Integration_cmod_pvwattsv8.LargeSystem_cmod_pvwattsv8
+[       OK ] CMPvwattsv8Integration_cmod_pvwattsv8.LargeSystem_cmod_pvwattsv8 (220 ms)
+[ RUN      ] CMPvwattsv8Integration_cmod_pvwattsv8.SubhourlyWeather_cmod_pvwattsv8
+[       OK ] CMPvwattsv8Integration_cmod_pvwattsv8.SubhourlyWeather_cmod_pvwattsv8 (158 ms)
+[ RUN      ] CMPvwattsv8Integration_cmod_pvwattsv8.LifetimeModeTest_cmod_pvwattsv8
+error during simulation.exec fail(pvwattsv8): Length of degradation array must be equal to analysis period.
+[       OK ] CMPvwattsv8Integration_cmod_pvwattsv8.LifetimeModeTest_cmod_pvwattsv8 (827 ms)
+[ RUN      ] CMPvwattsv8Integration_cmod_pvwattsv8.BifacialTest_cmod_pvwattsv8
+[       OK ] CMPvwattsv8Integration_cmod_pvwattsv8.BifacialTest_cmod_pvwattsv8 (449 ms)
+[ RUN      ] CMPvwattsv8Integration_cmod_pvwattsv8.AlbedoTest_cmod_pvwattsv8
+[       OK ] CMPvwattsv8Integration_cmod_pvwattsv8.AlbedoTest_cmod_pvwattsv8 (417 ms)
+[ RUN      ] CMPvwattsv8Integration_cmod_pvwattsv8.SnowModelTests_cmod_pvwattsv8
+[       OK ] CMPvwattsv8Integration_cmod_pvwattsv8.SnowModelTests_cmod_pvwattsv8 (582 ms)
+[ RUN      ] CMPvwattsv8Integration_cmod_pvwattsv8.SnowModelTest_cmod_pvwattsv8
+[       OK ] CMPvwattsv8Integration_cmod_pvwattsv8.SnowModelTest_cmod_pvwattsv8 (43 ms)
+[ RUN      ] CMPvwattsv8Integration_cmod_pvwattsv8.NonAnnual
+[       OK ] CMPvwattsv8Integration_cmod_pvwattsv8.NonAnnual (0 ms)
+[ RUN      ] CMPvwattsv8Integration_cmod_pvwattsv8.NonAnnualSummerStart
+[       OK ] CMPvwattsv8Integration_cmod_pvwattsv8.NonAnnualSummerStart (0 ms)
+[ RUN      ] CMPvwattsv8Integration_cmod_pvwattsv8.IntermediateOutputTesting
+[       OK ] CMPvwattsv8Integration_cmod_pvwattsv8.IntermediateOutputTesting (0 ms)
+[----------] 13 tests from CMPvwattsv8Integration_cmod_pvwattsv8 (3093 ms total)
+
+[----------] 6 tests from CmodPVWattsv8Test
+[ RUN      ] CmodPVWattsv8Test.DCACRatio_0_02
+[       OK ] CmodPVWattsv8Test.DCACRatio_0_02 (78 ms)
+[ RUN      ] CmodPVWattsv8Test.DCACRatio_0_5
+[       OK ] CmodPVWattsv8Test.DCACRatio_0_5 (76 ms)
+[ RUN      ] CmodPVWattsv8Test.DCACRatio_1_0
+[       OK ] CmodPVWattsv8Test.DCACRatio_1_0 (78 ms)
+[ RUN      ] CmodPVWattsv8Test.DCACRatio_1_5
+[       OK ] CmodPVWattsv8Test.DCACRatio_1_5 (77 ms)
+[ RUN      ] CmodPVWattsv8Test.DCACRatio_2_0
+[       OK ] CmodPVWattsv8Test.DCACRatio_2_0 (71 ms)
+[ RUN      ] CmodPVWattsv8Test.DCACRatio_10_0
+[       OK ] CmodPVWattsv8Test.DCACRatio_10_0 (73 ms)
+[----------] 6 tests from CmodPVWattsv8Test (456 ms total)
+
+[----------] 4 tests from CMPvYieldTimo
+[ RUN      ] CMPvYieldTimo.DefaultTimoModel_cmod_pvsamv1
+[       OK ] CMPvYieldTimo.DefaultTimoModel_cmod_pvsamv1 (487 ms)
+[ RUN      ] CMPvYieldTimo.Bifacial_cmod_pvsamv1
+[       OK ] CMPvYieldTimo.Bifacial_cmod_pvsamv1 (979 ms)
+[ RUN      ] CMPvYieldTimo.TimoModel80603_meteo_cmod_pvsamv1
+[       OK ] CMPvYieldTimo.TimoModel80603_meteo_cmod_pvsamv1 (508 ms)
+[ RUN      ] CMPvYieldTimo.TimoModel80603_AZ_cmod_pvsamv1
+[       OK ] CMPvYieldTimo.TimoModel80603_AZ_cmod_pvsamv1 (535 ms)
+[----------] 4 tests from CMPvYieldTimo (2511 ms total)
+
+[----------] 16 tests from CmodSaleLeasebackTest
+[ RUN      ] CmodSaleLeasebackTest.Biopower
+[       OK ] CmodSaleLeasebackTest.Biopower (20 ms)
+[ RUN      ] CmodSaleLeasebackTest.DSLF
+[       OK ] CmodSaleLeasebackTest.DSLF (19 ms)
+[ RUN      ] CmodSaleLeasebackTest.EmpiricalTrough
+[       OK ] CmodSaleLeasebackTest.EmpiricalTrough (19 ms)
+[ RUN      ] CmodSaleLeasebackTest.PV
+[       OK ] CmodSaleLeasebackTest.PV (83 ms)
+[ RUN      ] CmodSaleLeasebackTest.CustomGenerationBattery
+[       OK ] CmodSaleLeasebackTest.CustomGenerationBattery (83 ms)
+[ RUN      ] CmodSaleLeasebackTest.GenericCSP
+[       OK ] CmodSaleLeasebackTest.GenericCSP (17 ms)
+[ RUN      ] CmodSaleLeasebackTest.CustomGeneration
+[       OK ] CmodSaleLeasebackTest.CustomGeneration (20 ms)
+[ RUN      ] CmodSaleLeasebackTest.Geotherrmal
+[       OK ] CmodSaleLeasebackTest.Geotherrmal (55 ms)
+[ RUN      ] CmodSaleLeasebackTest.CPV
+[       OK ] CmodSaleLeasebackTest.CPV (17 ms)
+[ RUN      ] CmodSaleLeasebackTest.MSLF
+[       OK ] CmodSaleLeasebackTest.MSLF (21 ms)
+[ RUN      ] CmodSaleLeasebackTest.MSPT
+[       OK ] CmodSaleLeasebackTest.MSPT (18 ms)
+[ RUN      ] CmodSaleLeasebackTest.PhysicalTrough
+[       OK ] CmodSaleLeasebackTest.PhysicalTrough (21 ms)
+[ RUN      ] CmodSaleLeasebackTest.PVBattery
+[       OK ] CmodSaleLeasebackTest.PVBattery (112 ms)
+[ RUN      ] CmodSaleLeasebackTest.PVWatts
+[       OK ] CmodSaleLeasebackTest.PVWatts (15 ms)
+[ RUN      ] CmodSaleLeasebackTest.StandaloneBattery
+[       OK ] CmodSaleLeasebackTest.StandaloneBattery (96 ms)
+[ RUN      ] CmodSaleLeasebackTest.Wind
+[       OK ] CmodSaleLeasebackTest.Wind (20 ms)
+[----------] 16 tests from CmodSaleLeasebackTest (643 ms total)
+
+[----------] 1 test from sco2_tests.SCO2Cycle
+[ RUN      ] sco2_tests.SCO2Cycle.Parametrics
+[       OK ] sco2_tests.SCO2Cycle.Parametrics (8989 ms)
+[----------] 1 test from sco2_tests.SCO2Cycle (8989 ms total)
+
+[----------] 1 test from CMSingleOwner
+[ RUN      ] CMSingleOwner.ResidentialDefault_cmod_swh
+[       OK ] CMSingleOwner.ResidentialDefault_cmod_swh (10 ms)
+[----------] 1 test from CMSingleOwner (10 ms total)
+
+[----------] 19 tests from CmodSingleOwnerTest
+[ RUN      ] CmodSingleOwnerTest.ssc_1047
+[       OK ] CmodSingleOwnerTest.ssc_1047 (18 ms)
+[ RUN      ] CmodSingleOwnerTest.Biopower
+[       OK ] CmodSingleOwnerTest.Biopower (18 ms)
+[ RUN      ] CmodSingleOwnerTest.DSLF
+[       OK ] CmodSingleOwnerTest.DSLF (16 ms)
+[ RUN      ] CmodSingleOwnerTest.EmpiricalTrough
+[       OK ] CmodSingleOwnerTest.EmpiricalTrough (19 ms)
+[ RUN      ] CmodSingleOwnerTest.ETES
+[       OK ] CmodSingleOwnerTest.ETES (18 ms)
+[ RUN      ] CmodSingleOwnerTest.PV
+[       OK ] CmodSingleOwnerTest.PV (138 ms)
+[ RUN      ] CmodSingleOwnerTest.FuelCell
+[       OK ] CmodSingleOwnerTest.FuelCell (179 ms)
+[ RUN      ] CmodSingleOwnerTest.CustomGenerationBattery
+[       OK ] CmodSingleOwnerTest.CustomGenerationBattery (182 ms)
+[ RUN      ] CmodSingleOwnerTest.GenericCSP
+[       OK ] CmodSingleOwnerTest.GenericCSP (17 ms)
+[ RUN      ] CmodSingleOwnerTest.CustomGeneration
+[       OK ] CmodSingleOwnerTest.CustomGeneration (16 ms)
+[ RUN      ] CmodSingleOwnerTest.Geotherrmal
+[       OK ] CmodSingleOwnerTest.Geotherrmal (113 ms)
+[ RUN      ] CmodSingleOwnerTest.CPV
+[       OK ] CmodSingleOwnerTest.CPV (14 ms)
+[ RUN      ] CmodSingleOwnerTest.MSLF
+[       OK ] CmodSingleOwnerTest.MSLF (19 ms)
+[ RUN      ] CmodSingleOwnerTest.MSPT
+[       OK ] CmodSingleOwnerTest.MSPT (20 ms)
+[ RUN      ] CmodSingleOwnerTest.PhysicalTrough
+[       OK ] CmodSingleOwnerTest.PhysicalTrough (16 ms)
+[ RUN      ] CmodSingleOwnerTest.PVBattery
+[       OK ] CmodSingleOwnerTest.PVBattery (178 ms)
+[ RUN      ] CmodSingleOwnerTest.PVWatts
+[       OK ] CmodSingleOwnerTest.PVWatts (15 ms)
+[ RUN      ] CmodSingleOwnerTest.StandaloneBattery
+[       OK ] CmodSingleOwnerTest.StandaloneBattery (117 ms)
+[ RUN      ] CmodSingleOwnerTest.Wind
+[       OK ] CmodSingleOwnerTest.Wind (18 ms)
+[----------] 19 tests from CmodSingleOwnerTest (1141 ms total)
+
+[----------] 2 tests from CM_SWH
+[ RUN      ] CM_SWH.ResidentialDefault_cmod_swh
+[       OK ] CM_SWH.ResidentialDefault_cmod_swh (48 ms)
+[ RUN      ] CM_SWH.ResidentialDefaultUsingData_cmod_swh
+[       OK ] CM_SWH.ResidentialDefaultUsingData_cmod_swh (34 ms)
+[----------] 2 tests from CM_SWH (82 ms total)
+
+[----------] 4 tests from csp_fresnel.PowerFresnelCmod
+[ RUN      ] csp_fresnel.PowerFresnelCmod.Default_NoFinancial
+[       OK ] csp_fresnel.PowerFresnelCmod.Default_NoFinancial (7823 ms)
+[ RUN      ] csp_fresnel.PowerFresnelCmod.SequencedDefocusing_NoFinancial
+[       OK ] csp_fresnel.PowerFresnelCmod.SequencedDefocusing_NoFinancial (7846 ms)
+[ RUN      ] csp_fresnel.PowerFresnelCmod.TherminolVp1Htf_NoFinancial
+[       OK ] csp_fresnel.PowerFresnelCmod.TherminolVp1Htf_NoFinancial (8474 ms)
+[ RUN      ] csp_fresnel.PowerFresnelCmod.SolarPositioinOpticalChar_NoFinancial
+[       OK ] csp_fresnel.PowerFresnelCmod.SolarPositioinOpticalChar_NoFinancial (7671 ms)
+[----------] 4 tests from csp_fresnel.PowerFresnelCmod (31815 ms total)
+
+[----------] 6 tests from csp_tower.PowerTowerCmod
+[ RUN      ] csp_tower.PowerTowerCmod.Default_NoFinancial
+[       OK ] csp_tower.PowerTowerCmod.Default_NoFinancial (7106 ms)
+[ RUN      ] csp_tower.PowerTowerCmod.SlidingPressure_NoFinancial
+[       OK ] csp_tower.PowerTowerCmod.SlidingPressure_NoFinancial (7447 ms)
+[ RUN      ] csp_tower.PowerTowerCmod.FlowPattern_NoFinancial
+[       OK ] csp_tower.PowerTowerCmod.FlowPattern_NoFinancial (6340 ms)
+[ RUN      ] csp_tower.PowerTowerCmod.CopyingVarTable
+[       OK ] csp_tower.PowerTowerCmod.CopyingVarTable (4 ms)
+[ RUN      ] csp_tower.PowerTowerCmod.Start_Stop_Initialize_Default_NoFinancial
+[       OK ] csp_tower.PowerTowerCmod.Start_Stop_Initialize_Default_NoFinancial (15418 ms)
+[ RUN      ] csp_tower.PowerTowerCmod.Dispatch_Targets_Default_NoFinancial
+[       OK ] csp_tower.PowerTowerCmod.Dispatch_Targets_Default_NoFinancial (4246 ms)
+[----------] 6 tests from csp_tower.PowerTowerCmod (40564 ms total)
+
+[----------] 8 tests from csp_trough.EmpiricalTroughCmod
+[ RUN      ] csp_trough.EmpiricalTroughCmod.Default_NoFinancial
+[       OK ] csp_trough.EmpiricalTroughCmod.Default_NoFinancial (58 ms)
+[ RUN      ] csp_trough.EmpiricalTroughCmod.SolarSaltHtf_NoFinancial
+[       OK ] csp_trough.EmpiricalTroughCmod.SolarSaltHtf_NoFinancial (52 ms)
+[ RUN      ] csp_trough.EmpiricalTroughCmod.EuroTrough_NoFinancial
+[       OK ] csp_trough.EmpiricalTroughCmod.EuroTrough_NoFinancial (56 ms)
+[ RUN      ] csp_trough.EmpiricalTroughCmod.LuzCermetHce_NoFinancial
+[       OK ] csp_trough.EmpiricalTroughCmod.LuzCermetHce_NoFinancial (52 ms)
+[ RUN      ] csp_trough.EmpiricalTroughCmod.PowerCycle_NoFinancial
+[       OK ] csp_trough.EmpiricalTroughCmod.PowerCycle_NoFinancial (50 ms)
+[ RUN      ] csp_trough.EmpiricalTroughCmod.TherminolHtf_NoFinancial
+[       OK ] csp_trough.EmpiricalTroughCmod.TherminolHtf_NoFinancial (49 ms)
+[ RUN      ] csp_trough.EmpiricalTroughCmod.ParasiticElectric_NoFinancial
+[       OK ] csp_trough.EmpiricalTroughCmod.ParasiticElectric_NoFinancial (52 ms)
+[ RUN      ] csp_trough.EmpiricalTroughCmod.Phoenix_NoFinancial
+[       OK ] csp_trough.EmpiricalTroughCmod.Phoenix_NoFinancial (56 ms)
+[----------] 8 tests from csp_trough.EmpiricalTroughCmod (428 ms total)
+
+[----------] 7 tests from CmodThirdPartyOwnershipTest
+[ RUN      ] CmodThirdPartyOwnershipTest.PVWatts
+[       OK ] CmodThirdPartyOwnershipTest.PVWatts (2 ms)
+[ RUN      ] CmodThirdPartyOwnershipTest.PVWattsBattery
+[       OK ] CmodThirdPartyOwnershipTest.PVWattsBattery (3 ms)
+[ RUN      ] CmodThirdPartyOwnershipTest.PV
+[       OK ] CmodThirdPartyOwnershipTest.PV (33 ms)
+[ RUN      ] CmodThirdPartyOwnershipTest.PVBattery
+[       OK ] CmodThirdPartyOwnershipTest.PVBattery (32 ms)
+[ RUN      ] CmodThirdPartyOwnershipTest.CustomGeneration
+[       OK ] CmodThirdPartyOwnershipTest.CustomGeneration (2 ms)
+[ RUN      ] CmodThirdPartyOwnershipTest.CustomGenerationBattery
+[       OK ] CmodThirdPartyOwnershipTest.CustomGenerationBattery (30 ms)
+[ RUN      ] CmodThirdPartyOwnershipTest.StandaloneBattery
+[       OK ] CmodThirdPartyOwnershipTest.StandaloneBattery (18 ms)
+[----------] 7 tests from CmodThirdPartyOwnershipTest (124 ms total)
+
+[----------] 1 test from csp_trough.HeatTroughCmod
+[ RUN      ] csp_trough.HeatTroughCmod.Default_NoFinancial
+[       OK ] csp_trough.HeatTroughCmod.Default_NoFinancial (16049 ms)
+[----------] 1 test from csp_trough.HeatTroughCmod (16049 ms total)
+
+[----------] 3 tests from csp_trough.PowerTroughCmod
+[ RUN      ] csp_trough.PowerTroughCmod.Default_NoFinancial
+[       OK ] csp_trough.PowerTroughCmod.Default_NoFinancial (27896 ms)
+[ RUN      ] csp_trough.PowerTroughCmod.Start_Stop_Initialize_Default_NoFinancial
+[       OK ] csp_trough.PowerTroughCmod.Start_Stop_Initialize_Default_NoFinancial (28956 ms)
+[ RUN      ] csp_trough.PowerTroughCmod.Dispatch_Targets_Default_NoFinancial
+[       OK ] csp_trough.PowerTroughCmod.Dispatch_Targets_Default_NoFinancial (78 ms)
+[----------] 3 tests from csp_trough.PowerTroughCmod (56931 ms total)
+
+[----------] 1 test from URDBv7_cmod_utilityrate5_eqns
+[ RUN      ] URDBv7_cmod_utilityrate5_eqns.ElectricityRates_format_as_URDBv8
+[       OK ] URDBv7_cmod_utilityrate5_eqns.ElectricityRates_format_as_URDBv8 (0 ms)
+[----------] 1 test from URDBv7_cmod_utilityrate5_eqns (0 ms total)
+
+[----------] 36 tests from cmod_utilityrate5_eqns
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates (30 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_net_metering_credits_in_may
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_net_metering_credits_in_may (31 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_net_metering_credits_in_may_with_rollover
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_net_metering_credits_in_may_with_rollover (28 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_subhourly_gen
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_subhourly_gen (8 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_subhourly_gen_and_load
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_subhourly_gen_and_load (11 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_metering_credits
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_metering_credits (31 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_metering_credits_w_sell_rates_and_rollover
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_metering_credits_w_sell_rates_and_rollover (28 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing (11 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_w_sell_rates
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_w_sell_rates (39 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_subhourly_gen_and_load
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_subhourly_gen_and_load (12 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_subhourly_gen_and_load_w_sell_rates
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_subhourly_gen_and_load_w_sell_rates (11 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover (42 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_april_reset
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_april_reset (39 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_jan_reset
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_jan_reset (30 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_lower_sell_rate
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_lower_sell_rate (40 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_monthly_min
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_monthly_min (42 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_annual_min
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_annual_min (40 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_incorrect_month
+error during simulation.fail(ur_nm_credit_month, max=11): 12
+0=disable,1=enable
+
+0=disable,1=enable
+0=disable,1=enable
+Optional override
+
+
+0=disable,1=enable
+0=disable,1=enable
+0=disable,1=enable
+0=disable,1=enable
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_incorrect_month (17 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_buyall_sellall
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_buyall_sellall (9 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_no_credit
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_no_credit (28 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_annual_minimum
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_annual_minimum (28 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_w_tiers
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_w_tiers (31 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Commercial_Demand_Charges
+[       OK ] cmod_utilityrate5_eqns.Test_Commercial_Demand_Charges (33 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Commercial_kWh_per_kW_charges
+[       OK ] cmod_utilityrate5_eqns.Test_Commercial_kWh_per_kW_charges (62 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Commercial_Energy_Tiers_net_billing
+[       OK ] cmod_utilityrate5_eqns.Test_Commercial_Energy_Tiers_net_billing (56 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Commercial_kWh_per_kW_charges_with_billing_demand_percents
+[       OK ] cmod_utilityrate5_eqns.Test_Commercial_kWh_per_kW_charges_with_billing_demand_percents (81 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_seasonal_per_kw_charge_w_no_demand_charge
+[       OK ] cmod_utilityrate5_eqns.Test_seasonal_per_kw_charge_w_no_demand_charge (65 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_w_36_periods
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_w_36_periods (12 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_w_tiers
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_w_tiers (45 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_w_tiers_buy_rates
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_w_tiers_buy_rates (45 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_inflow_outflow_expire
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_inflow_outflow_expire (49 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_inflow_outflow_apply_no_expire
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_inflow_outflow_apply_no_expire (43 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_inflow_outflow_expire_no_apply
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_net_billing_carryover_inflow_outflow_expire_no_apply (41 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_w_tiers_exception
+error during simulation.exec fail(lib_utility_rate_equations): Energy tier 1 Max. Usage for jun period 2 was expected to be 351 kWh daily but was 390 kWh daily. Tiers should have the same Max. Usage across Periods in the same month for TOU rates.
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_w_tiers_exception (14 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Commercial_Demand_Charges_exception
+error during simulation.exec fail(lib_utility_rate_equations): Demand tier 1 Max. Usage for jan period 2 was expected to be 100 kW but was 50 kW. Tiers should have the same Max. Usage across Periods in the same month for TOU rates.
+[       OK ] cmod_utilityrate5_eqns.Test_Commercial_Demand_Charges_exception (16 ms)
+[ RUN      ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_buyall_sellall_ts_buy_rate
+[       OK ] cmod_utilityrate5_eqns.Test_Residential_TOU_Rates_buyall_sellall_ts_buy_rate (12 ms)
+[----------] 36 tests from cmod_utilityrate5_eqns (1178 ms total)
+
+[----------] 1 test from Wfreader_cmod_wfreader
+[ RUN      ] Wfreader_cmod_wfreader.Test
+[       OK ] Wfreader_cmod_wfreader.Test (13 ms)
+[----------] 1 test from Wfreader_cmod_wfreader (13 ms total)
+
+[----------] 12 tests from CMWindPowerIntegration
+[ RUN      ] CMWindPowerIntegration.HubHeightInterpolation_cmod_windpower
+[       OK ] CMWindPowerIntegration.HubHeightInterpolation_cmod_windpower (19 ms)
+[ RUN      ] CMWindPowerIntegration.WakeModelsUsingFile_cmod_windpower
+[       OK ] CMWindPowerIntegration.WakeModelsUsingFile_cmod_windpower (1488 ms)
+[ RUN      ] CMWindPowerIntegration.WakeLossMultiplier_cmod_windpower
+error during simulation.[       OK ] CMWindPowerIntegration.WakeLossMultiplier_cmod_windpower (2813 ms)
+[ RUN      ] CMWindPowerIntegration.CtCurve_cmod_windpower
+[       OK ] CMWindPowerIntegration.CtCurve_cmod_windpower (74 ms)
+[ RUN      ] CMWindPowerIntegration.UsingInterpolatedSubhourly_cmod_windpower
+[       OK ] CMWindPowerIntegration.UsingInterpolatedSubhourly_cmod_windpower (1156 ms)
+[ RUN      ] CMWindPowerIntegration.UsingDataArray_cmod_windpower
+[       OK ] CMWindPowerIntegration.UsingDataArray_cmod_windpower (88 ms)
+[ RUN      ] CMWindPowerIntegration.Weibull_cmod_windpower
+[       OK ] CMWindPowerIntegration.Weibull_cmod_windpower (0 ms)
+[ RUN      ] CMWindPowerIntegration.WindDist_cmod_windpower
+[       OK ] CMWindPowerIntegration.WindDist_cmod_windpower (0 ms)
+[ RUN      ] CMWindPowerIntegration.WindDist2_cmod_windpower
+[       OK ] CMWindPowerIntegration.WindDist2_cmod_windpower (0 ms)
+[ RUN      ] CMWindPowerIntegration.WindDist3_cmod_windpower
+[       OK ] CMWindPowerIntegration.WindDist3_cmod_windpower (0 ms)
+[ RUN      ] CMWindPowerIntegration.IcingAndLowTempCutoff_cmod_windpower
+[       OK ] CMWindPowerIntegration.IcingAndLowTempCutoff_cmod_windpower (57 ms)
+[ RUN      ] CMWindPowerIntegration.WakeModelMaxTurbineOverride
+[       OK ] CMWindPowerIntegration.WakeModelMaxTurbineOverride (1700 ms)
+[----------] 12 tests from CMWindPowerIntegration (7398 ms total)
+
+[----------] 6 tests from Turbine_powercurve_cmod_windpower_eqns
+[ RUN      ] Turbine_powercurve_cmod_windpower_eqns.NoData
+[       OK ] Turbine_powercurve_cmod_windpower_eqns.NoData (0 ms)
+[ RUN      ] Turbine_powercurve_cmod_windpower_eqns.MissingVariables
+[       OK ] Turbine_powercurve_cmod_windpower_eqns.MissingVariables (0 ms)
+[ RUN      ] Turbine_powercurve_cmod_windpower_eqns.Case1
+[       OK ] Turbine_powercurve_cmod_windpower_eqns.Case1 (0 ms)
+[ RUN      ] Turbine_powercurve_cmod_windpower_eqns.Case2
+[       OK ] Turbine_powercurve_cmod_windpower_eqns.Case2 (0 ms)
+[ RUN      ] Turbine_powercurve_cmod_windpower_eqns.Case3
+[       OK ] Turbine_powercurve_cmod_windpower_eqns.Case3 (0 ms)
+[ RUN      ] Turbine_powercurve_cmod_windpower_eqns.Case4
+[       OK ] Turbine_powercurve_cmod_windpower_eqns.Case4 (0 ms)
+[----------] 6 tests from Turbine_powercurve_cmod_windpower_eqns (0 ms total)
+
+[----------] 4 tests from windpower_landbosse
+[ RUN      ] windpower_landbosse.SetupPython
+[       OK ] windpower_landbosse.SetupPython (0 ms)
+[ RUN      ] windpower_landbosse.RunSuccess
+[       OK ] windpower_landbosse.RunSuccess (0 ms)
+[ RUN      ] windpower_landbosse.SubhourlyFail
+[       OK ] windpower_landbosse.SubhourlyFail (0 ms)
+[ RUN      ] windpower_landbosse.NegativeInputFail
+[       OK ] windpower_landbosse.NegativeInputFail (0 ms)
+[----------] 4 tests from windpower_landbosse (0 ms total)
+
+[----------] 1 test from save_as_JSON_test
+[ RUN      ] save_as_JSON_test.pvwatts_mechant_plant_read_file_to_string
+[       OK ] save_as_JSON_test.pvwatts_mechant_plant_read_file_to_string (22 ms)
+[----------] 1 test from save_as_JSON_test (22 ms total)
+
+[----------] 5 tests from save_as_JSON_test_parse
+[ RUN      ] save_as_JSON_test_parse.pvwatts_mechant_plant_rapidjson_parse_file
+[       OK ] save_as_JSON_test_parse.pvwatts_mechant_plant_rapidjson_parse_file (34 ms)
+[ RUN      ] save_as_JSON_test_parse.pvwatts_mechant_plant_rapidjson_parse_file_freadstream
+[       OK ] save_as_JSON_test_parse.pvwatts_mechant_plant_rapidjson_parse_file_freadstream (16 ms)
+[ RUN      ] save_as_JSON_test_parse.pv_batt_mechant_plant_rapidjson_parse_file
+[       OK ] save_as_JSON_test_parse.pv_batt_mechant_plant_rapidjson_parse_file (37 ms)
+[ RUN      ] save_as_JSON_test_parse.pt_mechant_plant_rapidjson_parse_file
+[       OK ] save_as_JSON_test_parse.pt_mechant_plant_rapidjson_parse_file (35 ms)
+[ RUN      ] save_as_JSON_test_parse.trough_mechant_plant_rapidjson_parse_file
+[       OK ] save_as_JSON_test_parse.trough_mechant_plant_rapidjson_parse_file (37 ms)
+[----------] 5 tests from save_as_JSON_test_parse (160 ms total)
+
+[----------] 5 tests from save_as_JSON_test_run
+[ RUN      ] save_as_JSON_test_run.pvwatts_mechant_plant_rapidjson_read_file_to_ssc_var_table
+[       OK ] save_as_JSON_test_run.pvwatts_mechant_plant_rapidjson_read_file_to_ssc_var_table (35 ms)
+[ RUN      ] save_as_JSON_test_run.pvwatts_mechant_plant_rapidjson_read_file_run_pvwatts
+[       OK ] save_as_JSON_test_run.pvwatts_mechant_plant_rapidjson_read_file_run_pvwatts (83 ms)
+[ RUN      ] save_as_JSON_test_run.pvwatts_mechant_plant_rapidjson
+[       OK ] save_as_JSON_test_run.pvwatts_mechant_plant_rapidjson (128 ms)
+[ RUN      ] save_as_JSON_test_run.pv_batt_mechant_plant_rapidjson
+[       OK ] save_as_JSON_test_run.pv_batt_mechant_plant_rapidjson (11824 ms)
+[ RUN      ] save_as_JSON_test_run.pt_mechant_plant_rapidjson
+[       OK ] save_as_JSON_test_run.pt_mechant_plant_rapidjson (9438 ms)
+[----------] 5 tests from save_as_JSON_test_run (21511 ms total)
+
+[----------] 1 test from SAM_as_JSON_test
+[ RUN      ] SAM_as_JSON_test.sam_table_ssc_table
+[       OK ] SAM_as_JSON_test.sam_table_ssc_table (16 ms)
+[----------] 1 test from SAM_as_JSON_test (16 ms total)
+
+[----------] 2 tests from SolescaTest
+[ RUN      ] SolescaTest.test_fixed_tilt_racking
+[       OK ] SolescaTest.test_fixed_tilt_racking (568 ms)
+[ RUN      ] SolescaTest.test_flush_mount_racking
+[       OK ] SolescaTest.test_flush_mount_racking (623 ms)
+[----------] 2 tests from SolescaTest (1191 ms total)
+
+[----------] 4 tests from sscapi_test
+[ RUN      ] sscapi_test.json_to_ssc_data
+[       OK ] sscapi_test.json_to_ssc_data (0 ms)
+[ RUN      ] sscapi_test.ssc_data_to_json
+[       OK ] sscapi_test.ssc_data_to_json (0 ms)
+[ RUN      ] sscapi_test.rapidjson_to_ssc_data
+[       OK ] sscapi_test.rapidjson_to_ssc_data (0 ms)
+[ RUN      ] sscapi_test.ssc_data_to_rapidjson
+[       OK ] sscapi_test.ssc_data_to_rapidjson (0 ms)
+[----------] 4 tests from sscapi_test (0 ms total)
+
+[----------] 1 test from vartab_test
+[ RUN      ] vartab_test.test_resize
+[       OK ] vartab_test.test_resize (0 ms)
+[----------] 1 test from vartab_test (0 ms total)
+
+[----------] 2 tests from SixParSolve_6par_solve
+[ RUN      ] SixParSolve_6par_solve.NewMonoSiModules
+[       OK ] SixParSolve_6par_solve.NewMonoSiModules (61 ms)
+[ RUN      ] SixParSolve_6par_solve.CIGSModules
+[       OK ] SixParSolve_6par_solve.CIGSModules (416 ms)
+[----------] 2 tests from SixParSolve_6par_solve (478 ms total)
+
+[----------] 1 test from UsingFileCaseWeatherReader
+[ RUN      ] UsingFileCaseWeatherReader.IntegrationTest_csp_solver_core
+[       OK ] UsingFileCaseWeatherReader.IntegrationTest_csp_solver_core (16 ms)
+[----------] 1 test from UsingFileCaseWeatherReader (16 ms total)
+
+[----------] 1 test from UsingDataCaseWeatherReader
+[ RUN      ] UsingDataCaseWeatherReader.IntegrationTest_csp_solver_core
+[       OK ] UsingDataCaseWeatherReader.IntegrationTest_csp_solver_core (3 ms)
+[----------] 1 test from UsingDataCaseWeatherReader (3 ms total)
+
+[----------] 10 tests from LiIon_lib_battery_capacity_test
+[ RUN      ] LiIon_lib_battery_capacity_test.SetUpTest
+[       OK ] LiIon_lib_battery_capacity_test.SetUpTest (0 ms)
+[ RUN      ] LiIon_lib_battery_capacity_test.updateCapacityTest
+[       OK ] LiIon_lib_battery_capacity_test.updateCapacityTest (0 ms)
+[ RUN      ] LiIon_lib_battery_capacity_test.updateCapacityThermalTest
+[       OK ] LiIon_lib_battery_capacity_test.updateCapacityThermalTest (0 ms)
+[ RUN      ] LiIon_lib_battery_capacity_test.updateCapacityLifetimeTest
+[       OK ] LiIon_lib_battery_capacity_test.updateCapacityLifetimeTest (0 ms)
+[ RUN      ] LiIon_lib_battery_capacity_test.replaceBatteryTest
+[       OK ] LiIon_lib_battery_capacity_test.replaceBatteryTest (0 ms)
+[ RUN      ] LiIon_lib_battery_capacity_test.runSequenceTest
+[       OK ] LiIon_lib_battery_capacity_test.runSequenceTest (0 ms)
+[ RUN      ] LiIon_lib_battery_capacity_test.OverchargedSOCLimits
+[       OK ] LiIon_lib_battery_capacity_test.OverchargedSOCLimits (0 ms)
+[ RUN      ] LiIon_lib_battery_capacity_test.OverchargedSOCLimits1
+[       OK ] LiIon_lib_battery_capacity_test.OverchargedSOCLimits1 (0 ms)
+[ RUN      ] LiIon_lib_battery_capacity_test.UnderchargedSOCLimits
+[       OK ] LiIon_lib_battery_capacity_test.UnderchargedSOCLimits (0 ms)
+[ RUN      ] LiIon_lib_battery_capacity_test.UnderchargedSOCLimits1
+[       OK ] LiIon_lib_battery_capacity_test.UnderchargedSOCLimits1 (0 ms)
+[----------] 10 tests from LiIon_lib_battery_capacity_test (0 ms total)
+
+[----------] 6 tests from KiBam_lib_battery_capacity_test
+[ RUN      ] KiBam_lib_battery_capacity_test.SetUpTest
+[       OK ] KiBam_lib_battery_capacity_test.SetUpTest (0 ms)
+[ RUN      ] KiBam_lib_battery_capacity_test.updateCapacityTest
+[       OK ] KiBam_lib_battery_capacity_test.updateCapacityTest (0 ms)
+[ RUN      ] KiBam_lib_battery_capacity_test.updateCapacityThermalTest
+[       OK ] KiBam_lib_battery_capacity_test.updateCapacityThermalTest (0 ms)
+[ RUN      ] KiBam_lib_battery_capacity_test.updateCapacityLifetimeTest
+[       OK ] KiBam_lib_battery_capacity_test.updateCapacityLifetimeTest (0 ms)
+[ RUN      ] KiBam_lib_battery_capacity_test.replaceBatteryTest
+[       OK ] KiBam_lib_battery_capacity_test.replaceBatteryTest (0 ms)
+[ RUN      ] KiBam_lib_battery_capacity_test.runSequenceTest
+[       OK ] KiBam_lib_battery_capacity_test.runSequenceTest (0 ms)
+[----------] 6 tests from KiBam_lib_battery_capacity_test (0 ms total)
+
+[----------] 31 tests from AutoBTMTest_lib_battery_dispatch
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridCharging
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridCharging (10 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVCharging
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVCharging (12 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVChargeAndDischarge
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVChargeAndDischarge (7 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVChargeAndDischargeSubhourly
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVChargeAndDischargeSubhourly (7 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMDCClipCharge
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMDCClipCharge (6 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.TestBasicForecast
+[       OK ] AutoBTMTest_lib_battery_dispatch.TestBasicForecast (12 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.TestSummerPeak
+[       OK ] AutoBTMTest_lib_battery_dispatch.TestSummerPeak (164 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.TestSummerPeakNetMeteringCredits
+[       OK ] AutoBTMTest_lib_battery_dispatch.TestSummerPeakNetMeteringCredits (13 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.TestSummerPeakGridCharging
+[       OK ] AutoBTMTest_lib_battery_dispatch.TestSummerPeakGridCharging (13 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.TestSummerPeakGridChargingSubhourly
+[       OK ] AutoBTMTest_lib_battery_dispatch.TestSummerPeakGridChargingSubhourly (13 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.TestCommercialPeakForecasting
+[       OK ] AutoBTMTest_lib_battery_dispatch.TestCommercialPeakForecasting (12 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVChargeAndDischargeSmallLoad
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVChargeAndDischargeSmallLoad (7 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVChargeAndDischargeSmallLoadWithLosses
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVChargeAndDischargeSmallLoadWithLosses (5 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMCustomDispatch
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMCustomDispatch (5 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMCustomDispatchDischargeToGrid
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMCustomDispatchDischargeToGrid (5 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMCustomDispatchWithLosses
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMCustomDispatchWithLosses (6 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMCustomWExcessPV
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMCustomWExcessPV (6 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutagePeakShavingDaily
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutagePeakShavingDaily (7 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageWithAvailabilityLossesAC
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageWithAvailabilityLossesAC (7 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageWithAvailabilityLossesDC
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageWithAvailabilityLossesDC (9 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageWithInverterLossesDC
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageWithInverterLossesDC (11 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutagePeakShavingEmptyAndFull
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutagePeakShavingEmptyAndFull (14 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageRetailRAteEmptyAndFull
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageRetailRAteEmptyAndFull (11 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageCustomEmptyAndFull
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageCustomEmptyAndFull (8 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutagePeakShavingDC
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutagePeakShavingDC (8 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageFuelCellCharge
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageFuelCellCharge (6 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMSetupRateForecastMultiYear
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMSetupRateForecastMultiYear (11 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageWithBatteryAvailabilityLossesAC
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageWithBatteryAvailabilityLossesAC (5 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageWithBatteryAvailabilityLossesDC
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMGridOutageWithBatteryAvailabilityLossesDC (5 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVChargeAndDischargeAvailabilityLossAC
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVChargeAndDischargeAvailabilityLossAC (6 ms)
+[ RUN      ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVChargeAndDischargeAvailabilityLossDC
+[       OK ] AutoBTMTest_lib_battery_dispatch.DispatchAutoBTMPVChargeAndDischargeAvailabilityLossDC (6 ms)
+[----------] 31 tests from AutoBTMTest_lib_battery_dispatch (432 ms total)
+
+[----------] 19 tests from AutoFOM_lib_battery_dispatch
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOMInput
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOMInput (6 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOMInputWithLosses
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOMInputWithLosses (6 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOMInputSubhourly
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOMInputSubhourly (5 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCCustomCharge
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCCustomCharge (6 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCCustomChargeSubhourly
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCCustomChargeSubhourly (6 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCAuto
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCAuto (7 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCAutoWithLosses
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCAutoWithLosses (7 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCAutoSubhourly
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCAutoSubhourly (8 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACCustomCharge
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACCustomCharge (9 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACCustomChargeSubhourly
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACCustomChargeSubhourly (10 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAuto
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAuto (15 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAutoWithLosses
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAutoWithLosses (12 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAutoSubhourly
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAutoSubhourly (8 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCAuto_ClipChargeFlatRate
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCAuto_ClipChargeFlatRate (8 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCAutoWithInterconnectionLimit
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_DCAutoWithInterconnectionLimit (6 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAutoWithInterconnectionLimit
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAutoWithInterconnectionLimit (6 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAutoWithClearedCapacity
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAutoWithClearedCapacity (9 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAutoWithClearedCapacityAndPrice
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAutoWithClearedCapacityAndPrice (7 ms)
+[ RUN      ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAutoWithAvailabilityLosses
+[       OK ] AutoFOM_lib_battery_dispatch.DispatchFOM_ACAutoWithAvailabilityLosses (8 ms)
+[----------] 19 tests from AutoFOM_lib_battery_dispatch (159 ms total)
+
+[----------] 21 tests from ManualTest_lib_battery_dispatch
+[ RUN      ] ManualTest_lib_battery_dispatch.PowerLimitsDispatchManualAC
+[       OK ] ManualTest_lib_battery_dispatch.PowerLimitsDispatchManualAC (3 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.PowerLimitsDispatchManualDC
+[       OK ] ManualTest_lib_battery_dispatch.PowerLimitsDispatchManualDC (3 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.CurrentLimitsDispatchManualAC
+[       OK ] ManualTest_lib_battery_dispatch.CurrentLimitsDispatchManualAC (4 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.CurrentLimitsDispatchManualDC
+[       OK ] ManualTest_lib_battery_dispatch.CurrentLimitsDispatchManualDC (4 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.BothLimitsDispatchManualAC
+[       OK ] ManualTest_lib_battery_dispatch.BothLimitsDispatchManualAC (4 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.BothLimitsDispatchManualDC
+[       OK ] ManualTest_lib_battery_dispatch.BothLimitsDispatchManualDC (3 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.DispatchChangeFrequency
+[       OK ] ManualTest_lib_battery_dispatch.DispatchChangeFrequency (4 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.SOCLimitsOnDispatch
+[       OK ] ManualTest_lib_battery_dispatch.SOCLimitsOnDispatch (5 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.ManualGridChargingOffTest
+[       OK ] ManualTest_lib_battery_dispatch.ManualGridChargingOffTest (3 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.ManualGridChargingOnTest
+[       OK ] ManualTest_lib_battery_dispatch.ManualGridChargingOnTest (4 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.ManualGridChargingOnDCConnectedTest
+[       OK ] ManualTest_lib_battery_dispatch.ManualGridChargingOnDCConnectedTest (5 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.NoGridChargingWhilePVIsOnTest
+[       OK ] ManualTest_lib_battery_dispatch.NoGridChargingWhilePVIsOnTest (4 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.EfficiencyLimitsDispatchManualDC
+[       OK ] ManualTest_lib_battery_dispatch.EfficiencyLimitsDispatchManualDC (4 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.InverterEfficiencyCutoffDC
+[       OK ] ManualTest_lib_battery_dispatch.InverterEfficiencyCutoffDC (7 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.TestDischargeToGrid
+[       OK ] ManualTest_lib_battery_dispatch.TestDischargeToGrid (4 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.TestClipCharging
+[       OK ] ManualTest_lib_battery_dispatch.TestClipCharging (5 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.OutageWithManualDispatch
+[       OK ] ManualTest_lib_battery_dispatch.OutageWithManualDispatch (4 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.PVPriorityLoadFirst
+[       OK ] ManualTest_lib_battery_dispatch.PVPriorityLoadFirst (4 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.PVPriorityBatteryFirst
+[       OK ] ManualTest_lib_battery_dispatch.PVPriorityBatteryFirst (4 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.ManualInterconnectionLimitTest
+[       OK ] ManualTest_lib_battery_dispatch.ManualInterconnectionLimitTest (6 ms)
+[ RUN      ] ManualTest_lib_battery_dispatch.TestDischargeToGridInterconnectionLimit
+[       OK ] ManualTest_lib_battery_dispatch.TestDischargeToGridInterconnectionLimit (6 ms)
+[----------] 21 tests from ManualTest_lib_battery_dispatch (99 ms total)
+
+[----------] 1 test from ManualTest_lib_battery_dispatch_losses
+[ RUN      ] ManualTest_lib_battery_dispatch_losses.TestLossesWithDispatch
+[       OK ] ManualTest_lib_battery_dispatch_losses.TestLossesWithDispatch (4 ms)
+[----------] 1 test from ManualTest_lib_battery_dispatch_losses (4 ms total)
+
+[----------] 1 test from ManualTest_lib_battery_dispatch_availability_losses
+[ RUN      ] ManualTest_lib_battery_dispatch_availability_losses.TestAvailabilityLossesWithDispatch
+[       OK ] ManualTest_lib_battery_dispatch_availability_losses.TestAvailabilityLossesWithDispatch (4 ms)
+[----------] 1 test from ManualTest_lib_battery_dispatch_availability_losses (4 ms total)
+
+[----------] 3 tests from PVSmoothing_lib_battery_dispatch
+[ RUN      ] PVSmoothing_lib_battery_dispatch.PV_Phoenix_all_on
+[       OK ] PVSmoothing_lib_battery_dispatch.PV_Phoenix_all_on (51839 ms)
+[ RUN      ] PVSmoothing_lib_battery_dispatch.Generic_w_PV_input_all_on
+[       OK ] PVSmoothing_lib_battery_dispatch.Generic_w_PV_input_all_on (17581 ms)
+[ RUN      ] PVSmoothing_lib_battery_dispatch.FuelCell_PV_Phoenix_all_on
+[       OK ] PVSmoothing_lib_battery_dispatch.FuelCell_PV_Phoenix_all_on (120780 ms)
+[----------] 3 tests from PVSmoothing_lib_battery_dispatch (190201 ms total)
+
+[----------] 8 tests from lib_battery_lifetime_lmolto_test
+[ RUN      ] lib_battery_lifetime_lmolto_test.InitTest
+[       OK ] lib_battery_lifetime_lmolto_test.InitTest (0 ms)
+[ RUN      ] lib_battery_lifetime_lmolto_test.CopyTest
+[       OK ] lib_battery_lifetime_lmolto_test.CopyTest (0 ms)
+[ RUN      ] lib_battery_lifetime_lmolto_test.CyclingCRate
+[       OK ] lib_battery_lifetime_lmolto_test.CyclingCRate (0 ms)
+[ RUN      ] lib_battery_lifetime_lmolto_test.CyclingCRateMinuteTimestep
+[       OK ] lib_battery_lifetime_lmolto_test.CyclingCRateMinuteTimestep (7 ms)
+[ RUN      ] lib_battery_lifetime_lmolto_test.CyclingEveryTwoDays
+[       OK ] lib_battery_lifetime_lmolto_test.CyclingEveryTwoDays (0 ms)
+[ RUN      ] lib_battery_lifetime_lmolto_test.IrregularTimeStep
+[       OK ] lib_battery_lifetime_lmolto_test.IrregularTimeStep (0 ms)
+[ RUN      ] lib_battery_lifetime_lmolto_test.TestAgainstINLData
+[       OK ] lib_battery_lifetime_lmolto_test.TestAgainstINLData (50 ms)
+[ RUN      ] lib_battery_lifetime_lmolto_test.replaceBatteryTest
+[       OK ] lib_battery_lifetime_lmolto_test.replaceBatteryTest (1 ms)
+[----------] 8 tests from lib_battery_lifetime_lmolto_test (61 ms total)
+
+[----------] 14 tests from lib_battery_lifetime_nmc_test
+[ RUN      ] lib_battery_lifetime_nmc_test.InitTest
+[       OK ] lib_battery_lifetime_nmc_test.InitTest (1 ms)
+[ RUN      ] lib_battery_lifetime_nmc_test.CopyTest
+[       OK ] lib_battery_lifetime_nmc_test.CopyTest (0 ms)
+[ RUN      ] lib_battery_lifetime_nmc_test.StorageDays
+[       OK ] lib_battery_lifetime_nmc_test.StorageDays (5 ms)
+[ RUN      ] lib_battery_lifetime_nmc_test.StorageMinuteTimestep
+[       OK ] lib_battery_lifetime_nmc_test.StorageMinuteTimestep (300 ms)
+[ RUN      ] lib_battery_lifetime_nmc_test.StorageTemp
+[       OK ] lib_battery_lifetime_nmc_test.StorageTemp (4 ms)
+[ RUN      ] lib_battery_lifetime_nmc_test.StorageTempSmallDt
+[       OK ] lib_battery_lifetime_nmc_test.StorageTempSmallDt (2687 ms)
+[ RUN      ] lib_battery_lifetime_nmc_test.CyclingHighDOD
+[       OK ] lib_battery_lifetime_nmc_test.CyclingHighDOD (17 ms)
+[ RUN      ] lib_battery_lifetime_nmc_test.CyclingHighTemp
+[       OK ] lib_battery_lifetime_nmc_test.CyclingHighTemp (12 ms)
+[ RUN      ] lib_battery_lifetime_nmc_test.CyclingCRate
+[       OK ] lib_battery_lifetime_nmc_test.CyclingCRate (1 ms)
+[ RUN      ] lib_battery_lifetime_nmc_test.CyclingCRateMinuteTimestep
+[       OK ] lib_battery_lifetime_nmc_test.CyclingCRateMinuteTimestep (58 ms)
+[ RUN      ] lib_battery_lifetime_nmc_test.CyclingEveryTwoDays
+[       OK ] lib_battery_lifetime_nmc_test.CyclingEveryTwoDays (0 ms)
+[ RUN      ] lib_battery_lifetime_nmc_test.IrregularTimeStep
+[       OK ] lib_battery_lifetime_nmc_test.IrregularTimeStep (0 ms)
+[ RUN      ] lib_battery_lifetime_nmc_test.TestAgainstKokamData
+[       OK ] lib_battery_lifetime_nmc_test.TestAgainstKokamData (97 ms)
+[ RUN      ] lib_battery_lifetime_nmc_test.replaceBatteryTest
+[       OK ] lib_battery_lifetime_nmc_test.replaceBatteryTest (3 ms)
+[----------] 14 tests from lib_battery_lifetime_nmc_test (3188 ms total)
+
+[----------] 6 tests from lib_battery_lifetime_cycle_test
+[ RUN      ] lib_battery_lifetime_cycle_test.SetUpTest
+[       OK ] lib_battery_lifetime_cycle_test.SetUpTest (0 ms)
+[ RUN      ] lib_battery_lifetime_cycle_test.runCycleLifetimeTest
+[       OK ] lib_battery_lifetime_cycle_test.runCycleLifetimeTest (0 ms)
+[ RUN      ] lib_battery_lifetime_cycle_test.runCycleLifetimeTestJaggedProfile
+[       OK ] lib_battery_lifetime_cycle_test.runCycleLifetimeTestJaggedProfile (0 ms)
+[ RUN      ] lib_battery_lifetime_cycle_test.runCycleLifetimeTestKokamProfile
+[       OK ] lib_battery_lifetime_cycle_test.runCycleLifetimeTestKokamProfile (0 ms)
+[ RUN      ] lib_battery_lifetime_cycle_test.runCycleLifetimeTestWithNoise
+[       OK ] lib_battery_lifetime_cycle_test.runCycleLifetimeTestWithNoise (0 ms)
+[ RUN      ] lib_battery_lifetime_cycle_test.replaceBatteryTest
+[       OK ] lib_battery_lifetime_cycle_test.replaceBatteryTest (0 ms)
+[----------] 6 tests from lib_battery_lifetime_cycle_test (1 ms total)
+
+[----------] 3 tests from lib_battery_lifetime_calendar_matrix_test
+[ RUN      ] lib_battery_lifetime_calendar_matrix_test.runCalendarMatrixTest
+[       OK ] lib_battery_lifetime_calendar_matrix_test.runCalendarMatrixTest (0 ms)
+[ RUN      ] lib_battery_lifetime_calendar_matrix_test.replaceBatteryTest
+[       OK ] lib_battery_lifetime_calendar_matrix_test.replaceBatteryTest (2 ms)
+[ RUN      ] lib_battery_lifetime_calendar_matrix_test.TestLifetimeDegradation
+[       OK ] lib_battery_lifetime_calendar_matrix_test.TestLifetimeDegradation (0 ms)
+[----------] 3 tests from lib_battery_lifetime_calendar_matrix_test (2 ms total)
+
+[----------] 4 tests from lib_battery_lifetime_calendar_model_test
+[ RUN      ] lib_battery_lifetime_calendar_model_test.SetUpTest
+[       OK ] lib_battery_lifetime_calendar_model_test.SetUpTest (0 ms)
+[ RUN      ] lib_battery_lifetime_calendar_model_test.runCalendarModelTest
+[       OK ] lib_battery_lifetime_calendar_model_test.runCalendarModelTest (0 ms)
+[ RUN      ] lib_battery_lifetime_calendar_model_test.replaceBatteryTest
+[       OK ] lib_battery_lifetime_calendar_model_test.replaceBatteryTest (2 ms)
+[ RUN      ] lib_battery_lifetime_calendar_model_test.TestLifetimeDegradation
+[       OK ] lib_battery_lifetime_calendar_model_test.TestLifetimeDegradation (3 ms)
+[----------] 4 tests from lib_battery_lifetime_calendar_model_test (6 ms total)
+
+[----------] 3 tests from lib_battery_lifetime_test
+[ RUN      ] lib_battery_lifetime_test.updateCapacityTest
+[       OK ] lib_battery_lifetime_test.updateCapacityTest (3 ms)
+[ RUN      ] lib_battery_lifetime_test.runCycleLifetimeTestWithRestPeriod
+[       OK ] lib_battery_lifetime_test.runCycleLifetimeTestWithRestPeriod (0 ms)
+[ RUN      ] lib_battery_lifetime_test.TestCycleDegradationDifferentOrdering
+[       OK ] lib_battery_lifetime_test.TestCycleDegradationDifferentOrdering (8 ms)
+[----------] 3 tests from lib_battery_lifetime_test (12 ms total)
+
+[----------] 25 tests from BatteryPowerFlowTest_lib_battery_powerflow
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.TestInitialize
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.TestInitialize (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.AC_PVCharging_ExcessPV
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.AC_PVCharging_ExcessPV (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.AC_PVCharging_ExcessLoad
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.AC_PVCharging_ExcessLoad (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.AC_GridCharging_ExcessPV
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.AC_GridCharging_ExcessPV (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.AC_GridCharging_ExcessLoad
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.AC_GridCharging_ExcessLoad (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.AC_GridPVCharging_ExcessPV
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.AC_GridPVCharging_ExcessPV (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.AC_GridPVCharging_ExcessLoad
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.AC_GridPVCharging_ExcessLoad (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.AC_outage_ExcessPV
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.AC_outage_ExcessPV (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.AC_outage_ExcessLoad
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.AC_outage_ExcessLoad (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.AC_grid_limits
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.AC_grid_limits (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.DC_PVCharging_ExcessPV
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.DC_PVCharging_ExcessPV (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.DC_PVCharging_ExcessLoad
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.DC_PVCharging_ExcessLoad (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.DC_GridCharging_ExcessPV
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.DC_GridCharging_ExcessPV (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.DC_GridCharging_ExcessLoad
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.DC_GridCharging_ExcessLoad (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.DC_GridPVCharging_ExcessPV
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.DC_GridPVCharging_ExcessPV (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.DC_GridPVCharging_ExcessLoad
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.DC_GridPVCharging_ExcessLoad (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.TestDCConnected
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.TestDCConnected (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.DC_outage_excessPV
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.DC_outage_excessPV (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.DC_PVCharging_ExcessLoad_outage
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.DC_PVCharging_ExcessLoad_outage (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.DC_interconnection_limit_excessPV
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.DC_interconnection_limit_excessPV (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.AC_PVCharging_ExcessPV_Flexible_Powerflow
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.AC_PVCharging_ExcessPV_Flexible_Powerflow (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.AC_PVCharging_ExcessLoad_Flexible_Charging
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.AC_PVCharging_ExcessLoad_Flexible_Charging (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.DC_PVCharging_ExcessPV_Flexible_Charging
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.DC_PVCharging_ExcessPV_Flexible_Charging (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.DC_PVCharging_ExcessLoad_Flexible_Charging
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.DC_PVCharging_ExcessLoad_Flexible_Charging (0 ms)
+[ RUN      ] BatteryPowerFlowTest_lib_battery_powerflow.DC_system_w_ac_losses
+[       OK ] BatteryPowerFlowTest_lib_battery_powerflow.DC_system_w_ac_losses (0 ms)
+[----------] 25 tests from BatteryPowerFlowTest_lib_battery_powerflow (1 ms total)
+
+[----------] 3 tests from lib_battery_thermal_test
+[ RUN      ] lib_battery_thermal_test.SetUpTest
+[       OK ] lib_battery_thermal_test.SetUpTest (0 ms)
+[ RUN      ] lib_battery_thermal_test.updateTemperatureTest
+[       OK ] lib_battery_thermal_test.updateTemperatureTest (0 ms)
+[ RUN      ] lib_battery_thermal_test.updateTemperatureTestSubMinute
+[       OK ] lib_battery_thermal_test.updateTemperatureTestSubMinute (0 ms)
+[----------] 3 tests from lib_battery_thermal_test (0 ms total)
+
+[----------] 2 tests from lib_battery_losses_test
+[ RUN      ] lib_battery_losses_test.MonthlyLossesTest
+[       OK ] lib_battery_losses_test.MonthlyLossesTest (0 ms)
+[ RUN      ] lib_battery_losses_test.TimeSeriesLossesTest
+[       OK ] lib_battery_losses_test.TimeSeriesLossesTest (0 ms)
+[----------] 2 tests from lib_battery_losses_test (0 ms total)
+
+[----------] 19 tests from lib_battery_test
+[ RUN      ] lib_battery_test.SetUpTest
+[       OK ] lib_battery_test.SetUpTest (13 ms)
+[ RUN      ] lib_battery_test.runTestCycleAt1C
+[       OK ] lib_battery_test.runTestCycleAt1C (107 ms)
+[ RUN      ] lib_battery_test.runTestCycleAt3C
+[       OK ] lib_battery_test.runTestCycleAt3C (74 ms)
+[ RUN      ] lib_battery_test.runDuplicates
+[       OK ] lib_battery_test.runDuplicates (3 ms)
+[ RUN      ] lib_battery_test.createFromParams
+[       OK ] lib_battery_test.createFromParams (2 ms)
+[ RUN      ] lib_battery_test.logging
+"capacity_state": { "q0": 500.000, "qmax_lifetime": 1000.000, "qmax_thermal": 1000.000, "cell_current": 0.000, "I_loss": 0.000, "SOC": 50.000, "SOC_prev": 0.000, "charge_mode": 2, "prev_charge": 2, "chargeChange": 0, "leadacid": { "q1_0": 0.000, "q2_0": 0.000, "qn": 0.000, "q2": 0.000 } }
+"capacity_params": { "qmax_init": 1000.000, "initial_SOC": 50.000, "maximum_SOC": 95.000, "minimum_SOC": 5.000, "dt_hr": 1.000, "leadacid": { "tn": 0.000, "t2": 0.000, "F1": 0.000, "F2": 0.000, "q10": 0.000, "q20": 0.000, "I20": 0.000} }
+
+"voltage_state": { "cell_voltage": 3.978 }
+"voltage_params": { "voltage_choice": 0, "num_cells_series": 139, "num_strings": 9, "Vnom_default": 3.600, "resistance": 0.000, "dt_hr": 1.000, "dynamic": { "Vfull": 4.100, "Vexp": 4.050, "Vnom": 3.400, "Qfull": 2.250, "Qexp": 0.040, "Qnom": 2.000, "C_rate": 0.200 } }
+
+"lifetime_state": { "q_relative": 100.000000, "n_cycles": 0, "cycle_DOD": 0.000, "cycle_range": 0.000,
+                  "average_range": 0.000, day_age_of_battery": 0.000, "cycle_state": { "q_relative_cycle": 100.000, "rainflow_Xlt": 0.000, "rainflow_Ylt": 0.000, "rainflow_jlt": 0, "rainflow_peaks": [], cum_dt: 0, DOD_max: 0, DOD_min:0, "cycle_DOD_max": "[]}, "calendar_state": { "q_relative_calendar": 102.000, "dq_relative_calendar_old": 0.000 } }
+"lifetime_params": { "dt_hr": 1.000, "model_choice": 0, "calendar_cycle_params": { "cycling_matrix": [[20, 0, 1e+02], [20, 5e+03, 80], [20, 1e+04, 60], [80, 0, 1e+02], [80, 1e+03, 80], [80, 2e+03, 60]], "calendar_choice": 1, "calendar_q0": 1.020, "calendar_a": 0.003, "calendar_b": -7280.000, "calendar_c": 930.000, "calendar_matrix": [[0]] } }
+
+"thermal_state": { "q_relative_thermal": 100.000, "T_batt": 20.000, "T_room": 20.000, "heat_dissipated": 0.000, "T_batt_prev": 20.000 }
+"thermal_params": { "dt_hr": 1.000, "mass": 507.000, "surface_area": 2.018, "Cp": 1004.000, "h": 20.000, "resistance": 2.000e-04, "en_cap_vs_temp": 1, "cap_vs_temp": [[-10, 60], [0, 80], [25, 1e+02], [40, 1e+02]], "option": 1, "T_room_schedule": [20 ] }
+
+"losses_state": { "loss_percent": 0.000 }
+"losses_params": { "loss_choice": 0, "monthly_charge_loss": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ], "monthly_discharge_loss": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ], "monthly_idle_loss": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ], "schedule_loss": [] }
+
+"replacement_state": { "n_replacements": 0, "indices_replaced": [] }
+"replacement_params": {"replacement_option": 0, "replacement_capacity": 0.000, "replacement_schedule_percent": [] }
+
+"battery_state": { "last_idx": 0, "V": 0.000, "Q": 0.000, "Q_max": 0.000, "I": 0.000, "I_dischargeable" 0.000, "I_chargeable" 0.000, "P": 0.000, "P_dischargeable": 0.000, "P_chargeable": 0.000, , "capacity_state": { "q0": 500.000, "qmax_lifetime": 1000.000, "qmax_thermal": 1000.000, "cell_current": 0.000, "I_loss": 0.000, "SOC": 50.000, "SOC_prev": 0.000, "charge_mode": 2, "prev_charge": 2, "chargeChange": 0, "leadacid": { "q1_0": 0.000, "q2_0": 0.000, "qn": 0.000, "q2": 0.000 } }, "voltage_state": { "cell_voltage": 3.978 }, "thermal_state": { "q_relative_thermal": 100.000, "T_batt": 20.000, "T_room": 20.000, "heat_dissipated": 0.000, "T_batt_prev": 20.000 }, "lifetime_state": { "q_relative": 100.000000, "n_cycles": 0, "cycle_DOD": 0.000, "cycle_range": 0.000,
+                  "average_range": 0.000, day_age_of_battery": 0.000, "cycle_state": { "q_relative_cycle": 100.000, "rainflow_Xlt": 0.000, "rainflow_Ylt": 0.000, "rainflow_jlt": 0, "rainflow_peaks": [], cum_dt: 0, DOD_max: 0, DOD_min:0, "cycle_DOD_max": "[]}, "calendar_state": { "q_relative_calendar": 102.000, "dq_relative_calendar_old": 0.000 } }, "losses_state": { "loss_percent": 0.000 }, "replacement_state": { "n_replacements": 0, "indices_replaced": [] } }
+"battery_params": { "chem": 1, "dt_hr": 1.000, "nominal_voltage": 500.400, "nominal_energy": 10.133, "capacity_params": { "qmax_init": 1000.000, "initial_SOC": 50.000, "maximum_SOC": 95.000, "minimum_SOC": 5.000, "dt_hr": 1.000, "leadacid": { "tn": 0.000, "t2": 0.000, "F1": 0.000, "F2": 0.000, "q10": 0.000, "q20": 0.000, "I20": 0.000} }, "voltage_params": { "voltage_choice": 0, "num_cells_series": 139, "num_strings": 9, "Vnom_default": 3.600, "resistance": 0.000, "dt_hr": 1.000, "dynamic": { "Vfull": 4.100, "Vexp": 4.050, "Vnom": 3.400, "Qfull": 2.250, "Qexp": 0.040, "Qnom": 2.000, "C_rate": 0.200 } }, "thermal_params": { "dt_hr": 1.000, "mass": 507.000, "surface_area": 2.018, "Cp": 1004.000, "h": 20.000, "resistance": 2.000e-04, "en_cap_vs_temp": 1, "cap_vs_temp": [[-10, 60], [0, 80], [25, 1e+02], [40, 1e+02]], "option": 1, "T_room_schedule": [20 ] }, "lifetime_params": { "dt_hr": 1.000, "model_choice": 0, "calendar_cycle_params": { "cycling_matrix": [[20, 0, 1e+02], [20, 5e+03, 80], [20, 1e+04, 60], [80, 0, 1e+02], [80, 1e+03, 80], [80, 2e+03, 60]], "calendar_choice": 1, "calendar_q0": 1.020, "calendar_a": 0.003, "calendar_b": -7280.000, "calendar_c": 930.000, "calendar_matrix": [[0]] } }, "losses_params": { "loss_choice": 0, "monthly_charge_loss": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ], "monthly_discharge_loss": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ], "monthly_idle_loss": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ], "schedule_loss": [] }, "replacement_params": {"replacement_option": 0, "replacement_capacity": 0.000, "replacement_schedule_percent": [] } }
+[       OK ] lib_battery_test.logging (2 ms)
+[ RUN      ] lib_battery_test.RoundtripEffModel
+[       OK ] lib_battery_test.RoundtripEffModel (2 ms)
+[ RUN      ] lib_battery_test.RoundtripEffTable
+[       OK ] lib_battery_test.RoundtripEffTable (2 ms)
+[ RUN      ] lib_battery_test.RoundtripEffVanadiumFlow
+[       OK ] lib_battery_test.RoundtripEffVanadiumFlow (3 ms)
+[ RUN      ] lib_battery_test.HourlyVsSubHourly
+[       OK ] lib_battery_test.HourlyVsSubHourly (3 ms)
+[ RUN      ] lib_battery_test.AdaptiveTimestep
+[       OK ] lib_battery_test.AdaptiveTimestep (523 ms)
+[ RUN      ] lib_battery_test.AugmentCapacity
+[       OK ] lib_battery_test.AugmentCapacity (43 ms)
+[ RUN      ] lib_battery_test.ReplaceByCapacityTest
+[       OK ] lib_battery_test.ReplaceByCapacityTest (112 ms)
+[ RUN      ] lib_battery_test.NMCLifeModel
+[       OK ] lib_battery_test.NMCLifeModel (2 ms)
+[ RUN      ] lib_battery_test.AdaptiveTimestepNMC
+[       OK ] lib_battery_test.AdaptiveTimestepNMC (258 ms)
+[ RUN      ] lib_battery_test.AdaptiveTimestepNonIntegerStep
+[       OK ] lib_battery_test.AdaptiveTimestepNonIntegerStep (3 ms)
+[ RUN      ] lib_battery_test.LMOLTOLifeModel
+[       OK ] lib_battery_test.LMOLTOLifeModel (3 ms)
+[ RUN      ] lib_battery_test.AdaptiveTimestepLMOLTO
+[       OK ] lib_battery_test.AdaptiveTimestepLMOLTO (283 ms)
+[ RUN      ] lib_battery_test.testCyclesWithAvailabilityLosses
+[       OK ] lib_battery_test.testCyclesWithAvailabilityLosses (60 ms)
+[----------] 19 tests from lib_battery_test (1508 ms total)
+
+[----------] 11 tests from voltage_dynamic_lib_battery_voltage_test
+[ RUN      ] voltage_dynamic_lib_battery_voltage_test.SetUpTest
+[       OK ] voltage_dynamic_lib_battery_voltage_test.SetUpTest (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_test.NickelMetalHydrideFromPaperTest
+[       OK ] voltage_dynamic_lib_battery_voltage_test.NickelMetalHydrideFromPaperTest (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_test.updateCapacityTest
+[       OK ] voltage_dynamic_lib_battery_voltage_test.updateCapacityTest (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_test.updateCapacitySubHourly
+[       OK ] voltage_dynamic_lib_battery_voltage_test.updateCapacitySubHourly (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_test.updateCapacitySubMinute
+[       OK ] voltage_dynamic_lib_battery_voltage_test.updateCapacitySubMinute (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_test.calculateMaxChargeHourly
+[       OK ] voltage_dynamic_lib_battery_voltage_test.calculateMaxChargeHourly (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_test.calculateMaxChargeSubHourly
+[       OK ] voltage_dynamic_lib_battery_voltage_test.calculateMaxChargeSubHourly (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_test.calculateMaxChargeSubMinute
+[       OK ] voltage_dynamic_lib_battery_voltage_test.calculateMaxChargeSubMinute (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_test.calculateMaxDischargeHourly
+[       OK ] voltage_dynamic_lib_battery_voltage_test.calculateMaxDischargeHourly (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_test.calculateMaxDischargeSubHourly
+[       OK ] voltage_dynamic_lib_battery_voltage_test.calculateMaxDischargeSubHourly (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_test.calculateMaxDischargeSubMinute
+[       OK ] voltage_dynamic_lib_battery_voltage_test.calculateMaxDischargeSubMinute (0 ms)
+[----------] 11 tests from voltage_dynamic_lib_battery_voltage_test (0 ms total)
+
+[----------] 6 tests from voltage_dynamic_lib_battery_voltage_cutoff_test
+[ RUN      ] voltage_dynamic_lib_battery_voltage_cutoff_test.calculateMaxChargeHourly
+[       OK ] voltage_dynamic_lib_battery_voltage_cutoff_test.calculateMaxChargeHourly (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_cutoff_test.calculateMaxChargeSubHourly
+[       OK ] voltage_dynamic_lib_battery_voltage_cutoff_test.calculateMaxChargeSubHourly (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_cutoff_test.calculateMaxChargeSubMinute
+[       OK ] voltage_dynamic_lib_battery_voltage_cutoff_test.calculateMaxChargeSubMinute (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_cutoff_test.calculateMaxDischargeHourly
+[       OK ] voltage_dynamic_lib_battery_voltage_cutoff_test.calculateMaxDischargeHourly (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_cutoff_test.calculateMaxDischargeSubHourly
+[       OK ] voltage_dynamic_lib_battery_voltage_cutoff_test.calculateMaxDischargeSubHourly (0 ms)
+[ RUN      ] voltage_dynamic_lib_battery_voltage_cutoff_test.calculateMaxDischargeSubMinute
+[       OK ] voltage_dynamic_lib_battery_voltage_cutoff_test.calculateMaxDischargeSubMinute (0 ms)
+[----------] 6 tests from voltage_dynamic_lib_battery_voltage_cutoff_test (0 ms total)
+
+[----------] 15 tests from voltage_table_lib_battery_voltage_test
+[ RUN      ] voltage_table_lib_battery_voltage_test.updateCapacityTest
+[       OK ] voltage_table_lib_battery_voltage_test.updateCapacityTest (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.updateCapacitySubHourly
+[       OK ] voltage_table_lib_battery_voltage_test.updateCapacitySubHourly (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.updateCapacitySubMinute
+[       OK ] voltage_table_lib_battery_voltage_test.updateCapacitySubMinute (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.calculateMaxChargeHourly1
+[       OK ] voltage_table_lib_battery_voltage_test.calculateMaxChargeHourly1 (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.calculateMaxChargeHourly2
+[       OK ] voltage_table_lib_battery_voltage_test.calculateMaxChargeHourly2 (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.calculateMaxChargeHourly3
+[       OK ] voltage_table_lib_battery_voltage_test.calculateMaxChargeHourly3 (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.calculateMaxChargeSubHourly1
+[       OK ] voltage_table_lib_battery_voltage_test.calculateMaxChargeSubHourly1 (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.calculateMaxChargeSubHourly2
+[       OK ] voltage_table_lib_battery_voltage_test.calculateMaxChargeSubHourly2 (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.calculateMaxChargeSubMinute
+[       OK ] voltage_table_lib_battery_voltage_test.calculateMaxChargeSubMinute (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.calculateMaxDischargeHourly
+[       OK ] voltage_table_lib_battery_voltage_test.calculateMaxDischargeHourly (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.calculateMaxDischargeHourlyInputErrors
+[       OK ] voltage_table_lib_battery_voltage_test.calculateMaxDischargeHourlyInputErrors (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.calculateMaxDischargeSubHourly
+[       OK ] voltage_table_lib_battery_voltage_test.calculateMaxDischargeSubHourly (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.calculateMaxDischargeHourly_table_2
+[       OK ] voltage_table_lib_battery_voltage_test.calculateMaxDischargeHourly_table_2 (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.calculateMaxDischargeSubMinute
+[       OK ] voltage_table_lib_battery_voltage_test.calculateMaxDischargeSubMinute (0 ms)
+[ RUN      ] voltage_table_lib_battery_voltage_test.calculate_discharging_past_limits
+[       OK ] voltage_table_lib_battery_voltage_test.calculate_discharging_past_limits (0 ms)
+[----------] 15 tests from voltage_table_lib_battery_voltage_test (0 ms total)
+
+[----------] 9 tests from voltage_vanadium_lib_battery_voltage_test
+[ RUN      ] voltage_vanadium_lib_battery_voltage_test.SetUpTest
+[       OK ] voltage_vanadium_lib_battery_voltage_test.SetUpTest (0 ms)
+[ RUN      ] voltage_vanadium_lib_battery_voltage_test.updateCapacityTest
+[       OK ] voltage_vanadium_lib_battery_voltage_test.updateCapacityTest (0 ms)
+[ RUN      ] voltage_vanadium_lib_battery_voltage_test.updateCapacitySubMinute
+[       OK ] voltage_vanadium_lib_battery_voltage_test.updateCapacitySubMinute (0 ms)
+[ RUN      ] voltage_vanadium_lib_battery_voltage_test.calculateMaxChargeHourly
+[       OK ] voltage_vanadium_lib_battery_voltage_test.calculateMaxChargeHourly (0 ms)
+[ RUN      ] voltage_vanadium_lib_battery_voltage_test.calculateMaxChargeSubHourly
+[       OK ] voltage_vanadium_lib_battery_voltage_test.calculateMaxChargeSubHourly (0 ms)
+[ RUN      ] voltage_vanadium_lib_battery_voltage_test.calculateMaxChargeSubMinute
+[       OK ] voltage_vanadium_lib_battery_voltage_test.calculateMaxChargeSubMinute (0 ms)
+[ RUN      ] voltage_vanadium_lib_battery_voltage_test.calculateMaxDischargeHourly
+[       OK ] voltage_vanadium_lib_battery_voltage_test.calculateMaxDischargeHourly (0 ms)
+[ RUN      ] voltage_vanadium_lib_battery_voltage_test.calculateMaxDischargeSubHourly
+[       OK ] voltage_vanadium_lib_battery_voltage_test.calculateMaxDischargeSubHourly (0 ms)
+[ RUN      ] voltage_vanadium_lib_battery_voltage_test.calculateMaxDischargeSubMinute
+[       OK ] voltage_vanadium_lib_battery_voltage_test.calculateMaxDischargeSubMinute (0 ms)
+[----------] 9 tests from voltage_vanadium_lib_battery_voltage_test (0 ms total)
+
+[----------] 2 tests from csp_common.StorageTank
+[ RUN      ] csp_common.StorageTank.DrainingTank
+[       OK ] csp_common.StorageTank.DrainingTank (0 ms)
+[ RUN      ] csp_common.StorageTank.InitiallyDrainedTank
+[       OK ] csp_common.StorageTank.InitiallyDrainedTank (0 ms)
+[----------] 2 tests from csp_common.StorageTank (0 ms total)
+
+[----------] 1 test from csp_common.TesCspSolver
+[ RUN      ] csp_common.TesCspSolver.Default
+[       OK ] csp_common.TesCspSolver.Default (0 ms)
+[----------] 1 test from csp_common.TesCspSolver (0 ms total)
+
+[----------] 1 test from csp_common.TesSubcomponentCmod
+[ RUN      ] csp_common.TesSubcomponentCmod.Default
+[       OK ] csp_common.TesSubcomponentCmod.Default (0 ms)
+[----------] 1 test from csp_common.TesSubcomponentCmod (0 ms total)
+
+[----------] 4 tests from csp_common.TowerSharedWithUi
+[ RUN      ] csp_common.TowerSharedWithUi.Tes
+[       OK ] csp_common.TowerSharedWithUi.Tes (0 ms)
+[ RUN      ] csp_common.TowerSharedWithUi.TesWithPeriodUse
+[       OK ] csp_common.TowerSharedWithUi.TesWithPeriodUse (0 ms)
+[ RUN      ] csp_common.TowerSharedWithUi.FinancialCase1
+[       OK ] csp_common.TowerSharedWithUi.FinancialCase1 (0 ms)
+[ RUN      ] csp_common.TowerSharedWithUi.FinancialCase2
+[       OK ] csp_common.TowerSharedWithUi.FinancialCase2 (0 ms)
+[----------] 4 tests from csp_common.TowerSharedWithUi (0 ms total)
+
+[----------] 4 tests from csp_common.TroughSharedWithUi
+[ RUN      ] csp_common.TroughSharedWithUi.SystemDesign
+[       OK ] csp_common.TroughSharedWithUi.SystemDesign (0 ms)
+[ RUN      ] csp_common.TroughSharedWithUi.SolarField
+[       OK ] csp_common.TroughSharedWithUi.SolarField (0 ms)
+[ RUN      ] csp_common.TroughSharedWithUi.CollectorType
+[       OK ] csp_common.TroughSharedWithUi.CollectorType (0 ms)
+[ RUN      ] csp_common.TroughSharedWithUi.SystemControl
+[       OK ] csp_common.TroughSharedWithUi.SystemControl (0 ms)
+[----------] 4 tests from csp_common.TroughSharedWithUi (0 ms total)
+
+[----------] 2 tests from csp_trough.TroughLoop
+[ RUN      ] csp_trough.TroughLoop.DefaultTest
+[       OK ] csp_trough.TroughLoop.DefaultTest (8 ms)
+[ RUN      ] csp_trough.TroughLoop.SteadyStateTest
+[       OK ] csp_trough.TroughLoop.SteadyStateTest (13 ms)
+[----------] 2 tests from csp_trough.TroughLoop (22 ms total)
+
+[----------] 18 tests from FuelCellTest
+[ RUN      ] FuelCellTest.UnitConversions_lib_fuel_cell
+[       OK ] FuelCellTest.UnitConversions_lib_fuel_cell (3 ms)
+[ RUN      ] FuelCellTest.EfficiencyCurve_lib_fuel_cell
+[       OK ] FuelCellTest.EfficiencyCurve_lib_fuel_cell (0 ms)
+[ RUN      ] FuelCellTest.FuelConsumption_lib_fuel_cell
+[       OK ] FuelCellTest.FuelConsumption_lib_fuel_cell (2 ms)
+[ RUN      ] FuelCellTest.Initialize_lib_fuel_cell
+[       OK ] FuelCellTest.Initialize_lib_fuel_cell (0 ms)
+[ RUN      ] FuelCellTest.Startup_lib_fuel_cell
+[       OK ] FuelCellTest.Startup_lib_fuel_cell (3 ms)
+[ RUN      ] FuelCellTest.StartedUp_lib_fuel_cell
+[       OK ] FuelCellTest.StartedUp_lib_fuel_cell (0 ms)
+[ RUN      ] FuelCellTest.Shutdown_lib_fuel_cell
+[       OK ] FuelCellTest.Shutdown_lib_fuel_cell (1 ms)
+[ RUN      ] FuelCellTest.Idle_lib_fuel_cell
+[       OK ] FuelCellTest.Idle_lib_fuel_cell (0 ms)
+[ RUN      ] FuelCellTest.AvailableFuel_lib_fuel_cell
+[       OK ] FuelCellTest.AvailableFuel_lib_fuel_cell (5 ms)
+[ RUN      ] FuelCellTest.HeatCalculation_lib_fuel_cell
+[       OK ] FuelCellTest.HeatCalculation_lib_fuel_cell (2 ms)
+[ RUN      ] FuelCellTest.Replacements_lib_fuel_cell
+[       OK ] FuelCellTest.Replacements_lib_fuel_cell (7 ms)
+[ RUN      ] FuelCellTest.ScheduleRestarts_lib_fuel_cell
+[       OK ] FuelCellTest.ScheduleRestarts_lib_fuel_cell (0 ms)
+[ RUN      ] FuelCellTest.DispatchFixedSubhourly_lib_fuel_cell_dispatch
+[       OK ] FuelCellTest.DispatchFixedSubhourly_lib_fuel_cell_dispatch (3 ms)
+[ RUN      ] FuelCellTest.DispatchFixedMultiple_lib_fuel_cell_dispatch
+[       OK ] FuelCellTest.DispatchFixedMultiple_lib_fuel_cell_dispatch (0 ms)
+[ RUN      ] FuelCellTest.DispatchLoadFollow_lib_fuel_cell_dispatch
+[       OK ] FuelCellTest.DispatchLoadFollow_lib_fuel_cell_dispatch (3 ms)
+[ RUN      ] FuelCellTest.DispatchManual_lib_fuel_cell_dispatch
+[       OK ] FuelCellTest.DispatchManual_lib_fuel_cell_dispatch (0 ms)
+[ RUN      ] FuelCellTest.DispatchManualUnits_lib_fuel_cell_dispatch
+[       OK ] FuelCellTest.DispatchManualUnits_lib_fuel_cell_dispatch (2 ms)
+[ RUN      ] FuelCellTest.DispatchInput_lib_fuel_cell_dispatch
+[       OK ] FuelCellTest.DispatchInput_lib_fuel_cell_dispatch (0 ms)
+[----------] 18 tests from FuelCellTest (37 ms total)
+
+[----------] 2 tests from GeothermalPlantAnalyzer
+[ RUN      ] GeothermalPlantAnalyzer.TestBinaryPlant_lib_geothermal
+[       OK ] GeothermalPlantAnalyzer.TestBinaryPlant_lib_geothermal (103 ms)
+[ RUN      ] GeothermalPlantAnalyzer.TestFlashPlant_lib_geothermal
+[       OK ] GeothermalPlantAnalyzer.TestFlashPlant_lib_geothermal (1937 ms)
+[----------] 2 tests from GeothermalPlantAnalyzer (2041 ms total)
+
+[----------] 4 tests from NightCaseIrradProc
+[ RUN      ] NightCaseIrradProc.solarposTest_lib_irradproc
+[       OK ] NightCaseIrradProc.solarposTest_lib_irradproc (0 ms)
+[ RUN      ] NightCaseIrradProc.solarpos_spaTest_lib_irradproc
+[       OK ] NightCaseIrradProc.solarpos_spaTest_lib_irradproc (0 ms)
+[ RUN      ] NightCaseIrradProc.incidenceTest_lib_irradproc
+[       OK ] NightCaseIrradProc.incidenceTest_lib_irradproc (0 ms)
+[ RUN      ] NightCaseIrradProc.CalcTestRadMode0_lib_irradproc
+[       OK ] NightCaseIrradProc.CalcTestRadMode0_lib_irradproc (0 ms)
+[----------] 4 tests from NightCaseIrradProc (0 ms total)
+
+[----------] 4 tests from SunriseCaseIrradProc
+[ RUN      ] SunriseCaseIrradProc.solarposTest_lib_irradproc
+[       OK ] SunriseCaseIrradProc.solarposTest_lib_irradproc (0 ms)
+[ RUN      ] SunriseCaseIrradProc.solarpos_spaTest_lib_irradproc
+[       OK ] SunriseCaseIrradProc.solarpos_spaTest_lib_irradproc (0 ms)
+[ RUN      ] SunriseCaseIrradProc.incidenceTest_lib_irradproc
+[       OK ] SunriseCaseIrradProc.incidenceTest_lib_irradproc (0 ms)
+[ RUN      ] SunriseCaseIrradProc.CalcTestRadMode0_lib_irradproc
+[       OK ] SunriseCaseIrradProc.CalcTestRadMode0_lib_irradproc (0 ms)
+[----------] 4 tests from SunriseCaseIrradProc (0 ms total)
+
+[----------] 5 tests from IrradTest
+[ RUN      ] IrradTest.sunriseAndSunsetAtDifferentLocationsTest_lib_irradproc
+[       OK ] IrradTest.sunriseAndSunsetAtDifferentLocationsTest_lib_irradproc (0 ms)
+[ RUN      ] IrradTest.sunriseAndSunsetAtDifferentLocationsTest_spa_lib_irradproc
+[       OK ] IrradTest.sunriseAndSunsetAtDifferentLocationsTest_spa_lib_irradproc (0 ms)
+[ RUN      ] IrradTest.sunriseAndSunsetAlaskaTest_spa_lib_irradproc
+[       OK ] IrradTest.sunriseAndSunsetAlaskaTest_spa_lib_irradproc (0 ms)
+[ RUN      ] IrradTest.atmos_refractionTest_spa_lib_irradproc
+[       OK ] IrradTest.atmos_refractionTest_spa_lib_irradproc (0 ms)
+[ RUN      ] IrradTest.ineichenTest
+[       OK ] IrradTest.ineichenTest (0 ms)
+[----------] 5 tests from IrradTest (0 ms total)
+
+[----------] 5 tests from DayCaseIrradProc
+[ RUN      ] DayCaseIrradProc.OptionalInputTest
+[       OK ] DayCaseIrradProc.OptionalInputTest (0 ms)
+[ RUN      ] DayCaseIrradProc.solarposTest_lib_irradproc
+[       OK ] DayCaseIrradProc.solarposTest_lib_irradproc (0 ms)
+[ RUN      ] DayCaseIrradProc.solarpos_spaTest_lib_irradproc
+[       OK ] DayCaseIrradProc.solarpos_spaTest_lib_irradproc (0 ms)
+[ RUN      ] DayCaseIrradProc.incidenceTest_lib_irradproc
+[       OK ] DayCaseIrradProc.incidenceTest_lib_irradproc (0 ms)
+[ RUN      ] DayCaseIrradProc.CalcTestRadMode0_lib_irradproc
+[       OK ] DayCaseIrradProc.CalcTestRadMode0_lib_irradproc (0 ms)
+[----------] 5 tests from DayCaseIrradProc (0 ms total)
+
+[----------] 4 tests from SunsetCaseIrradProc
+[ RUN      ] SunsetCaseIrradProc.solarposTest_lib_irradproc
+[       OK ] SunsetCaseIrradProc.solarposTest_lib_irradproc (0 ms)
+[ RUN      ] SunsetCaseIrradProc.solarpos_spaTest_lib_irradproc
+[       OK ] SunsetCaseIrradProc.solarpos_spaTest_lib_irradproc (0 ms)
+[ RUN      ] SunsetCaseIrradProc.incidenceTest_lib_irradproc
+[       OK ] SunsetCaseIrradProc.incidenceTest_lib_irradproc (0 ms)
+[ RUN      ] SunsetCaseIrradProc.CalcTestRadMode0_lib_irradproc
+[       OK ] SunsetCaseIrradProc.CalcTestRadMode0_lib_irradproc (0 ms)
+[----------] 4 tests from SunsetCaseIrradProc (0 ms total)
+
+[----------] 6 tests from BifacialIrradTest
+[ RUN      ] BifacialIrradTest.TestSkyConfigFactors
+[       OK ] BifacialIrradTest.TestSkyConfigFactors (4 ms)
+[ RUN      ] BifacialIrradTest.TestGroundShadeFactors
+[       OK ] BifacialIrradTest.TestGroundShadeFactors (170 ms)
+[ RUN      ] BifacialIrradTest.TestGroundGHI
+[       OK ] BifacialIrradTest.TestGroundGHI (261 ms)
+[ RUN      ] BifacialIrradTest.TestFrontSurfaceIrradiance
+[       OK ] BifacialIrradTest.TestFrontSurfaceIrradiance (134 ms)
+[ RUN      ] BifacialIrradTest.TestRearSurfaceIrradiance
+[       OK ] BifacialIrradTest.TestRearSurfaceIrradiance (203 ms)
+[ RUN      ] BifacialIrradTest.TestVerticalOrientation
+[       OK ] BifacialIrradTest.TestVerticalOrientation (4 ms)
+[----------] 6 tests from BifacialIrradTest (778 ms total)
+
+[----------] 4 tests from SingleAxisTrackingTest
+[ RUN      ] SingleAxisTrackingTest.TrackingBacktracking
+[       OK ] SingleAxisTrackingTest.TrackingBacktracking (0 ms)
+[ RUN      ] SingleAxisTrackingTest.TrackingBacktrackingwSlopedTerrain
+[       OK ] SingleAxisTrackingTest.TrackingBacktrackingwSlopedTerrain (0 ms)
+[ RUN      ] SingleAxisTrackingTest.TrackingVerticalTest
+[       OK ] SingleAxisTrackingTest.TrackingVerticalTest (0 ms)
+[ RUN      ] SingleAxisTrackingTest.SunBelowTiltedArray
+[       OK ] SingleAxisTrackingTest.SunBelowTiltedArray (0 ms)
+[----------] 4 tests from SingleAxisTrackingTest (0 ms total)
+
+[----------] 16 tests from ResilienceTest_lib_resilience
+[ RUN      ] ResilienceTest_lib_resilience.VoltageCutoffParameterSetup
+[       OK ] ResilienceTest_lib_resilience.VoltageCutoffParameterSetup (186 ms)
+[ RUN      ] ResilienceTest_lib_resilience.DischargeBatteryModelHourly
+[       OK ] ResilienceTest_lib_resilience.DischargeBatteryModelHourly (1 ms)
+[ RUN      ] ResilienceTest_lib_resilience.DischargeBatteryModelSubHourly
+[       OK ] ResilienceTest_lib_resilience.DischargeBatteryModelSubHourly (1 ms)
+[ RUN      ] ResilienceTest_lib_resilience.DischargeBatteryModelSubHourlyWSOCLimits
+[       OK ] ResilienceTest_lib_resilience.DischargeBatteryModelSubHourlyWSOCLimits (0 ms)
+[ RUN      ] ResilienceTest_lib_resilience.ChargeBatteryModelHourly
+[       OK ] ResilienceTest_lib_resilience.ChargeBatteryModelHourly (0 ms)
+[ RUN      ] ResilienceTest_lib_resilience.ChargeBatteryModelSubhourly
+[       OK ] ResilienceTest_lib_resilience.ChargeBatteryModelSubhourly (1 ms)
+[ RUN      ] ResilienceTest_lib_resilience.PVWattsSetUp
+[       OK ] ResilienceTest_lib_resilience.PVWattsSetUp (0 ms)
+[ RUN      ] ResilienceTest_lib_resilience.VoltageTable
+[       OK ] ResilienceTest_lib_resilience.VoltageTable (0 ms)
+[ RUN      ] ResilienceTest_lib_resilience.DischargeVoltageTable
+[       OK ] ResilienceTest_lib_resilience.DischargeVoltageTable (0 ms)
+[ RUN      ] ResilienceTest_lib_resilience.ChargeVoltageTable
+[       OK ] ResilienceTest_lib_resilience.ChargeVoltageTable (0 ms)
+[ RUN      ] ResilienceTest_lib_resilience.VoltageVanadium
+[       OK ] ResilienceTest_lib_resilience.VoltageVanadium (0 ms)
+[ RUN      ] ResilienceTest_lib_resilience.PVWattsACHourly_Discharge
+[       OK ] ResilienceTest_lib_resilience.PVWattsACHourly_Discharge (4 ms)
+[ RUN      ] ResilienceTest_lib_resilience.PVWattsACHalfHourly_Discharge
+[       OK ] ResilienceTest_lib_resilience.PVWattsACHalfHourly_Discharge (4 ms)
+[ RUN      ] ResilienceTest_lib_resilience.PVWattsDCHourly_Discharge
+[       OK ] ResilienceTest_lib_resilience.PVWattsDCHourly_Discharge (1 ms)
+[ RUN      ] ResilienceTest_lib_resilience.PVWattsDCHalfHourly_Discharge
+[       OK ] ResilienceTest_lib_resilience.PVWattsDCHalfHourly_Discharge (3 ms)
+[ RUN      ] ResilienceTest_lib_resilience.PVWattsACHourly_Charge
+[       OK ] ResilienceTest_lib_resilience.PVWattsACHourly_Charge (53 ms)
+[----------] 16 tests from ResilienceTest_lib_resilience (258 ms total)
+
+[----------] 2 tests from sharedInverterTest_lib_shared_inverter
+[ RUN      ] sharedInverterTest_lib_shared_inverter.tempDerateTest_lib_shared_inverter
+[       OK ] sharedInverterTest_lib_shared_inverter.tempDerateTest_lib_shared_inverter (0 ms)
+[ RUN      ] sharedInverterTest_lib_shared_inverter.calculateEffForACPower
+[       OK ] sharedInverterTest_lib_shared_inverter.calculateEffForACPower (0 ms)
+[----------] 2 tests from sharedInverterTest_lib_shared_inverter (0 ms total)
+
+[----------] 1 test from solar_thermal.FlatPlateCollectorTest
+[ RUN      ] solar_thermal.FlatPlateCollectorTest.TestFlatPlateCollectorNominalOperation
+[       OK ] solar_thermal.FlatPlateCollectorTest.TestFlatPlateCollectorNominalOperation (0 ms)
+[----------] 1 test from solar_thermal.FlatPlateCollectorTest (0 ms total)
+
+[----------] 1 test from solar_thermal.FlatPlateArrayTest
+[ RUN      ] solar_thermal.FlatPlateArrayTest.TestFlatPlateArrayOfOneNominalOperation
+[       OK ] solar_thermal.FlatPlateArrayTest.TestFlatPlateArrayOfOneNominalOperation (0 ms)
+[----------] 1 test from solar_thermal.FlatPlateArrayTest (0 ms total)
+
+[----------] 12 tests from libTimeTest_lib_time
+[ RUN      ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_Lifetime
+[       OK ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_Lifetime (4 ms)
+[ RUN      ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_SingleYear
+[       OK ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_SingleYear (3 ms)
+[ RUN      ] libTimeTest_lib_time.single_year_to_lifetime_with_escalation
+[       OK ] libTimeTest_lib_time.single_year_to_lifetime_with_escalation (3 ms)
+[ RUN      ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_SingleValue
+[       OK ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_SingleValue (2 ms)
+[ RUN      ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_SingleYearSubhourly
+[       OK ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_SingleYearSubhourly (2 ms)
+[ RUN      ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_LifetimeSubhourly
+[       OK ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_LifetimeSubhourly (4 ms)
+[ RUN      ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_DownsampleLifetime
+[       OK ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_DownsampleLifetime (2 ms)
+[ RUN      ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_DownsampleLifetime_w_interpolation
+[       OK ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_DownsampleLifetime_w_interpolation (2 ms)
+[ RUN      ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_DownsampleSingleYear
+[       OK ] libTimeTest_lib_time.single_year_to_lifetime_interpolated_DownsampleSingleYear (2 ms)
+[ RUN      ] libTimeTest_lib_time.flatten_diurnal_Schedule
+[       OK ] libTimeTest_lib_time.flatten_diurnal_Schedule (3 ms)
+[ RUN      ] libTimeTest_lib_time.flatten_diurnal_ScheduleTOD
+[       OK ] libTimeTest_lib_time.flatten_diurnal_ScheduleTOD (2 ms)
+[ RUN      ] libTimeTest_lib_time.TestDiurnalToFlat
+[       OK ] libTimeTest_lib_time.TestDiurnalToFlat (3 ms)
+[----------] 12 tests from libTimeTest_lib_time (39 ms total)
+
+[----------] 2 tests from libUtilTests
+[ RUN      ] libUtilTests.testFormat_lib_util
+[       OK ] libUtilTests.testFormat_lib_util (0 ms)
+[ RUN      ] libUtilTests.testNearestColValue
+[       OK ] libUtilTests.testNearestColValue (0 ms)
+[----------] 2 tests from libUtilTests (0 ms total)
+
+[----------] 2 tests from sscapiTest
+[ RUN      ] sscapiTest.SSC_DATARR_test
+[       OK ] sscapiTest.SSC_DATARR_test (0 ms)
+[ RUN      ] sscapiTest.SSC_DATMAT_test
+[       OK ] sscapiTest.SSC_DATMAT_test (0 ms)
+[----------] 2 tests from sscapiTest (0 ms total)
+
+[----------] 9 tests from lib_utility_rate_equations_test
+[ RUN      ] lib_utility_rate_equations_test.test_copy
+[       OK ] lib_utility_rate_equations_test.test_copy (0 ms)
+[ RUN      ] lib_utility_rate_equations_test.test_demand_charges
+[       OK ] lib_utility_rate_equations_test.test_demand_charges (1 ms)
+[ RUN      ] lib_utility_rate_equations_test.test_seasonal_demand_charges
+[       OK ] lib_utility_rate_equations_test.test_seasonal_demand_charges (0 ms)
+[ RUN      ] lib_utility_rate_equations_test.test_block_step_tiers
+[       OK ] lib_utility_rate_equations_test.test_block_step_tiers (1 ms)
+[ RUN      ] lib_utility_rate_equations_test.test_kwh_per_kw_only
+[       OK ] lib_utility_rate_equations_test.test_kwh_per_kw_only (1 ms)
+[ RUN      ] lib_utility_rate_equations_test.test_billing_demand_calcs
+[       OK ] lib_utility_rate_equations_test.test_billing_demand_calcs (0 ms)
+[ RUN      ] lib_utility_rate_equations_test.test_billing_demand_calcs_w_tou
+[       OK ] lib_utility_rate_equations_test.test_billing_demand_calcs_w_tou (0 ms)
+[ RUN      ] lib_utility_rate_equations_test.test_demand_hourly_tou_charges
+[       OK ] lib_utility_rate_equations_test.test_demand_hourly_tou_charges (0 ms)
+[ RUN      ] lib_utility_rate_equations_test.test_demand_subhourly_tou_charges
+[       OK ] lib_utility_rate_equations_test.test_demand_subhourly_tou_charges (0 ms)
+[----------] 9 tests from lib_utility_rate_equations_test (7 ms total)
+
+[----------] 27 tests from lib_utility_rate_test
+[ RUN      ] lib_utility_rate_test.test_copy
+[       OK ] lib_utility_rate_test.test_copy (0 ms)
+[ RUN      ] lib_utility_rate_test.test_tiered_tou_cost_estimates
+[       OK ] lib_utility_rate_test.test_tiered_tou_cost_estimates (0 ms)
+[ RUN      ] lib_utility_rate_test.test_tiered_sell_rates
+[       OK ] lib_utility_rate_test.test_tiered_sell_rates (0 ms)
+[ RUN      ] lib_utility_rate_test.test_simple_demand_charges
+[       OK ] lib_utility_rate_test.test_simple_demand_charges (0 ms)
+[ RUN      ] lib_utility_rate_test.test_demand_charges_crossing_months
+[       OK ] lib_utility_rate_test.test_demand_charges_crossing_months (0 ms)
+[ RUN      ] lib_utility_rate_test.test_demand_charges_inaccurate_forecast
+[       OK ] lib_utility_rate_test.test_demand_charges_inaccurate_forecast (0 ms)
+[ RUN      ] lib_utility_rate_test.test_changing_rates_crossing_months
+[       OK ] lib_utility_rate_test.test_changing_rates_crossing_months (0 ms)
+[ RUN      ] lib_utility_rate_test.test_demand_charges_crossing_year
+[       OK ] lib_utility_rate_test.test_demand_charges_crossing_year (0 ms)
+[ RUN      ] lib_utility_rate_test.test_sell_rates
+[       OK ] lib_utility_rate_test.test_sell_rates (0 ms)
+[ RUN      ] lib_utility_rate_test.test_net_metering_one_tou_period
+[       OK ] lib_utility_rate_test.test_net_metering_one_tou_period (1 ms)
+[ RUN      ] lib_utility_rate_test.test_net_metering_multiple_tou_periods
+[       OK ] lib_utility_rate_test.test_net_metering_multiple_tou_periods (1 ms)
+[ RUN      ] lib_utility_rate_test.test_net_metering_end_of_month_carryover
+[       OK ] lib_utility_rate_test.test_net_metering_end_of_month_carryover (1 ms)
+[ RUN      ] lib_utility_rate_test.test_net_metering_dollar_credits
+[       OK ] lib_utility_rate_test.test_net_metering_dollar_credits (1 ms)
+[ RUN      ] lib_utility_rate_test.test_net_metering_end_of_month_cashout
+[       OK ] lib_utility_rate_test.test_net_metering_end_of_month_cashout (1 ms)
+[ RUN      ] lib_utility_rate_test.test_net_metering_end_of_month_charges
+[       OK ] lib_utility_rate_test.test_net_metering_end_of_month_charges (1 ms)
+[ RUN      ] lib_utility_rate_test.test_net_metering_end_of_month_charges_subhourly
+[       OK ] lib_utility_rate_test.test_net_metering_end_of_month_charges_subhourly (1 ms)
+[ RUN      ] lib_utility_rate_test.test_net_metering_charges_crossing_year
+[       OK ] lib_utility_rate_test.test_net_metering_charges_crossing_year (1 ms)
+[ RUN      ] lib_utility_rate_test.test_net_metering_charges_crossing_year_other_cash_out_month
+[       OK ] lib_utility_rate_test.test_net_metering_charges_crossing_year_other_cash_out_month (1 ms)
+[ RUN      ] lib_utility_rate_test.test_multiple_forecast_calls
+[       OK ] lib_utility_rate_test.test_multiple_forecast_calls (1 ms)
+[ RUN      ] lib_utility_rate_test.test_one_at_a_time_vs_full_vector
+[       OK ] lib_utility_rate_test.test_one_at_a_time_vs_full_vector (2 ms)
+[ RUN      ] lib_utility_rate_test.test_one_at_a_time_vs_full_vector_nm_credits
+[       OK ] lib_utility_rate_test.test_one_at_a_time_vs_full_vector_nm_credits (1 ms)
+[ RUN      ] lib_utility_rate_test.test_one_at_a_time_vs_full_vector_nm_credits_subhourly
+[       OK ] lib_utility_rate_test.test_one_at_a_time_vs_full_vector_nm_credits_subhourly (0 ms)
+[ RUN      ] lib_utility_rate_test.test_end_of_analyis_period
+[       OK ] lib_utility_rate_test.test_end_of_analyis_period (0 ms)
+[ RUN      ] lib_utility_rate_test.test_one_at_a_time_vs_full_vector_buy_and_sell_rates
+[       OK ] lib_utility_rate_test.test_one_at_a_time_vs_full_vector_buy_and_sell_rates (1 ms)
+[ RUN      ] lib_utility_rate_test.test_ts_buy_only
+[       OK ] lib_utility_rate_test.test_ts_buy_only (0 ms)
+[ RUN      ] lib_utility_rate_test.test_ts_sell_only
+[       OK ] lib_utility_rate_test.test_ts_sell_only (0 ms)
+[ RUN      ] lib_utility_rate_test.test_demand_monthly_tou_demand_charges
+[       OK ] lib_utility_rate_test.test_demand_monthly_tou_demand_charges (0 ms)
+[----------] 27 tests from lib_utility_rate_test (28 ms total)
+
+[----------] 3 tests from CSVCase_WeatherfileTest
+[ RUN      ] CSVCase_WeatherfileTest.initTest_lib_weatherfile
+[       OK ] CSVCase_WeatherfileTest.initTest_lib_weatherfile (15 ms)
+[ RUN      ] CSVCase_WeatherfileTest.normalizeCityTest_lib_weatherfile
+[       OK ] CSVCase_WeatherfileTest.normalizeCityTest_lib_weatherfile (12 ms)
+[ RUN      ] CSVCase_WeatherfileTest.readTest_lib_weatherfile
+[       OK ] CSVCase_WeatherfileTest.readTest_lib_weatherfile (13 ms)
+[----------] 3 tests from CSVCase_WeatherfileTest (40 ms total)
+
+[----------] 2 tests from weatherfileTest
+[ RUN      ] weatherfileTest.EPWTest_lib_weatherfile
+[       OK ] weatherfileTest.EPWTest_lib_weatherfile (76 ms)
+[ RUN      ] weatherfileTest.EPWNoLineEndingsTest_lib_weatherfile
+[       OK ] weatherfileTest.EPWNoLineEndingsTest_lib_weatherfile (32 ms)
+[----------] 2 tests from weatherfileTest (109 ms total)
+
+[----------] 3 tests from Data8760CaseWeatherData
+[ RUN      ] Data8760CaseWeatherData.initTest_lib_weatherfile
+[       OK ] Data8760CaseWeatherData.initTest_lib_weatherfile (3 ms)
+[ RUN      ] Data8760CaseWeatherData.initTest_errormessage_lib_weatherfile
+[       OK ] Data8760CaseWeatherData.initTest_errormessage_lib_weatherfile (1 ms)
+[ RUN      ] Data8760CaseWeatherData.readTest_lib_weatherfile
+[       OK ] Data8760CaseWeatherData.readTest_lib_weatherfile (1 ms)
+[----------] 3 tests from Data8760CaseWeatherData (7 ms total)
+
+[----------] 3 tests from Data9999CaseWeatherData
+[ RUN      ] Data9999CaseWeatherData.initTest_lib_weatherfile
+[       OK ] Data9999CaseWeatherData.initTest_lib_weatherfile (1 ms)
+[ RUN      ] Data9999CaseWeatherData.initTest2_lib_weatherfile
+[       OK ] Data9999CaseWeatherData.initTest2_lib_weatherfile (0 ms)
+[ RUN      ] Data9999CaseWeatherData.readTest2_lib_weatherfile
+[       OK ] Data9999CaseWeatherData.readTest2_lib_weatherfile (0 ms)
+[----------] 3 tests from Data9999CaseWeatherData (3 ms total)
+
+[----------] 1 test from DataSingleTimestepWeatherData
+[ RUN      ] DataSingleTimestepWeatherData.initAndReadTest_lib_weatherfile
+[       OK ] DataSingleTimestepWeatherData.initAndReadTest_lib_weatherfile (0 ms)
+[----------] 1 test from DataSingleTimestepWeatherData (0 ms total)
+
+[----------] 1 test from windDataProviderCalculatorTest
+[ RUN      ] windDataProviderCalculatorTest.FindClosestUsingData_lib_windfile_test
+[       OK ] windDataProviderCalculatorTest.FindClosestUsingData_lib_windfile_test (0 ms)
+[----------] 1 test from windDataProviderCalculatorTest (0 ms total)
+
+[----------] 1 test from windTurbineTest
+[ RUN      ] windTurbineTest.turbinePowerTest_lib_windwakemodel
+[       OK ] windTurbineTest.turbinePowerTest_lib_windwakemodel (0 ms)
+[----------] 1 test from windTurbineTest (0 ms total)
+
+[----------] 3 tests from simpleWakeModelTest
+[ RUN      ] simpleWakeModelTest.wakeCalcNoInterference_lib_windwakemodel
+[       OK ] simpleWakeModelTest.wakeCalcNoInterference_lib_windwakemodel (0 ms)
+[ RUN      ] simpleWakeModelTest.wakeCalcAllInterference_lib_windwakemodel
+[       OK ] simpleWakeModelTest.wakeCalcAllInterference_lib_windwakemodel (0 ms)
+[ RUN      ] simpleWakeModelTest.wakeCalcTriangleInterference_lib_windwakemodel
+[       OK ] simpleWakeModelTest.wakeCalcTriangleInterference_lib_windwakemodel (0 ms)
+[----------] 3 tests from simpleWakeModelTest (0 ms total)
+
+[----------] 3 tests from parkWakeModelTest
+[ RUN      ] parkWakeModelTest.wakeCalcNoInterference_lib_windwakemodel
+[       OK ] parkWakeModelTest.wakeCalcNoInterference_lib_windwakemodel (0 ms)
+[ RUN      ] parkWakeModelTest.wakeCalcAllInterference_lib_windwakemodel
+[       OK ] parkWakeModelTest.wakeCalcAllInterference_lib_windwakemodel (0 ms)
+[ RUN      ] parkWakeModelTest.wakeCalcTriangleInterference_lib_windwakemodel
+[       OK ] parkWakeModelTest.wakeCalcTriangleInterference_lib_windwakemodel (0 ms)
+[----------] 3 tests from parkWakeModelTest (0 ms total)
+
+[----------] 3 tests from eddyViscosityWakeModelTest
+[ RUN      ] eddyViscosityWakeModelTest.wakeCalcNoInterference_lib_windwakemodel
+[       OK ] eddyViscosityWakeModelTest.wakeCalcNoInterference_lib_windwakemodel (0 ms)
+[ RUN      ] eddyViscosityWakeModelTest.wakeCalcAllInterference_lib_windwakemodel
+[       OK ] eddyViscosityWakeModelTest.wakeCalcAllInterference_lib_windwakemodel (0 ms)
+[ RUN      ] eddyViscosityWakeModelTest.wakeCalcTriangleInterference_lib_windwakemodel
+[       OK ] eddyViscosityWakeModelTest.wakeCalcTriangleInterference_lib_windwakemodel (0 ms)
+[----------] 3 tests from eddyViscosityWakeModelTest (0 ms total)
+
+[----------] 4 tests from windPowerCalculatorTest
+[ RUN      ] windPowerCalculatorTest.windPowerUsingResource_lib_windwatts
+[       OK ] windPowerCalculatorTest.windPowerUsingResource_lib_windwatts (0 ms)
+[ RUN      ] windPowerCalculatorTest.windPowerUsingWeibull_lib_windwatts
+[       OK ] windPowerCalculatorTest.windPowerUsingWeibull_lib_windwatts (0 ms)
+[ RUN      ] windPowerCalculatorTest.windPowerUsingDistribution_lib_windwatts
+[       OK ] windPowerCalculatorTest.windPowerUsingDistribution_lib_windwatts (0 ms)
+[ RUN      ] windPowerCalculatorTest.windPowerUsingDistribution_1turbine_lib_windwatts
+[       OK ] windPowerCalculatorTest.windPowerUsingDistribution_1turbine_lib_windwatts (0 ms)
+[----------] 4 tests from windPowerCalculatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 783 tests from 114 test suites ran. (1048647 ms total)
+[  PASSED  ] 783 tests.
