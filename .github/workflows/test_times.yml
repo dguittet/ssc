@@ -63,10 +63,6 @@ jobs:
           }
           fs.writeFileSync(path.join(temp, 'test_times.zip'), Buffer.from(download.data));
 
-    - name: Check
-      shell: bash
-      run: ls ${{ github.workspace }}
-
     - name: Unzip Test Times
       if: ${{ matrix.os == 'windows-2019' }}
       run: 7z x ${{ github.workspace }}/test_times.zip
