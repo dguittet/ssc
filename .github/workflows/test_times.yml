@@ -91,7 +91,7 @@ jobs:
           });
           const fs = require('fs');
           const path = require('path');
-          const temp = '${{ env.GITHUB_WORKSPACE }}';
+          const temp = '${{ github.workspace }}';
           if (!fs.existsSync(temp)){
             fs.mkdirSync(temp);
           }
@@ -114,4 +114,4 @@ jobs:
       run: |
         ls ${{ runner.temp }}/artifacts/test
         pip install pandas
-        python ${SSCDIR}/test/compare_elapsed_time.py compare ${{ env.GITHUB_WORKSPACE }}/gtest_elapsed_times.csv ${{ github.ref_name }}
+        python ${SSCDIR}/test/compare_elapsed_time.py compare ${{ github.workspace }}/gtest_elapsed_times.csv ${{ github.ref_name }}
