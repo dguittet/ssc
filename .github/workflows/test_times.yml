@@ -69,12 +69,11 @@ jobs:
     - name: Unzip Test Times
       if: ${{ matrix.os == 'windows-2019' }}
       run: |
-        echo "${{steps.get-artifact.outputs.result}}"
         7z x ${{steps.get-artifact.outputs.result}}
 
     - name: Unzip Test Times
       if: ${{ matrix.os != 'windows-2019' }}
-      run: unzip ${{ github.workspace }}/test_times.zip
+      run: unzip ${{steps.get-artifact.outputs.result}}
 
     - name: Checkout SSC
       uses: actions/checkout@v4
