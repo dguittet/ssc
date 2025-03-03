@@ -129,7 +129,9 @@ if __name__ == "__main__":
         if Path(filename).suffix != ".csv":
             test_df = convert_log_to_csv(filename)
             base_test_df = get_workflow_artifact_branch(base_branch)
-            compare_time_elapsed(test_df, base_test_df)
+        else:
+            base_test_df = pd.read_csv(filename)
+        compare_time_elapsed(test_df, base_test_df)
     else:
         raise RuntimeError("Options are 'gtest_log' or 'compare'. Use 'help' to see details")
  
