@@ -124,8 +124,8 @@ def get_feature_branch():
 
 
 def compare_time_elapsed(new_test_df, base_test_df, default_branch):
-    diff_rel = os.getenv("DIFF_THRESHOLD_REL")
-    diff_threshold = os.getenv("DIFF_THRESHOLD_MS")
+    diff_rel = float(os.getenv("DIFF_THRESHOLD_REL"))
+    diff_threshold = float(os.getenv("DIFF_THRESHOLD_MS"))
     feature_branch = get_feature_branch()
     compare_df = new_test_df.merge(base_test_df, how='outer', suffixes=[f" {feature_branch}", f" {default_branch}"], on=['Test Group', 'Test Name'])
     
