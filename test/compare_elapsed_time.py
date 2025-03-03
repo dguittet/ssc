@@ -112,10 +112,13 @@ def get_feature_branch():
 
     response = requests.get(f'https://api.github.com/repos/dguittet/ssc/actions/runs/{workflow_id}', headers=headers)
     return response.json()['head_branch']
+
+
 def compare_time_elapsed(new_test_df, base_test_df, default_branch):
     feature_branch = get_feature_branch()
     compare_df = new_test_df.merge(base_test_df, how='outer', suffixes=[f" {feature_branch}", f" {default_branch}"], on=['Test Group', 'Test Name'])
     print(compare_df)
+    compare_df.to_csv(Path(__file__).parent / "compare_times.csv", index=False)
 
 
 if __name__ == "__main__":
