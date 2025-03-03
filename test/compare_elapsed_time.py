@@ -16,6 +16,7 @@ Command Line Options to run this script in order to generate CSVs of time elapse
 'python compare_elapsed_time.py compare <path to csv or gtest log> <branch to compare>' 
     Compares the results from a previous run of Github actions by downloading the artifact csv of the given branch
 """
+access_token = os.getenv("GH_TOKEN")
 
 def convert_log_to_csv(gtest_log_path):
     test_groups = []
@@ -56,8 +57,6 @@ def convert_log_to_csv(gtest_log_path):
     return test_df
 
 def get_workflow_artifact_branch(base_branch):
-    access_token = os.getenv("GH_TOKEN")
-
     headers = {
         'Accept': 'application/vnd.github+json',
         'Authorization': f'Bearer {access_token}',
@@ -103,8 +102,19 @@ def get_workflow_artifact_branch(base_branch):
     os.remove(file_dir / "gtest_elapsed_times.csv")
     return test_df_base
     
-def compare_time_elapsed(new_test_df, base_test_df):
-    compare_df = new_test_df.merge(base_test_df, how='outer', suffixes=['After', 'Before'], on=['Test Group', 'Test Name'])
+def get_feature_branch():
+    workflow_id = os.getenv("WORKFLOW_ID")
+    headers = {
+    'Accept': 'application/vnd.github+json',
+    'Authorization': f'Bearer {access_token}',
+    'X-GitHub-Api-Version': '2022-11-28',
+    }
+
+    response = requests.get(f'https://api.github.com/repos/dguittet/ssc/actions/runs/{workflow_id}', headers=headers)
+    return response.json()['head_branch']
+def compare_time_elapsed(new_test_df, base_test_df, default_branch):
+    feature_branch = get_feature_branch()
+    compare_df = new_test_df.merge(base_test_df, how='outer', suffixes=[f" {feature_branch}", f" {default_branch}"], on=['Test Group', 'Test Name'])
     print(compare_df)
 
 
@@ -131,7 +141,7 @@ if __name__ == "__main__":
             test_df = convert_log_to_csv(filename)
         else:
             test_df = pd.read_csv(filename)
-        compare_time_elapsed(test_df, base_test_df)
+        compare_time_elapsed(test_df, base_test_df, default_branch=base_branch)
     else:
         raise RuntimeError("Options are 'gtest_log' or 'compare'. Use 'help' to see details")
  
