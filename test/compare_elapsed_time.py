@@ -66,7 +66,7 @@ def get_workflow_artifact_branch(base_branch):
 
     response = requests.get('https://api.github.com/repos/dguittet/ssc/actions/artifacts', headers=headers)
 
-    print(response)
+    print(response.json())
 
     artifacts = response.json()['artifacts']
 
