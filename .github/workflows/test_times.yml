@@ -48,6 +48,7 @@ jobs:
         result-encoding: string
 
     - name: Export Context Vars to ENV
+      shell: bash
       run: |
         echo "WORKFLOW_ID=${{ steps.workflow_id.outputs.result }}" >> $GITHUB_ENV
 
