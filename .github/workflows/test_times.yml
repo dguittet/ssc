@@ -36,7 +36,9 @@ jobs:
 
     - name: Check filename
       shell: bash
-      run: echo ${{env.CI_WF}}
+      run: | 
+        echo ${{env.CI_WF}}
+        echo ${{github.workflow_ref}}
                     
     - name: Get Artifact from Completed CI (on Feature Branch)
       uses: actions/github-script@v7
