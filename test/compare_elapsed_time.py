@@ -110,12 +110,6 @@ def compare_time_elapsed(new_test_df, base_test_df):
 
 if __name__ == "__main__":
 
-    base_test_df = get_workflow_artifact_branch("gtest_times")
-    test_df = pd.read_csv("/Users/dguittet/Downloads/gtest_elapsed_times_intel.csv")
-    compare_time_elapsed(test_df, base_test_df)
-
-
-
     if len(sys.argv) == 1:
         raise RuntimeError("Options are 'gtest_log' or 'compare'. Use 'help' to see details")
 
