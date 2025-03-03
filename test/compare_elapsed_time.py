@@ -56,7 +56,7 @@ def convert_log_to_csv(gtest_log_path):
     return test_df
 
 def get_workflow_artifact_branch(base_branch):
-    access_token = os.getenv("GITHUB_TOKEN")
+    access_token = os.getenv("GH_TOKEN")
 
     headers = {
         'Accept': 'application/vnd.github+json',
@@ -64,9 +64,9 @@ def get_workflow_artifact_branch(base_branch):
         'X-GitHub-Api-Version': '2022-11-28',
     }
 
-    response = requests.get('https://api.github.com/repos/NREL/ssc/actions/artifacts', headers=headers)
+    response = requests.get('https://api.github.com/repos/dguittet/ssc/actions/artifacts', headers=headers)
 
-    print(response)
+    print(response.json())
 
     artifacts = response.json()['artifacts']
 
@@ -104,8 +104,8 @@ def get_workflow_artifact_branch(base_branch):
     return test_df_base
     
 def compare_time_elapsed(new_test_df, base_test_df):
-    new_test_df.compare(base_test_df)
-    print(new_test_df.describe())
+    compare_df = new_test_df.merge(base_test_df, how='outer', suffixes=['After', 'Before'], on=['Test Group', 'Test Name'])
+    print(compare_df)
 
 
 if __name__ == "__main__":
