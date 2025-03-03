@@ -65,7 +65,9 @@ def get_workflow_artifact_branch(base_branch):
 
     response = requests.get('https://api.github.com/repos/dguittet/ssc/actions/artifacts', headers=headers)
 
-    print(response.json())
+    if response.status_code != 200:
+        print(response.json())
+        raise Exception("Failed to Get Workflow Artifacts List")
 
     artifacts = response.json()['artifacts']
 
@@ -104,6 +106,9 @@ def get_workflow_artifact_branch(base_branch):
     
 def get_feature_branch():
     workflow_id = os.getenv("WORKFLOW_ID")
+    if workflow_id is None:
+        raise Exception("Environment variable 'workflow_id' not defined")
+
     headers = {
     'Accept': 'application/vnd.github+json',
     'Authorization': f'Bearer {access_token}',
@@ -111,6 +116,10 @@ def get_feature_branch():
     }
 
     response = requests.get(f'https://api.github.com/repos/dguittet/ssc/actions/runs/{workflow_id}', headers=headers)
+    if response.status_code != 200:
+        print(response.json())
+        raise Exception(f"Failed to Get Feature Branch from Workflow ID {workflow_id}")
+    
     return response.json()['head_branch']
 def compare_time_elapsed(new_test_df, base_test_df, default_branch):
     feature_branch = get_feature_branch()
