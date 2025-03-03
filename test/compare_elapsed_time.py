@@ -56,7 +56,7 @@ def convert_log_to_csv(gtest_log_path):
     return test_df
 
 def get_workflow_artifact_branch(base_branch):
-    access_token = os.getenv("GITHUB_TOKEN")
+    access_token = os.getenv("GH_TOKEN")
 
     headers = {
         'Accept': 'application/vnd.github+json',
