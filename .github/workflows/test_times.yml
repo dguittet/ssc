@@ -37,8 +37,7 @@ jobs:
     - name: Check filename
       shell: bash
       run: | 
-        echo ${{env.CI_WF}}
-        echo ${{github.workflow_ref}}
+        echo "Downloading" ${{env.CI_WF}} "from" ${{github.workflow_ref}} $GITHUB_REF
                     
     - name: Get Artifact from Completed CI (on Feature Branch)
       uses: actions/github-script@v7
@@ -50,6 +49,7 @@ jobs:
               repo: context.repo.repo,
               run_id: context.payload.workflow_run.id,
           });
+          console.log("Downloaded Elapsed Test Times from Workflow ID:");
           console.log(context.payload.workflow_run.id);
           let matchArtifact = allArtifacts.data.artifacts.filter((artifact) => {
             return artifact.name == "${{env.CI_WF}}"
