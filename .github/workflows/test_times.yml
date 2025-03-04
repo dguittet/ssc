@@ -11,12 +11,13 @@ env:
   DIFF_THRESHOLD_MS: 3      # Only check tests which take more than this time
 
 jobs:
-  build-on-mac:
+  check-elapsed-test-times:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [windows-2019, ubuntu-latest, macos-latest]
-
+    fail-fast: false
+    
     steps:
     - name: Get Filename
       if: ${{ matrix.os == 'windows-2019' }}
