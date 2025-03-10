@@ -1,0 +1,94 @@
+name: Update Elapsed Test Times
+
+on:
+  release:
+    types: [published]
+
+env:
+    GITHUB_SHA: 42eb60355397b48d42bfece5ade4deadc772f5dd
+
+jobs:
+  update_elapsed_test_times:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-2019, ubuntu-latest, macos-14-large, macos-latest]
+      fail-fast: false
+
+    steps:
+    - name: Get Filename
+      if: ${{ matrix.os == 'windows-2019' }}
+      shell: bash
+      run: |
+        echo "CI_WF=SSC Windows Test Time Elapsed" >> $GITHUB_ENV
+
+    - name: Get Filename
+      if: ${{ matrix.os == 'ubuntu-latest' }}
+      run: |
+        echo "CI_WF=SSC Linux Test Time Elapsed" >> $GITHUB_ENV
+
+    - name: Get Filename
+      if: ${{ matrix.os == 'macos-14-large' }}
+      run: |
+        echo "CI_WF=SSC Mac Intel Test Time Elapsed" >> $GITHUB_ENV
+
+    - name: Get Filename
+      if: ${{ matrix.os == 'macos-latest' }}
+      run: |
+        echo "CI_WF=SSC Mac Arm Test Time Elapsed" >> $GITHUB_ENV
+
+    - name: Get Artifact from Completed CI
+      uses: actions/github-script@v7
+      id: get-artifact
+      with:
+        script: |
+          let allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head_sha: "${{env.GITHUB_SHA}}",
+          });
+          console.log("Downloaded Elapsed Test Times from Head SHA:");
+          console.log(context.payload.workflow_run.head_sha);
+          let matchArtifact = allArtifacts.data.artifacts.filter((artifact) => {
+            return artifact.name == "${{env.CI_WF}}"
+          })[0];
+          let download = await github.rest.actions.downloadArtifact({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              artifact_id: matchArtifact.id,
+              archive_format: 'zip',
+          });
+          const fs = require('fs');
+          const path = require('path');
+          const temp = '${{ github.workspace }}';
+          if (!fs.existsSync(temp)){
+            fs.mkdirSync(temp);
+          }
+          fs.writeFileSync(path.join(temp, 'test_times.zip'), Buffer.from(download.data));
+          return path.join(temp, 'test_times.zip')
+        result-encoding: string
+
+    - name: Unzip Test Times
+      if: ${{ matrix.os == 'windows-2019' }}
+      run: |
+          7z x ${{steps.get-artifact.outputs.result}}
+
+    - name: Unzip Test Times
+      if: ${{ matrix.os != 'windows-2019' }}
+      run: unzip ${{steps.get-artifact.outputs.result}}
+
+    - name: Checkout SSC
+      uses: actions/checkout@v4
+      with:
+          path: ssc
+
+    - name: Create SSC branch
+      shell: bash
+      run: | 
+        cd ${{ github.workspace }}/ssc
+        
+
+    # - name: create pull request
+    #   run: gh pr create -B base_branch -H branch_to_merge --title 'Merge branch_to_merge into base_branch' --body 'Created by Github action'
+    #   env:
+        # GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
