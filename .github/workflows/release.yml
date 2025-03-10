@@ -5,9 +5,6 @@ on:
     # types: [published]
   push
 
-env:
-    GITHUB_SHA: d69ac43306dff5a61b5798d280ee68fd8fbd4e3d
-
 jobs:
   update_elapsed_test_times:
     runs-on: ${{ matrix.os }}
@@ -38,7 +35,7 @@ jobs:
       shell: bash
       run: |
         pip install pandas requests
-        python '${{ github.workspace }}/ssc/test/compare_elapsed_time.py' download_csv $GITHUB_SHA '${{ github.workspace }}/ssc/test/elapsed_time_release'
+        python '${{ github.workspace }}/ssc/test/compare_elapsed_time.py' download_csv 6c468166b85214d6643d09e547d8c483cd2580bb '${{ github.workspace }}/ssc/test/elapsed_time_release'
 
     - name: create pull request
       env:
