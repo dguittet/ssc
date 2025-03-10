@@ -142,7 +142,7 @@ def get_artifact_from_sha(sha, output_dir=None):
     os.remove(file_dir / "gtest_elapsed_times.csv")
     if output_dir is not None:
         test_df_base.to_csv(output_dir / f"gtest_elapsed_times_{platform}.csv")
-        print(f"Saved to {str(output_dir / f"gtest_elapsed_times_{platform}.csv")}")
+        print(f"Saved to {str(output_dir / f'gtest_elapsed_times_{platform}.csv')}")
     return test_df_base
 
 def get_feature_branch():
@@ -246,8 +246,8 @@ if __name__ == "__main__":
         sha = sys.argv[2]
         output_dir = None
         if len(sys.argv) == 4:
-            output_dir = sys.argv[3]
-        get_artifact_from_sha(sha)
+            output_dir = Path(sys.argv[3])
+        get_artifact_from_sha(sha, output_dir)
     else:
         raise RuntimeError("Options are 'gtest_log' or 'compare'. Use 'help' to see details")
  
