@@ -1,9 +1,8 @@
 name: Update Elapsed Test Times
 
 on:
-  # release:
-    # types: [published]
-  push
+  release:
+    types: [published]
 
 jobs:
   update_elapsed_test_times:
@@ -35,7 +34,7 @@ jobs:
       shell: bash
       run: |
         pip install pandas requests
-        python '${{ github.workspace }}/ssc/test/compare_elapsed_time.py' download_csv 6c468166b85214d6643d09e547d8c483cd2580bb '${{ github.workspace }}/ssc/test/elapsed_time_release'
+        python '${{ github.workspace }}/ssc/test/compare_elapsed_time.py' download_csv $GITHUB_SHA '${{ github.workspace }}/ssc/test/elapsed_time_release'
 
     - name: create pull request
       shell: bash
