@@ -5,7 +5,7 @@ on:
     types: [published]
 
 env:
-    GITHUB_SHA: 42eb60355397b48d42bfece5ade4deadc772f5dd
+    GITHUB_SHA: d69ac43306dff5a61b5798d280ee68fd8fbd4e3d
 
 jobs:
   update_elapsed_test_times:
@@ -56,13 +56,13 @@ jobs:
         script: |
           let allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
               owner: "NREL",
-              repo: "ssc",
-              head_sha: "${{env.GITHUB_SHA}}",
+              repo: "ssc"
           });
           console.log("Downloaded Elapsed Test Times from Head SHA:");
           console.log("${{env.GITHUB_SHA}}");
           let matchArtifact = allArtifacts.data.artifacts.filter((artifact) => {
-            return artifact.name == "${{env.CI_WF}}"
+            return (artifact.name == "${{env.CI_WF}}") &
+                   (artifact.workflow_run.head_sha == "${{env.GITHUB_SHA}}")
           })[0];
           let download = await github.rest.actions.downloadArtifact({
               owner: "NREL",
