@@ -43,8 +43,7 @@ jobs:
         script: |
           let allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
               owner: "NREL",
-              repo: "ssc",
-              head_sha: "${{env.GITHUB_SHA}}",
+              repo: "ssc"
           });
           console.log("Downloaded Elapsed Test Times from Head SHA:");
           console.log("${{env.GITHUB_SHA}}");
