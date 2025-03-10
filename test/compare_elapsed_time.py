@@ -141,7 +141,8 @@ def get_artifact_from_sha(sha, output_dir=None):
     test_df_base = pd.read_csv(file_dir / "gtest_elapsed_times.csv")
     os.remove(file_dir / "gtest_elapsed_times.csv")
     if output_dir is not None:
-        test_df_base.to_csv(output_dir / f"gtest_elapsed_times_{platform}")
+        test_df_base.to_csv(output_dir / f"gtest_elapsed_times_{platform}.csv")
+        print(f"Saved to {str(output_dir / f"gtest_elapsed_times_{platform}.csv")}")
     return test_df_base
 
 def get_feature_branch():
