@@ -1,8 +1,9 @@
 name: Update Elapsed Test Times
 
 on:
-  release:
-    types: [published]
+  # release:
+    # types: [published]
+  push
 
 env:
     GITHUB_SHA: d69ac43306dff5a61b5798d280ee68fd8fbd4e3d
@@ -41,7 +42,7 @@ jobs:
       uses: actions/github-script@v7
       with:
         script: |
-          let allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
+          let allArtifacts = await github.rest.actions.listArtifactsForARespository({
               owner: "NREL",
               repo: "ssc"
           });
@@ -53,7 +54,7 @@ jobs:
       id: get-artifact
       with:
         script: |
-          let allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
+          let allArtifacts = await github.rest.actions.listArtifactsForARespository({
               owner: "NREL",
               repo: "ssc"
           });
