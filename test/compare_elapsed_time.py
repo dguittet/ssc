@@ -123,27 +123,28 @@ def get_artifact_from_sha(sha, output_dir=None):
 
     artifacts = response.json()['artifacts']
 
-    artifacts = [a for a in artifacts if a['workflow_run']['head_sha'] == sha]
+    artifacts_sha = [a for a in artifacts if a['workflow_run']['head_sha'] == sha]
     
-    artifacts = [a for a in artifacts if (platform in a['name']) and ("Test Time Elapsed" in a['name'])]
+    for platform in ["Windows", "Mac Arm", "Mac Intel", "Linux"]:
+        artifacts = [a for a in artifacts_sha if (platform in a['name']) and ("Test Time Elapsed" in a['name'])]
 
-    headers = {
-    'Accept': 'application/vnd.github+json',
-    'Authorization': f'Bearer {access_token}',
-    'X-GitHub-Api-Version': '2022-11-28',
-    }
+        headers = {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': f'Bearer {access_token}',
+        'X-GitHub-Api-Version': '2022-11-28',
+        }
 
-    response = requests.get(artifacts[0]['archive_download_url'], headers=headers)
+        response = requests.get(artifacts[0]['archive_download_url'], headers=headers)
 
-    z = zipfile.ZipFile(io.BytesIO(response.content)) 
-    file_dir = Path(__file__).parent
-    z.extractall(file_dir)
-    test_df_base = pd.read_csv(file_dir / "gtest_elapsed_times.csv")
-    os.remove(file_dir / "gtest_elapsed_times.csv")
-    if output_dir is not None:
-        test_df_base.to_csv(output_dir / f"gtest_elapsed_times_{platform}.csv")
-        print(f"Saved to {str(output_dir / f'gtest_elapsed_times_{platform}.csv')}")
-    return test_df_base
+        z = zipfile.ZipFile(io.BytesIO(response.content)) 
+        file_dir = Path(__file__).parent
+        z.extractall(file_dir)
+        test_df_base = pd.read_csv(file_dir / "gtest_elapsed_times.csv")
+        os.remove(file_dir / "gtest_elapsed_times.csv")
+        if output_dir is not None:
+            test_df_base.to_csv(output_dir / f"gtest_elapsed_times_{platform}.csv")
+            print(f"Saved to {str(output_dir / f'gtest_elapsed_times_{platform}.csv')}")
+    return
 
 def get_feature_branch():
     workflow_id = os.getenv("WORKFLOW_ID")
