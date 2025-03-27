@@ -81,7 +81,7 @@ def get_workflow_artifact_branch(base_branch):
         'X-GitHub-Api-Version': '2022-11-28',
     }
 
-    response = requests.get('https://api.github.com/repos/NREL/ssc/actions/artifacts', headers=headers)
+    response = requests.get('https://api.github.com/repos/dguittet/ssc/actions/artifacts', headers=headers)
 
     if response.status_code != 200:
         print(response.json())
@@ -115,7 +115,7 @@ def get_artifact_from_sha(sha, output_dir=None):
         'X-GitHub-Api-Version': '2022-11-28',
     }
 
-    response = requests.get('https://api.github.com/repos/NREL/ssc/actions/artifacts', headers=headers)
+    response = requests.get('https://api.github.com/repos/dguittet/ssc/actions/artifacts', headers=headers)
 
     if response.status_code != 200:
         print(response.json())
@@ -157,7 +157,7 @@ def get_feature_branch():
     'X-GitHub-Api-Version': '2022-11-28',
     }
 
-    response = requests.get(f'https://api.github.com/repos/NREL/ssc/actions/runs/{workflow_id}', headers=headers)
+    response = requests.get(f'https://api.github.com/repos/dguittet/ssc/actions/runs/{workflow_id}', headers=headers)
     if response.status_code != 200:
         print(response.json())
         raise Exception(f"Failed to Get Feature Branch from Workflow ID {workflow_id}")
