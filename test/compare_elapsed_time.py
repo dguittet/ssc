@@ -6,6 +6,7 @@ import os
 import zipfile
 import io
 from platform import processor
+import time
 
 help_info = """
 Command Line Options to run this script in order to generate CSVs of time elapsed for tests and to compare them
@@ -108,14 +109,34 @@ def get_workflow_artifact_branch(base_branch):
     os.remove(file_dir / "gtest_elapsed_times.csv")
     return test_df_base
     
+def retry_request_with_timeout(url, timeout, headers, retry_delay=20 * 60, ):
+    start_time = time.time()
+    while time.time() - start_time < timeout:
+        try:
+            response = requests.get(url, headers=headers)
+            response.raise_for_status()
+            return response
+        except requests.exceptions.RequestException as e:
+            print(f"Request failed: {e}, retrying in {retry_delay} seconds...")
+            time.sleep(retry_delay)
+    raise TimeoutError(f"Request to {url} timed out after {timeout} seconds")
+
 def get_artifact_from_sha(sha, output_dir=None):
+    """
+    Give 3 hours for the tests for finish
+    """
+
     headers = {
         'Accept': 'application/vnd.github+json',
         'Authorization': f'Bearer {access_token}',
         'X-GitHub-Api-Version': '2022-11-28',
     }
-
-    response = requests.get('https://api.github.com/repos/dguittet/ssc/actions/artifacts', headers=headers)
+    try:
+        response = retry_request_with_timeout('https://api.github.com/repos/NREL/ssc/actions/artifacts', 60 * 60 * 3, headers)
+    except TimeoutError as e:
+        print(e)
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed after multiple retries: {e}")
 
     if response.status_code != 200:
         print(response.json())
