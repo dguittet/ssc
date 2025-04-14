@@ -22,6 +22,8 @@ Command Line Options to run this script in order to generate CSVs of time elapse
 """
 access_token = os.getenv("GH_TOKEN")
 
+tested_platforms = ["Windows", "Mac Arm", "Mac Intel", "Linux"]
+
 platform = None
 if sys.platform == 'linux':
     platform = "Linux"
