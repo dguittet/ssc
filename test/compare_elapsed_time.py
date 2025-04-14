@@ -109,16 +109,21 @@ def get_workflow_artifact_branch(base_branch):
     os.remove(file_dir / "gtest_elapsed_times.csv")
     return test_df_base
     
-def retry_request_with_timeout(url, timeout, headers, retry_delay=20 * 60, ):
+def retry_request_with_timeout(url, timeout, headers, sha, retry_delay=20 * 60):
     start_time = time.time()
     while time.time() - start_time < timeout:
-        try:
-            response = requests.get(url, headers=headers)
-            response.raise_for_status()
-            return response
-        except requests.exceptions.RequestException as e:
-            print(f"Request failed: {e}, retrying in {retry_delay} seconds...")
-            time.sleep(retry_delay)
+        response = requests.get(url, headers=headers)
+
+        if response.status_code == 200:
+            artifacts = response.json()['artifacts']
+            artifacts_sha = [a for a in artifacts if a['workflow_run']['head_sha'] == sha]
+            if len(artifacts_sha) == len(tested_platforms):
+                return artifacts_sha
+        else:
+            print(response.json())
+            raise requests.exceptions.RequestException
+        print(f"Request failed: retrying in {retry_delay} seconds...")
+        time.sleep(retry_delay)
     raise TimeoutError(f"Request to {url} timed out after {timeout} seconds")
 
 def get_artifact_from_sha(sha, output_dir=None):
@@ -132,19 +137,11 @@ def get_artifact_from_sha(sha, output_dir=None):
         'X-GitHub-Api-Version': '2022-11-28',
     }
     try:
-        response = retry_request_with_timeout('https://api.github.com/repos/NREL/ssc/actions/artifacts', 60 * 60 * 3, headers)
+        artifacts_sha = retry_request_with_timeout('https://api.github.com/repos/NREL/ssc/actions/artifacts', 60 * 60 * 3, headers, sha)
     except TimeoutError as e:
         print(e)
     except requests.exceptions.RequestException as e:
         print(f"Request failed after multiple retries: {e}")
-
-    if response.status_code != 200:
-        print(response.json())
-        raise Exception("Failed to Get Workflow Artifacts List")
-
-    artifacts = response.json()['artifacts']
-
-    artifacts_sha = [a for a in artifacts if a['workflow_run']['head_sha'] == sha]
     
     for platform in ["Windows", "Mac Arm", "Linux"]:
         artifacts = [a for a in artifacts_sha if (platform in a['name']) and ("Test Time Elapsed" in a['name'])]
