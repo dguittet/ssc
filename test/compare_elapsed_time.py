@@ -146,8 +146,11 @@ def get_artifact_from_sha(sha, output_dir=None):
 
     artifacts_sha = [a for a in artifacts if a['workflow_run']['head_sha'] == sha]
     
-    for platform in ["Windows", "Mac Arm", "Mac Intel", "Linux"]:
+    for platform in ["Windows", "Mac Arm", "Linux"]:
         artifacts = [a for a in artifacts_sha if (platform in a['name']) and ("Test Time Elapsed" in a['name'])]
+
+        if len(artifacts) == 0:
+            raise Exception(f"Failed to get Artifact for {platform} for {sha}")
 
         headers = {
         'Accept': 'application/vnd.github+json',
