@@ -22,7 +22,7 @@ Command Line Options to run this script in order to generate CSVs of time elapse
 """
 access_token = os.getenv("GH_TOKEN")
 
-tested_platforms = ["Windows", "Mac Arm", "Mac Intel", "Linux"]
+tested_platforms = ["Windows", "Mac Arm", "Linux"]
 
 platform = None
 if sys.platform == 'linux':
@@ -119,8 +119,14 @@ def retry_request_with_timeout(url, timeout, headers, sha, retry_delay=20 * 60):
         if response.status_code == 200:
             artifacts = response.json()['artifacts']
             artifacts_sha = [a for a in artifacts if a['workflow_run']['head_sha'] == sha]
-            if len(artifacts_sha) >= len(tested_platforms):
-                return artifacts_sha
+            if len(artifacts_sha) > 0:
+                artifacts_count = 0
+                for platform in tested_platforms:
+                    artifacts = [a for a in artifacts_sha if (platform in a['name']) and ("Test Time Elapsed" in a['name'])]
+                    if len(artifacts):
+                        artifacts_count += 1
+                if artifacts_count == len(tested_platforms):
+                    return artifacts_sha
         else:
             print(response.json())
             raise requests.exceptions.RequestException
@@ -145,7 +151,7 @@ def get_artifact_from_sha(sha, output_dir=None):
     except requests.exceptions.RequestException as e:
         print(f"Request failed after multiple retries: {e}")
     
-    for platform in ["Windows", "Mac Arm", "Linux"]:
+    for platform in tested_platforms:
         artifacts = [a for a in artifacts_sha if (platform in a['name']) and ("Test Time Elapsed" in a['name'])]
 
         if len(artifacts) == 0:
