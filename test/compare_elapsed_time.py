@@ -139,7 +139,7 @@ def get_artifact_from_sha(sha, output_dir=None):
         'X-GitHub-Api-Version': '2022-11-28',
     }
     try:
-        artifacts_sha = retry_request_with_timeout('https://api.github.com/repos/NREL/ssc/actions/artifacts', 60 * 60 * 3, headers, sha)
+        artifacts_sha = retry_request_with_timeout('https://api.github.com/repos/dguittet/ssc/actions/artifacts', 60 * 60 * 3, headers, sha, 1 * 60)
     except TimeoutError as e:
         print(e)
     except requests.exceptions.RequestException as e:
