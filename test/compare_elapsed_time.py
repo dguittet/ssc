@@ -119,7 +119,7 @@ def retry_request_with_timeout(url, timeout, headers, sha, retry_delay=20 * 60):
         if response.status_code == 200:
             artifacts = response.json()['artifacts']
             artifacts_sha = [a for a in artifacts if a['workflow_run']['head_sha'] == sha]
-            if len(artifacts_sha) == len(tested_platforms):
+            if len(artifacts_sha) >= len(tested_platforms):
                 return artifacts_sha
         else:
             print(response.json())
