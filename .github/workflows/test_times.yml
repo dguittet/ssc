@@ -66,6 +66,8 @@ jobs:
           });
           console.log("Downloaded Elapsed Test Times from Workflow ID:");
           console.log(context.payload.workflow_run.id);
+          console.log(allArtifacts[0);
+          
           let matchArtifact = allArtifacts.data.artifacts.filter((artifact) => {
             return (artifact.name == "${{env.CI_WF}}") &
                    (artifact.workfow_run.id == ${{env.WORKFLOW_ID}})
